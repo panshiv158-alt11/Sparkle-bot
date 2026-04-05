@@ -1,0 +1,22 @@
+{
+  "name": "sparklebots-website",
+  "version": "1.0.0",
+  "description": "Official Sparklebots Robotics & AI Innovation Lab Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "robotics",
+    "ai",
+    "innovation",
+    "education",
+    "sparklebots"
+  ],
+  "author": "Sparklebots Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

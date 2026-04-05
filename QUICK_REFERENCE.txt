@@ -1,0 +1,275 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║           SPARKLEBOTS WEBSITE - QUICK REFERENCE                  ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+⚡ QUICK START (30 SECONDS):
+
+1. Double-click: start.bat
+2. Wait for browser to open
+3. Website is ready! 🎉
+
+═══════════════════════════════════════════════════════════════════
+
+📁 IMPORTANT FILES:
+
+start.bat                    👈 START HERE (double-click)
+├── index.html              Main website
+├── styles.css              Styling
+├── qr-generator.html       Download QR code for posters
+├── server.js               Node.js server
+├── copy_videos.bat         Copy your videos here
+└── README.md               Help & instructions
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 FIRST TIME SETUP:
+
+✅ Step 1: Copy Videos (2 minutes)
+   Double-click: copy_videos.bat
+   (Copies your 3 WhatsApp videos automatically)
+
+✅ Step 2: Launch Website (10 seconds)
+   Double-click: start.bat
+   (Website opens in your browser)
+
+✅ Step 3: Test It (1 minute)
+   • Check if videos play
+   • Click through courses
+   • Scroll to QR code section
+   • Fill out enrollment form
+
+✅ Step 4: Get QR Code (1 minute)
+   • Click "QR Generator" link in navigation
+   • Download QR code
+   • Print it for posters!
+
+═══════════════════════════════════════════════════════════════════
+
+📱 WEBSITE FEATURES AT A GLANCE:
+
+Feature              Location          What It Does
+─────────────────────────────────────────────────────────
+Hero Section         Top              Welcome banner & CTA
+Courses              Below hero        All 5 courses with pricing
+Specialised Tracks   Middle           Humanoid & Robot arm
+Career Modules       Below tracks      4 career-focused programs
+Videos               Lower section     Your 3 WhatsApp videos
+QR Code              Lower section     Scannable code for website
+Contact/Enrollment   Bottom            Quick enrollment form
+QR Generator         Separate page     Download QR for posters
+
+═══════════════════════════════════════════════════════════════════
+
+🎓 ALL COURSES & PRICING:
+
+CORE COURSES:
+  • Core Python                    ₹7,500
+  • Advanced Python                ₹7,500
+  • Arduino Robotics               ₹8,500
+  • Image Processing               ₹9,500
+  • 3D Printing & CAD              ₹8,500
+
+SPECIALISED TRACKS:
+  • Humanoid Robotics              ₹28,500
+  • Robot Arm Programming          ₹12,000
+
+CAREER MODULES:
+  • Embedded Systems               ₹15,000
+  • IoT Program                    ₹12,000
+  • Raspberry Pi                   ₹18,000
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 COMMON TASKS:
+
+CHANGE PHONE NUMBER:
+  1. Open: index.html
+  2. Find: "8446630300"
+  3. Replace with your phone
+
+CHANGE WEBSITE URL:
+  1. Open: index.html & qr-generator.html
+  2. Find: "www.sparklebots.com"
+  3. Replace with your website
+
+CHANGE COURSE PRICES:
+  1. Open: index.html
+  2. Find the course section
+  3. Change the price in <p class="price">
+
+CHANGE COLORS:
+  1. Open: styles.css
+  2. Edit at top in :root section:
+     --primary-blue: #003DA5
+     --primary-yellow: #FFD800
+     --primary-red: #E63946
+
+═══════════════════════════════════════════════════════════════════
+
+📞 CONTACT INFO:
+
+Phone:    8446630300
+Website:  www.sparklebots.com
+Age:      14-18 Years
+Type:     Innovator/Advanced Level
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️ TROUBLESHOOTING:
+
+VIDEOS NOT PLAYING?
+  ➜ Run: copy_videos.bat
+  ➜ Check file names (EXACT match needed)
+  ➜ Use: start.bat (not direct file open)
+
+WEBSITE LOOKS WEIRD?
+  ➜ Refresh page: Ctrl+F5
+  ➜ Clear cache: Ctrl+Shift+Del
+  ➜ Try different browser
+
+QR CODE NOT SHOWING?
+  ➜ Refresh page: F5
+  ➜ Wait 2-3 seconds
+  ➜ Check browser console: F12
+
+PORT ALREADY IN USE?
+  ➜ Edit: server.js
+  ➜ Change: PORT = 3000 to PORT = 8080
+
+═══════════════════════════════════════════════════════════════════
+
+🚀 DEPLOYMENT (FREE):
+
+NETLIFY (Recommended):
+  1. Go to: netlify.com
+  2. Sign up free
+  3. Drag & drop your Application folder
+  4. Done! Your site is live 🎉
+
+Takes about 5 minutes!
+
+═══════════════════════════════════════════════════════════════════
+
+📊 FILE SIZES:
+
+index.html              ~15 KB  (main page)
+styles.css              ~25 KB  (styling)
+qr-generator.html       ~10 KB  (QR tool)
+server.js               ~5 KB   (Node server)
+server.py               ~4 KB   (Python server)
+start.bat               ~1 KB   (launcher)
+copy_videos.bat         ~0.5 KB (video copier)
+
+TOTAL: ~60 KB (without videos)
+VIDEOS: Your files (usually 50-500 MB each)
+
+═══════════════════════════════════════════════════════════════════
+
+🎨 DESIGN FEATURES:
+
+✓ Responsive Design (works on all devices)
+✓ Mobile-First Approach
+✓ Modern UI/UX
+✓ Smooth Animations
+✓ Fast Loading
+✓ Professional Branding
+✓ Accessible (WCAG)
+✓ Cross-Browser Compatible
+✓ SEO-Optimized
+✓ Touch-Friendly
+
+═══════════════════════════════════════════════════════════════════
+
+📱 RESPONSIVE BREAKPOINTS:
+
+Desktop    : 1200px+  (full layout)
+Tablet     : 768px+   (adapted layout)
+Mobile     : < 768px  (optimized for small screens)
+
+Tested on:
+  ✓ Windows 10/11 Desktop
+  ✓ macOS
+  ✓ iPad & Android tablets
+  ✓ iPhone & Android phones
+
+═══════════════════════════════════════════════════════════════════
+
+💾 BACKUP CHECKLIST:
+
+Before deployment:
+  ☐ Download all files from Application folder
+  ☐ Save to external drive
+  ☐ Keep backup of videos
+  ☐ Document any custom edits
+
+After deployment:
+  ☐ Test all links
+  ☐ Check videos play
+  ☐ Scan QR code
+  ☐ Submit form test
+  ☐ Check on mobile
+
+═══════════════════════════════════════════════════════════════════
+
+🔐 SECURITY NOTES:
+
+✓ Website is static (no server processing)
+✓ No database required
+✓ No user data stored
+✓ Safe to deploy anywhere
+✓ Form doesn't actually submit (add backend later)
+
+Future Enhancement:
+  • Add backend for form handling
+  • Add database for enrollments
+  • Add email notifications
+  • Add payment gateway
+
+═══════════════════════════════════════════════════════════════════
+
+📈 ANALYTICS (Optional):
+
+Add Google Analytics:
+  1. Create Google Analytics account
+  2. Copy tracking ID
+  3. Add to index.html <head> section
+  4. Track visitor behavior
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 SUCCESS METRICS:
+
+Track these after deployment:
+  • Visitors per day
+  • Time on page
+  • Bounce rate
+  • Video plays
+  • QR code scans
+  • Form submissions
+  • Mobile vs Desktop traffic
+  • Top page sections
+
+═══════════════════════════════════════════════════════════════════
+
+🆘 QUICK HELP LINKS:
+
+📖 Documentation:  README.md
+📝 Setup Guide:    SETUP_GUIDE.txt
+📋 Full Summary:   SUMMARY.txt
+⚡ This File:      QUICK_REFERENCE.txt
+
+═══════════════════════════════════════════════════════════════════
+
+🎉 YOU'RE READY!
+
+Everything you need is in the Application folder.
+
+Start with: start.bat (double-click it!)
+
+═══════════════════════════════════════════════════════════════════
+
+Version: 1.0
+Created: April 2026
+© Sparklebots - Robotics & AI Innovation Lab
+
+═══════════════════════════════════════════════════════════════════

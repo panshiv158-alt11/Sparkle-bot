@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorer Courses (Age 11-14) - Sparklebots</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <h1>🤖 SPARKLEBOTS</h1>
+            <p class="tagline">AI & Robotics for Kids</p>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#paths">Paths</a></li>
+            <li><a href="index.html#courses">Courses</a></li>
+            <li><a href="index.html#demo">Free Demo</a></li>
+            <li><a href="index.html#contact" class="nav-cta">Enroll</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Explorer Courses Header -->
+    <section class="page-header explorer-header">
+      <div class="container">
+        <div class="back-button-wrapper">
+          <button class="btn-back" onclick="window.history.back()">
+            ← Back to Home
+          </button>
+        </div>
+        <h1 class="section-title">🚀 Explorer Courses</h1>
+        <p class="section-subtitle">
+          Age 11-14 • Build Real Projects with Coding & Robotics
+        </p>
+        <p class="page-intro">
+          Take your skills to the next level with real-world projects and
+          hands-on robotics. Learn industry-standard tools and create impressive
+          applications.
+        </p>
+      </div>
+    </section>
+
+    <!-- Explorer Courses Grid -->
+    <section class="courses-section">
+      <div class="container">
+        <div class="courses-grid">
+          <!-- Course 1: Arduino Programming -->
+          <div class="course-card">
+            <div class="course-header">
+              <div class="course-icon">⚡</div>
+              <h3 class="course-title">Arduino Programming</h3>
+            </div>
+            <div class="course-body">
+              <p class="course-level">Intermediate Level</p>
+              <p class="course-description">
+                Master Arduino microcontrollers and embedded systems. Build
+                sensors, actuators, and IoT devices. Learn electronics
+                principles and write C++ code to control real hardware.
+              </p>
+              <div class="course-details">
+                <span class="detail-item">📅 10 Weeks</span>
+                <span class="detail-item">🕐 2.5 Hours/Week</span>
+                <span class="detail-item">👥 5-8 Students</span>
+              </div>
+              <p class="course-price">₹7,500</p>
+            </div>
+            <button
+              class="btn btn-enroll course-enroll-btn"
+              onclick="enrollForCourse('Arduino Programming', 'explorer')">
+              ✨ Enroll Now
+            </button>
+          </div>
+
+          <!-- Course 2: Python Development -->
+          <div class="course-card">
+            <div class="course-header">
+              <div class="course-icon">🐍</div>
+              <h3 class="course-title">Python Development</h3>
+            </div>
+            <div class="course-body">
+              <p class="course-level">Intermediate Level</p>
+              <p class="course-description">
+                Learn Python programming with a focus on real-world
+                applications. Build games, web applications, and data analysis
+                tools. Understand OOP concepts and best coding practices.
+              </p>
+              <div class="course-details">
+                <span class="detail-item">📅 12 Weeks</span>
+                <span class="detail-item">🕐 2.5 Hours/Week</span>
+                <span class="detail-item">👥 5-8 Students</span>
+              </div>
+              <p class="course-price">₹7,500</p>
+            </div>
+            <button
+              class="btn btn-enroll course-enroll-btn"
+              onclick="enrollForCourse('Python Development', 'explorer')">
+              ✨ Enroll Now
+            </button>
+          </div>
+
+          <!-- Course 3: Robotics Projects -->
+          <div class="course-card">
+            <div class="course-header">
+              <div class="course-icon">🤖</div>
+              <h3 class="course-title">Robotics Projects</h3>
+            </div>
+            <div class="course-body">
+              <p class="course-level">Intermediate Level</p>
+              <p class="course-description">
+                Design and build advanced robots with multiple sensors and
+                actuators. Participate in robotics competitions. Learn
+                mechanical design, motor control, and autonomous navigation.
+              </p>
+              <div class="course-details">
+                <span class="detail-item">📅 14 Weeks</span>
+                <span class="detail-item">🕐 3 Hours/Week</span>
+                <span class="detail-item">👥 4-6 Students</span>
+              </div>
+              <p class="course-price">₹7,500</p>
+            </div>
+            <button
+              class="btn btn-enroll course-enroll-btn"
+              onclick="enrollForCourse('Robotics Projects', 'explorer')">
+              ✨ Enroll Now
+            </button>
+          </div>
+
+          <!-- Course 4: AI Basics -->
+          <div class="course-card">
+            <div class="course-header">
+              <div class="course-icon">🧠</div>
+              <h3 class="course-title">AI Basics</h3>
+            </div>
+            <div class="course-body">
+              <p class="course-level">Intermediate Level</p>
+              <p class="course-description">
+                Introduction to Artificial Intelligence and Machine Learning
+                concepts. Build neural networks, understand algorithms, and
+                create AI-powered applications. Explore the future of
+                technology.
+              </p>
+              <div class="course-details">
+                <span class="detail-item">📅 10 Weeks</span>
+                <span class="detail-item">🕐 2.5 Hours/Week</span>
+                <span class="detail-item">👥 5-8 Students</span>
+              </div>
+              <p class="course-price">₹9,500</p>
+            </div>
+            <button
+              class="btn btn-enroll course-enroll-btn"
+              onclick="enrollForCourse('AI Basics', 'explorer')">
+              ✨ Enroll Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Explorer Courses Section -->
+    <section class="why-courses-section">
+      <div class="container">
+        <h2 class="section-title">✨ Why Explorer Courses?</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">🎯</div>
+            <h3>Project-Based Learning</h3>
+            <p>
+              Build real, impressive projects that showcase your skills to the
+              world.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">👨‍💼</div>
+            <h3>Career Focused</h3>
+            <p>
+              Learn industry-relevant skills that prepare you for tech careers
+              ahead.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🏆</div>
+            <h3>Competition Ready</h3>
+            <p>
+              Prepare for robotics and coding competitions with hands-on
+              practice.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🌟</div>
+            <h3>Advanced Concepts</h3>
+            <p>
+              Dive deeper into programming, electronics, and AI fundamentals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="courses-cta">
+      <div class="container">
+        <h2>Ready to Build Real Projects?</h2>
+        <p>
+          Join our Explorer program and take your tech skills to the next level
+        </p>
+        <button class="btn btn-primary btn-lg" onclick="goToEnrollment()">
+          🎉 Enroll Now - Limited Seats!
+        </button>
+        <p class="contact-info">
+          📞 Questions? Call us: <strong>8446630300</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2026 Sparklebots - Robotics & AI Innovation Lab. All rights
+          reserved.
+        </p>
+        <p>
+          Building the tech leaders of tomorrow | Engineer • Innovate • Create
+          the Future
+        </p>
+      </div>
+    </footer>
+
+    <!-- Demo Row: Enroll Now + Contact Icons (Desktop) -->
+    <div class="demo-row">
+      <button class="floating-cta" onclick="goToEnrollment()">
+        <span>Enroll Now</span>
+        <span class="pulse"></span>
+      </button>
+      <div class="contact-icons">
+        <a href="tel:8446630300" class="call-icon" title="Call us"> 📞 </a>
+        <a
+          href="https://wa.me/918446630300?text=Hi%20Sparklebots!%20I%20want%20to%20know%20more%20about%20Explorer%20courses"
+          target="_blank"
+          class="whatsapp-icon"
+          title="Message on WhatsApp">
+          💬
+        </a>
+      </div>
+    </div>
+
+    <!-- Floating CTA Button (Mobile) -->
+    <button class="floating-cta mobile-only" onclick="goToEnrollment()">
+      <span>Enroll Now</span>
+      <span class="pulse"></span>
+    </button>
+
+    <!-- Combined Contact Button - Call & WhatsApp (Mobile) -->
+    <div class="combined-contact-btn">
+      <a
+        href="tel:8446630300"
+        class="contact-option contact-call"
+        title="Call us">
+        <span class="contact-icon">📞</span>
+        <span class="contact-label">Call</span>
+      </a>
+      <a
+        href="https://wa.me/918446630300?text=Hi%20Sparklebots!%20I%20want%20to%20know%20more%20about%20Explorer%20courses"
+        target="_blank"
+        class="contact-option contact-whatsapp"
+        title="Message on WhatsApp">
+        <span class="contact-icon">💬</span>
+        <span class="contact-label">WhatsApp</span>
+      </a>
+    </div>
+
+    <!-- Combined Contact Button - WhatsApp Only (Desktop) -->
+    <div class="combined-contact-btn desktop-layout">
+      <a
+        href="https://wa.me/918446630300?text=Hi%20Sparklebots!%20I%20want%20to%20know%20more%20about%20Explorer%20courses"
+        target="_blank"
+        class="contact-option contact-whatsapp"
+        title="Message on WhatsApp">
+        <span class="contact-icon">💬</span>
+        <span class="contact-label">WhatsApp</span>
+      </a>
+    </div>
+
+    <script>
+      // Enroll for Explorer course
+      function enrollForCourse(courseName, courseType) {
+        // Store the course name in sessionStorage for retrieval on main page
+        sessionStorage.setItem("selectedCourse", courseName);
+        // Redirect to main page contact section
+        window.location.href = "index.html#contact";
+      }
+
+      // Go to enrollment on main page
+      function goToEnrollment() {
+        window.location.href = "index.html#contact";
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

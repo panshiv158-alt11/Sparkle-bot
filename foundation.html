@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation - Sparklebots</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="assets/logo.jpg" alt="Sparklebots Logo" class="logo-img" />
+          <h1>Sparklebots</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">All Courses</a></li>
+          <li><a href="index.html#paths">Programs</a></li>
+          <li><a href="courses.html">← Back to Learning Path</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <button
+            class="btn btn-primary"
+            onclick="
+              document.getElementById('contact-section').scrollIntoView()
+            ">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Course Header Section -->
+    <section class="course-header compact-course-header">
+      <div class="container">
+        <div class="compact-header-card">
+          <div class="header-left">
+            <div class="header-icon-large">🟢</div>
+            <div class="header-text">
+              <h1>FOUNDATION</h1>
+              <p class="header-subtitle">
+                Build Your First Robot & Master Programming
+              </p>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="header-meta-block">
+              <span class="meta-badge">📅 6 Months</span>
+              <span class="meta-badge">👥 Age 6-10</span>
+              <span class="meta-badge">🎓 Beginner</span>
+            </div>
+            <button
+              class="btn btn-primary btn-demo"
+              onclick="enrollFor('Foundation')">
+              Register for Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Description Section -->
+    <section class="course-section">
+      <div class="container">
+        <p class="section-text center-text">
+          The perfect introduction to robotics and programming for young
+          learners. Build confidence, learn fundamental concepts, and create
+          your first robot projects through hands-on building and interactive
+          visual programming.
+        </p>
+      </div>
+    </section>
+
+    <!-- What Students Will Learn Section -->
+    <section class="course-section alternate-bg card-section">
+      <div class="container">
+        <h2 class="section-heading">What Students Will Learn</h2>
+        <div class="card-grid">
+          <div class="feature-card">
+            <div class="card-icon">🤖</div>
+            <h3>Introduction to Robotics</h3>
+            <p>
+              Master robot mechanics and understand how real-world technology
+              works
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon">🧩</div>
+            <h3>Block Programming (Scratch)</h3>
+            <p>
+              Learn visual coding without complex syntax - perfect for beginners
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon">⚡</div>
+            <h3>Sensors & Actions</h3>
+            <p>Build intelligent robots that respond to the environment</p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon">🔧</div>
+            <h3>Basic Mechanisms</h3>
+            <p>Create working mechanical systems with gears and structures</p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon">🧠</div>
+            <h3>AI Thinking Basics</h3>
+            <p>
+              Introduce your child to artificial intelligence concepts early
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon">🚀</div>
+            <h3>Mini Projects</h3>
+            <p>Build real working robots from day one - hands-on learning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="course-section card-section">
+      <div class="container">
+        <h2 class="section-heading">Why Choose Foundation Course?</h2>
+        <div class="card-grid card-grid-4">
+          <div class="benefit-card">
+            <div class="card-number">01</div>
+            <div class="card-icon">🌟</div>
+            <h3>Confidence Building</h3>
+            <p>
+              Success from day one - students see their creations work
+              immediately
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="card-number">02</div>
+            <div class="card-icon">🧩</div>
+            <h3>Problem-Solving Skills</h3>
+            <p>
+              Learn critical thinking through hands-on engineering challenges
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="card-number">03</div>
+            <div class="card-icon">🚀</div>
+            <h3>Career Readiness</h3>
+            <p>
+              Perfect preparation for STEM careers - high demand in tech
+              industry
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="card-number">04</div>
+            <div class="card-icon">⚙️</div>
+            <h3>Practical Skills</h3>
+            <p>Learn by doing - theory combined with real-world applications</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Modules Section -->
+    <section class="course-section alternate-bg module-showcase-section">
+      <div class="container">
+        <h2 class="section-heading">Course Modules</h2>
+        <div class="modules-showcase-grid">
+          <div class="module-box module-box-1">
+            <div class="module-step">1</div>
+            <div class="module-title">Robotics Fundamentals</div>
+            <p>Learn basics, safety & components</p>
+          </div>
+          <div class="module-connector"></div>
+
+          <div class="module-box module-box-2">
+            <div class="module-step">2</div>
+            <div class="module-title">Visual Coding</div>
+            <p>Block programming with Scratch</p>
+          </div>
+          <div class="module-connector"></div>
+
+          <div class="module-box module-box-3">
+            <div class="module-step">3</div>
+            <div class="module-title">Smart Sensors</div>
+            <p>Electronic components & circuits</p>
+          </div>
+
+          <div class="module-box module-box-2">
+            <div class="module-step">4</div>
+            <div class="module-title">Mechanics & Motion</div>
+            <p>Gears, levers & structures</p>
+          </div>
+          <div class="module-connector"></div>
+
+          <div class="module-box module-box-1">
+            <div class="module-step">5</div>
+            <div class="module-title">AI & Logic</div>
+            <p>Intelligent robot behaviors</p>
+          </div>
+          <div class="module-connector"></div>
+
+          <div class="module-box module-box-3">
+            <div class="module-step">6</div>
+            <div class="module-title">Final Projects</div>
+            <p>Build & showcase your robot</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Individual Course Breakdown Section -->
+    <section class="course-section">
+      <div class="container">
+        <h2 class="section-heading">What You'll Master</h2>
+        <div class="master-skills-grid">
+          <div class="master-box master-box-1">
+            <div class="master-icon">🧩</div>
+            <h3>Block Programming</h3>
+            <p class="master-highlight">Visual drag-drop coding</p>
+            <p>See results instantly</p>
+            <div class="skill-tags">
+              <span class="tag tag-blue">Logic</span>
+              <span class="tag tag-green">Loops</span>
+              <span class="tag tag-gold">Debugging</span>
+            </div>
+          </div>
+
+          <div class="master-box master-box-2">
+            <div class="master-icon">🤖</div>
+            <h3>Basic Robotics</h3>
+            <p class="master-highlight">Build working robots</p>
+            <p>See code move real things</p>
+            <div class="skill-tags">
+              <span class="tag tag-green">Mechanics</span>
+              <span class="tag tag-gold">Assembly</span>
+              <span class="tag tag-blue">Engineering</span>
+            </div>
+          </div>
+
+          <div class="master-box master-box-3">
+            <div class="master-icon">⚡</div>
+            <h3>Sensors & Components</h3>
+            <p class="master-highlight">Electronic inputs & outputs</p>
+            <p>Make robots "see" & "feel"</p>
+            <div class="skill-tags">
+              <span class="tag tag-blue">Circuits</span>
+              <span class="tag tag-gold">Sensors</span>
+              <span class="tag tag-green">Troubleshooting</span>
+            </div>
+          </div>
+
+          <div class="master-box master-box-1">
+            <div class="master-icon">🎯</div>
+            <h3>Mini Projects</h3>
+            <p class="master-highlight">Real-world challenges</p>
+            <p>Apply everything together</p>
+            <div class="skill-tags">
+              <span class="tag tag-gold">Integration</span>
+              <span class="tag tag-green">Problem-solving</span>
+              <span class="tag tag-blue">Presentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Options Section -->
+    <section class="course-section card-section">
+      <div class="container">
+        <h2 class="section-heading">Training Options</h2>
+        <div class="card-grid card-grid-2">
+          <div class="training-info-card" onclick="openModal('training-1')">
+            <div class="card-icon">🏢</div>
+            <h3>Batch Training</h3>
+            <p>
+              Learn in a group setting with 4-6 students per batch. Great for
+              peer learning, teamwork, and social interaction.
+            </p>
+            <p class="highlight-text">✓ Perfect for collaborative learning</p>
+          </div>
+          <div class="training-info-card">
+            <div class="card-icon">👨‍🏫</div>
+            <h3>1-to-1 Mentorship</h3>
+            <p>
+              Get personalized attention and customized learning pace. Available
+              as an add-on to batch training or standalone.
+            </p>
+            <p class="highlight-text">✓ For advanced/accelerated learning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Card Section -->
+    <section class="course-section">
+      <div class="container">
+        <div class="price-card">
+          <h2>Foundation Course Package</h2>
+          <div class="price-duration">
+            <p><strong>Duration:</strong> 6 Months (24 Classes)</p>
+            <p><strong>Age Group:</strong> 6–10 Years</p>
+            <p><strong>Batch Size:</strong> 4–6 Students</p>
+            <p><strong>Schedule:</strong> 2 Classes per Week (90 min each)</p>
+          </div>
+          <div class="price-display">
+            <span class="price-text">Starting from</span>
+            <h3 style="color: #ffd700; font-size: 36px; margin: 10px 0">
+              ₹6,500
+            </h3>
+          </div>
+          <p style="color: #e8f5ff; margin: 1rem 0">
+            1-to-1 mentorship available at same cost
+          </p>
+          <button onclick="enrollFor('Foundation Course')">
+            Register for Free Demo Class
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section cta-with-animation">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-robot-animation">
+            <div class="robot-animation">
+              <div class="robot-body">🤖</div>
+              <div class="robot-move"></div>
+            </div>
+          </div>
+          <div class="cta-text">
+            <h2>Ready to Start Your Child's Tech Journey?</h2>
+            <p>
+              Schedule a free demo class and see if Foundation is the right fit!
+            </p>
+            <button
+              class="btn btn-lg btn-demo-cta"
+              onclick="enrollFor('Foundation')">
+              📅 Book a Free Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Sparklebots. All rights reserved.</p>
+        <p>Building tomorrow's innovators today.</p>
+      </div>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+      <div class="modal-overlay" onclick="closeModal()"></div>
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script>
+      // Modal data for all sections
+      const modalData = {
+        "learn-1": {
+          title: "Introduction to Robotics",
+          icon: "🤖",
+          content: `
+            <h3>Understanding Robotics Fundamentals</h3>
+            <ul>
+              <li><strong>What is a Robot?</strong> Learn the definition and basic components</li>
+              <li><strong>Types of Robots:</strong> Fixed robots, mobile robots, and industrial robots</li>
+              <li><strong>Robot Parts:</strong> Motors, sensors, actuators, and controllers</li>
+              <li><strong>Safety First:</strong> Important safety practices when working with robots</li>
+              <li><strong>Real-World Applications:</strong> How robots are used in industries</li>
+              <li><strong>Hands-on Demo:</strong> Assemble and test your first simple robot</li>
+            </ul>
+          `,
+        },
+        "learn-2": {
+          title: "Block Programming (Scratch)",
+          icon: "🧩",
+          content: `
+            <h3>Visual Programming with Drag-and-Drop Blocks</h3>
+            <ul>
+              <li><strong>Scratch Interface:</strong> Navigate the workspace and understand blocks</li>
+              <li><strong>Basic Blocks:</strong> Movement, appearance, sound, and control blocks</li>
+              <li><strong>Variables & Lists:</strong> Store and manage data in programs</li>
+              <li><strong>Logic & Loops:</strong> Create conditionals and repeat actions</li>
+              <li><strong>Debugging:</strong> Find and fix errors in your code</li>
+              <li><strong>Create & Share:</strong> Build projects and share with the community</li>
+            </ul>
+          `,
+        },
+        "learn-3": {
+          title: "Sensors & Actions",
+          icon: "⚡",
+          content: `
+            <h3>Electronic Components and Interactions</h3>
+            <ul>
+              <li><strong>Sensors:</strong> Ultrasonic, light, touch, and motion sensors</li>
+              <li><strong>Actuators:</strong> Motors and servos for robot movement</li>
+              <li><strong>LEDs & Lights:</strong> Visual feedback systems</li>
+              <li><strong>Circuits:</strong> Understanding series and parallel connections</li>
+              <li><strong>Power Supply:</strong> Batteries and power management</li>
+              <li><strong>Integration:</strong> Connect sensors to controllers and run programs</li>
+            </ul>
+          `,
+        },
+        "learn-4": {
+          title: "Basic Mechanisms",
+          icon: "🔧",
+          content: `
+            <h3>Mechanical Engineering Basics</h3>
+            <ul>
+              <li><strong>Gears:</strong> Speed ratios, torque, and power transmission</li>
+              <li><strong>Levers:</strong> Mechanical advantage and force multiplication</li>
+              <li><strong>Pulleys:</strong> Rope systems and load distribution</li>
+              <li><strong>Wheels & Axles:</strong> Movement and steering systems</li>
+              <li><strong>Structural Design:</strong> Stability and balance</li>
+              <li><strong>Build & Test:</strong> Construct and verify mechanical structures</li>
+            </ul>
+          `,
+        },
+        "learn-5": {
+          title: "AI Thinking Basics",
+          icon: "🧠",
+          content: `
+            <h3>Introduction to Artificial Intelligence</h3>
+            <ul>
+              <li><strong>What is AI?</strong> Machine learning and decision-making</li>
+              <li><strong>Algorithms:</strong> Step-by-step problem-solving approaches</li>
+              <li><strong>Pattern Recognition:</strong> How machines learn from data</li>
+              <li><strong>Prediction:</strong> Using AI to make forecasts</li>
+              <li><strong>Logic & Rules:</strong> Creating decision trees</li>
+              <li><strong>Simple AI Projects:</strong> Build intelligent robot behaviors</li>
+            </ul>
+          `,
+        },
+        "learn-6": {
+          title: "Mini Projects",
+          icon: "🚀",
+          content: `
+            <h3>Hands-On Project Challenges</h3>
+            <ul>
+              <li><strong>Line-Following Robot:</strong> Sensors + programming</li>
+              <li><strong>Obstacle Avoidance:</strong> Ultrasonic sensors + AI thinking</li>
+              <li><strong>Light Chaser:</strong> Responding to light stimuli</li>
+              <li><strong>Programmable Dancer:</strong> Patterns and timing</li>
+              <li><strong>Simple Gripper:</strong> Mechanical design challenge</li>
+              <li><strong>Final Showcase:</strong> Present your project and what you learned</li>
+            </ul>
+          `,
+        },
+        "benefit-1": {
+          title: "Confidence Building",
+          icon: "🌟",
+          content: `
+            <h3>Building Self-Confidence Through Success</h3>
+            <ul>
+              <li><strong>Early Wins:</strong> Students experience success in the first class</li>
+              <li><strong>Incremental Challenges:</strong> Gradual progression that matches skill level</li>
+              <li><strong>Positive Feedback:</strong> Recognition of effort and improvements</li>
+              <li><strong>Peer Support:</strong> Learning alongside others builds community</li>
+              <li><strong>Project Showcase:</strong> Display completed projects for friends and family</li>
+              <li><strong>Personal Growth:</strong> Students develop a growth mindset</li>
+            </ul>
+          `,
+        },
+        "benefit-2": {
+          title: "Problem-Solving Skills",
+          icon: "🧩",
+          content: `
+            <h3>Critical Thinking & Creative Solutions</h3>
+            <ul>
+              <li><strong>Decomposition:</strong> Break complex problems into smaller steps</li>
+              <li><strong>Trial & Error:</strong> Learn through experimentation</li>
+              <li><strong>Pattern Recognition:</strong> Identify similarities across problems</li>
+              <li><strong>Abstraction:</strong> Focus on key concepts</li>
+              <li><strong>Algorithm Design:</strong> Plan solutions systematically</li>
+              <li><strong>Real-World Application:</strong> Solve actual engineering challenges</li>
+            </ul>
+          `,
+        },
+        "benefit-3": {
+          title: "Career Readiness",
+          icon: "🚀",
+          content: `
+            <h3>Opening Doors to Future Opportunities</h3>
+            <ul>
+              <li><strong>STEM Pathways:</strong> Foundation for robotics, engineering, tech careers</li>
+              <li><strong>Industry Demand:</strong> Growing field with excellent job prospects</li>
+              <li><strong>Entrepreneurship:</strong> Start your own robotics projects or business</li>
+              <li><strong>Research Opportunities:</strong> Advanced studies in robotics and AI</li>
+              <li><strong>Competitions:</strong> Participate in robotics contests and showcases</li>
+              <li><strong>Portfolio Building:</strong> Create projects for college and job applications</li>
+            </ul>
+          `,
+        },
+        "benefit-4": {
+          title: "Practical Skills",
+          icon: "⚙️",
+          content: `
+            <h3>Real-World Engineering Experience</h3>
+            <ul>
+              <li><strong>Hands-On Learning:</strong> Build actual robots that work</li>
+              <li><strong>Programming Skills:</strong> Write real code with visible results</li>
+              <li><strong>Design Thinking:</strong> Plan, prototype, and iterate</li>
+              <li><strong>Tool Mastery:</strong> Learn to use robotics platforms and tools</li>
+              <li><strong>Documentation:</strong> Record and explain your work</li>
+              <li><strong>Troubleshooting:</strong> Develop debugging and problem-solving techniques</li>
+            </ul>
+          `,
+        },
+        "module-1": {
+          title: "Module 1: Introduction to Robotics",
+          icon: "📚",
+          content: `
+            <h3>Get Started with Robotics Basics</h3>
+            <p><strong>Duration:</strong> Weeks 1-2 (4 classes)</p>
+            <ul>
+              <li>What is a robot and how does it work?</li>
+              <li>Tour of robot components and kits</li>
+              <li>Safety protocols and workspace setup</li>
+              <li>First hands-on assembly exercise</li>
+              <li>Understanding circuits and power</li>
+              <li>Q&A and troubleshooting practice</li>
+            </ul>
+          `,
+        },
+        "module-2": {
+          title: "Module 2: Block Programming with Scratch",
+          icon: "🧩",
+          content: `
+            <h3>Master Visual Programming</h3>
+            <p><strong>Duration:</strong> Weeks 3-4 (4 classes)</p>
+            <ul>
+              <li>Introduction to Scratch platform</li>
+              <li>Basic movement and control blocks</li>
+              <li>Creating simple programs</li>
+              <li>Using loops and conditionals</li>
+              <li>Variables and data storage</li>
+              <li>Project: Create an interactive game</li>
+            </ul>
+          `,
+        },
+        "module-3": {
+          title: "Module 3: Sensors & Electronic Components",
+          icon: "⚡",
+          content: `
+            <h3>Build Your First Sensing Robot</h3>
+            <p><strong>Duration:</strong> Weeks 5-6 (4 classes)</p>
+            <ul>
+              <li>Types of sensors and their applications</li>
+              <li>Connecting sensors to your robot</li>
+              <li>Reading sensor values and responding</li>
+              <li>LED indicators and feedback</li>
+              <li>Troubleshooting sensor issues</li>
+              <li>Project: Build a sensor-responsive robot</li>
+            </ul>
+          `,
+        },
+        "module-4": {
+          title: "Module 4: Building Mechanisms",
+          icon: "🔧",
+          content: `
+            <h3>Mechanical Engineering Principles</h3>
+            <p><strong>Duration:</strong> Weeks 7-8 (4 classes)</p>
+            <ul>
+              <li>Gears and power transmission</li>
+              <li>Levers and mechanical advantage</li>
+              <li>Wheel systems and movement</li>
+              <li>Structural stability</li>
+              <li>Designing for different tasks</li>
+              <li>Project: Build a specialized robot structure</li>
+            </ul>
+          `,
+        },
+        "module-5": {
+          title: "Module 5: AI Thinking & Logic",
+          icon: "🧠",
+          content: `
+            <h3>Introduction to Smart Robotics</h3>
+            <p><strong>Duration:</strong> Weeks 9-10 (4 classes)</p>
+            <ul>
+              <li>What is artificial intelligence?</li>
+              <li>Decision-making algorithms</li>
+              <li>Pattern recognition basics</li>
+              <li>Creating smart robot behaviors</li>
+              <li>State machines and logic</li>
+              <li>Project: Program an intelligent robot</li>
+            </ul>
+          `,
+        },
+        "module-6": {
+          title: "Module 6: Capstone Mini Projects",
+          icon: "🚀",
+          content: `
+            <h3>Showcase Your Skills</h3>
+            <p><strong>Duration:</strong> Weeks 11-12 (4 classes)</p>
+            <ul>
+              <li>Choose your challenge project</li>
+              <li>Plan and design your robot</li>
+              <li>Build and program your creation</li>
+              <li>Test and optimize performance</li>
+              <li>Document your work</li>
+              <li>Final showcase and celebration</li>
+            </ul>
+          `,
+        },
+        "master-1": {
+          title: "Block Programming (Scratch)",
+          icon: "🧩",
+          content: `
+            <h3>Visual Coding Mastery</h3>
+            <ul>
+              <li><strong>Block Palette:</strong> Motion, looks, sound, pen, variables, lists, events, control, sensing, operators, more blocks</li>
+              <li><strong>Key Concepts:</strong> Sequences, loops, conditionals, functions, events</li>
+              <li><strong>Debugging Techniques:</strong> Finding and fixing logic errors</li>
+              <li><strong>Performance:</strong> Optimizing code for speed</li>
+              <li><strong>Advanced Features:</strong> Custom blocks, cloning, broadcasting</li>
+              <li><strong>Integration:</strong> Connect Scratch programs to physical robots</li>
+            </ul>
+          `,
+        },
+        "master-2": {
+          title: "Basic Robotics",
+          icon: "🤖",
+          content: `
+            <h3>Hands-On Robot Building</h3>
+            <ul>
+              <li><strong>Kit Mastery:</strong> Complete knowledge of your robotics kit</li>
+              <li><strong>Assembly Skills:</strong> Efficient and precise construction</li>
+              <li><strong>Motor Control:</strong> Speed, direction, and timing</li>
+              <li><strong>Structural Design:</strong> Building stable, functional robots</li>
+              <li><strong>Maintenance:</strong> Caring for equipment and fixing issues</li>
+              <li><strong>Innovation:</strong> Customizing and upgrading designs</li>
+            </ul>
+          `,
+        },
+        "master-3": {
+          title: "Sensors & Components",
+          icon: "⚡",
+          content: `
+            <h3>Electronic Integration Mastery</h3>
+            <ul>
+              <li><strong>Sensor Types:</strong> Ultrasonic, IR, touch, light, motion, temperature</li>
+              <li><strong>Actuators:</strong> DC motors, servo motors, stepper motors</li>
+              <li><strong>Power Management:</strong> Battery selection, power distribution</li>
+              <li><strong>Circuit Design:</strong> Series, parallel, complex circuits</li>
+              <li><strong>Electrical Safety:</strong> Voltage, current, and protection</li>
+              <li><strong>System Integration:</strong> Combining multiple components</li>
+            </ul>
+          `,
+        },
+        "master-4": {
+          title: "Mini Projects",
+          icon: "🎯",
+          content: `
+            <h3>Practical Application Projects</h3>
+            <ul>
+              <li><strong>Challenge 1 - Line Follower:</strong> Build a robot that follows marked paths</li>
+              <li><strong>Challenge 2 - Obstacle Avoider:</strong> Create a robot that navigates around obstacles</li>
+              <li><strong>Challenge 3 - Object Tracker:</strong> Build a robot that responds to light or color</li>
+              <li><strong>Challenge 4 - Smart Gripper:</strong> Design a mechanical arm that picks up objects</li>
+              <li><strong>Challenge 5 - Racing Robot:</strong> Optimize speed and efficiency</li>
+              <li><strong>Challenge 6 - Creative Build:</strong> Design your own robot project</li>
+            </ul>
+          `,
+        },
+        "training-1": {
+          title: "Batch Training Program",
+          icon: "🏢",
+          content: `
+            <h3>Group Learning Experience</h3>
+            <ul>
+              <li><strong>Class Size:</strong> 4-6 students per batch</li>
+              <li><strong>Schedule:</strong> 2 classes per week, 90 minutes each</li>
+              <li><strong>Duration:</strong> 6 months (24 classes total)</li>
+              <li><strong>Benefits:</strong> Peer learning, teamwork, collaboration</li>
+              <li><strong>Environment:</strong> Dedicated lab with shared equipment</li>
+              <li><strong>Pricing:</strong> ₹6,500 for full 6-month program</li>
+              <li><strong>Add-ons:</strong> 1-to-1 mentorship available (₹2,000/month)</li>
+            </ul>
+          `,
+        },
+        "training-2": {
+          title: "1-to-1 Mentorship Program",
+          icon: "👨‍🏫",
+          content: `
+            <h3>Personalized Learning Experience</h3>
+            <ul>
+              <li><strong>Customized Pace:</strong> Learn at your own speed</li>
+              <li><strong>Flexible Schedule:</strong> Classes at your convenience</li>
+              <li><strong>Personal Attention:</strong> One-on-one guidance from expert mentors</li>
+              <li><strong>Tailored Content:</strong> Focus on your interests and strengths</li>
+              <li><strong>Duration:</strong> 6 months or customizable</li>
+              <li><strong>Pricing:</strong> ₹2,000/month (in addition to batch training)</li>
+              <li><strong>Perfect For:</strong> Accelerated learners or beginners who need extra support</li>
+            </ul>
+          `,
+        },
+      };
+
+      // Open modal function
+      function openModal(id) {
+        const data = modalData[id];
+        if (!data) return;
+
+        const modalBody = document.getElementById("modal-body");
+        modalBody.innerHTML = `
+          <div class="modal-header">
+            <div class="modal-icon">${data.icon}</div>
+            <h2>${data.title}</h2>
+          </div>
+          <div class="modal-body-content">
+            ${data.content}
+          </div>
+        `;
+        document.getElementById("modal").classList.add("active");
+      }
+
+      // Close modal function
+      function closeModal() {
+        document.getElementById("modal").classList.remove("active");
+      }
+
+      // Close modal when Esc key is pressed
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+
+      function enrollFor(courseName) {
+        // Store course name and redirect to enrollment form
+        sessionStorage.setItem("selectedCourse", courseName);
+        window.location.href = "index.html#enrollForm";
+      }
+    </script>
+  </body>
+</html>

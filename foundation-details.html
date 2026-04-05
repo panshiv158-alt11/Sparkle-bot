@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Courses - Sparklebots</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="assets/logo.jpg" alt="Sparklebots Logo" class="logo-img" />
+          <span>Sparklebots</span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-links">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about-us" class="nav-links">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#learning-paths" class="nav-links"
+              >Learning Paths</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="index.html#courses" class="nav-links">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#free-demo" class="nav-links">Free Demo</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-links nav-cta">Contact Us</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- FOUNDATION COURSES SECTION -->
+    <section class="foundation-section">
+      <div class="container">
+        <h1 class="section-title">Foundation Courses</h1>
+        <p class="foundation-intro">
+          Master the basics of robotics with our carefully designed Foundation
+          courses. Perfect for beginners to build strong fundamentals.
+        </p>
+
+        <div class="foundation-grid">
+          <!-- RoboChamp -->
+          <div class="foundation-card">
+            <div class="card-header">
+              <h2>🤖 RoboChamp</h2>
+              <span class="age-badge">Age: 5-7 years</span>
+            </div>
+            <p class="card-description">
+              An introductory course designed for the youngest learners. Kids
+              explore basic robotics concepts through fun, interactive
+              activities.
+            </p>
+            <div class="course-highlights">
+              <h3>What You'll Learn:</h3>
+              <ul>
+                <li>Basic robotics fundamentals</li>
+                <li>Problem-solving through play</li>
+                <li>Hand-eye coordination and motor skills</li>
+                <li>Teamwork and collaboration</li>
+                <li>Creative thinking and imagination</li>
+              </ul>
+            </div>
+            <div class="course-benefits">
+              <h3>Benefits:</h3>
+              <ul>
+                <li>✨ Engaging, play-based learning</li>
+                <li>✨ Builds confidence in STEM</li>
+                <li>✨ Develops communication skills</li>
+                <li>✨ Age-appropriate challenges</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary" onclick="registerDemo('RoboChamp')">
+              Register for Demo
+            </button>
+          </div>
+
+          <!-- Scratch Programming -->
+          <div class="foundation-card">
+            <div class="card-header">
+              <h2>💻 Scratch Programming</h2>
+              <span class="age-badge">Age: 7-9 years</span>
+            </div>
+            <p class="card-description">
+              Learn visual programming with Scratch! Create your own games,
+              animations, and interactive stories while understanding coding
+              logic.
+            </p>
+            <div class="course-highlights">
+              <h3>What You'll Learn:</h3>
+              <ul>
+                <li>Visual programming basics</li>
+                <li>Creating games and animations</li>
+                <li>Logic and algorithmic thinking</li>
+                <li>Debugging and problem-solving</li>
+                <li>Interactive storytelling</li>
+              </ul>
+            </div>
+            <div class="course-benefits">
+              <h3>Benefits:</h3>
+              <ul>
+                <li>✨ No prior coding experience needed</li>
+                <li>✨ Fun, creative projects</li>
+                <li>✨ Develops computational thinking</li>
+                <li>✨ Portfolio-building projects</li>
+              </ul>
+            </div>
+            <button
+              class="btn btn-primary"
+              onclick="registerDemo('Scratch Programming')">
+              Register for Demo
+            </button>
+          </div>
+
+          <!-- Creative Design -->
+          <div class="foundation-card">
+            <div class="card-header">
+              <h2>🎨 Creative Design</h2>
+              <span class="age-badge">Age: 8-10 years</span>
+            </div>
+            <p class="card-description">
+              Combine art and robotics! Design and build creative robotic
+              structures that move and interact with the environment.
+            </p>
+            <div class="course-highlights">
+              <h3>What You'll Learn:</h3>
+              <ul>
+                <li>Design thinking methodology</li>
+                <li>Building mechanical structures</li>
+                <li>Integration of art and robotics</li>
+                <li>Prototyping and iteration</li>
+                <li>Material science basics</li>
+              </ul>
+            </div>
+            <div class="course-benefits">
+              <h3>Benefits:</h3>
+              <ul>
+                <li>✨ Encourages creative expression</li>
+                <li>✨ Hands-on building experience</li>
+                <li>✨ Develops spatial reasoning</li>
+                <li>✨ Merges STEM with arts</li>
+              </ul>
+            </div>
+            <button
+              class="btn btn-primary"
+              onclick="registerDemo('Creative Design')">
+              Register for Demo
+            </button>
+          </div>
+
+          <!-- Problem Solving -->
+          <div class="foundation-card">
+            <div class="card-header">
+              <h2>🧩 Problem Solving</h2>
+              <span class="age-badge">Age: 9-11 years</span>
+            </div>
+            <p class="card-description">
+              Master critical thinking through robotics challenges. Solve
+              complex problems by building and programming robots to complete
+              real-world tasks.
+            </p>
+            <div class="course-highlights">
+              <h3>What You'll Learn:</h3>
+              <ul>
+                <li>Advanced problem-solving strategies</li>
+                <li>Complex robot programming</li>
+                <li>Sensor integration and logic</li>
+                <li>Project management basics</li>
+                <li>Real-world application design</li>
+              </ul>
+            </div>
+            <div class="course-benefits">
+              <h3>Benefits:</h3>
+              <ul>
+                <li>✨ Develops critical thinking</li>
+                <li>✨ Prepares for advanced courses</li>
+                <li>✨ Builds confidence in STEM</li>
+                <li>✨ Practical engineering skills</li>
+              </ul>
+            </div>
+            <button
+              class="btn btn-primary"
+              onclick="registerDemo('Problem Solving')">
+              Register for Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="foundation-cta">
+          <h2>Ready to Start Your Robotics Journey?</h2>
+          <p>
+            Choose a Foundation course and register for a free demo session
+            today!
+          </p>
+          <button
+            class="btn btn-enroll"
+            onclick="
+              document
+                .querySelector('#contact-form')
+                .scrollIntoView({ behavior: 'smooth' })
+            ">
+            Get Started Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Sparklebots</h3>
+          <p>Building future innovators through robotics education.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about-us">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p>Email: info@sparklebots.com</p>
+          <p>Phone: +91 XXXXX XXXXX</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Sparklebots. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function registerDemo(courseName) {
+        alert(
+          `Thank you for your interest in ${courseName}!\n\nPlease fill out the form below to register for a free demo session.`,
+        );
+        document
+          .querySelector("#contact-form")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      // Mobile menu toggle
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-menu").classList.toggle("active");
+        });
+
+      // Close menu when link is clicked
+      document.querySelectorAll(".nav-links").forEach((link) => {
+        link.addEventListener("click", function () {
+          document.querySelector(".nav-menu").classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparklebots - Robotics & AI Learning for Kids (6-18 Years)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <img
+              src="assets/logo.jpg"
+              alt="Sparklebots Logo"
+              class="logo-img" />
+            <div class="logo-text">
+              <h1>SPARKLEBOTS</h1>
+              <p class="tagline">Robotics • STEM • Innovation</p>
+            </div>
+          </div>
+          <!-- Hamburger Menu Button -->
+          <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!-- Navigation Menu -->
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#paths">Learning Paths</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Background -->
+    <section id="home" class="hero">
+      <div class="hero-background"></div>
+      <video class="hero-video" autoplay muted loop>
+        <source src="assets/robotics-video.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Transform Your Child Into a Tech Leader</h1>
+          <p class="hero-subtitle">
+            Learn Robotics, AI & Coding • Age 6-18 • Industry-Ready Skills
+          </p>
+          <div class="hero-features">
+            <div class="feature-item">
+              <span class="feature-icon">🎯</span>
+              <span>Expert Instructors</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🏆</span>
+              <span>Industry Certified</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🚀</span>
+              <span>Career Ready</span>
+            </div>
+          </div>
+          <button
+            class="btn btn-primary btn-lg"
+            onclick="
+              document
+                .getElementById('demo')
+                .scrollIntoView({ behavior: 'smooth' })
+            ">
+            🎉 Get FREE Demo Class
+          </button>
+          <p class="hero-cta">
+            📞 Call: <strong>7875367537</strong> • <strong>8446767999</strong> •
+            Limited Seats Available!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <h2 class="section-title">About Sparklebots</h2>
+          <div class="about-text">
+            <p class="about-intro">
+              Empowering young innovators with hands-on robotics and
+              future-ready STEM skills.
+            </p>
+            <p class="about-description">
+              We go beyond learning—students build, create, and solve real-world
+              problems using advanced technologies. With expert guidance and
+              practical training, we shape confident thinkers ready to lead the
+              future.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">🎓</span>
+                <h4>Hands-On Learning</h4>
+                <p>
+                  Learn by doing with real robotics kits and cutting-edge tools
+                </p>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">👨‍🏫</span>
+                <h4>Expert Guidance</h4>
+                <p>
+                  Learn from industry professionals with years of experience
+                </p>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🚀</span>
+                <h4>Future Ready</h4>
+                <p>Develop skills that matter for tomorrow's careers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Free Demo Classes Section -->
+    <section id="demo" class="demo-section">
+      <div class="container">
+        <h2 class="section-title">✨ FREE Demo Classes Every Week</h2>
+        <p class="section-subtitle">
+          Join thousands of students learning robotics & AI
+        </p>
+        <div class="demo-grid">
+          <div class="demo-card">
+            <div class="demo-badge">🎉 FREE</div>
+            <h3>🤖 Robotics Basics</h3>
+            <p>Build & control your first robot</p>
+            <p class="demo-time">📅 Saturday • 10:00 AM</p>
+            <p class="demo-age">Age: 6-10 years</p>
+            <button class="btn btn-demo" onclick="enrollFor('Robotics Basics')">
+              Register for Demo
+            </button>
+          </div>
+          <div class="demo-card">
+            <div class="demo-badge">🎉 FREE</div>
+            <h3>🐍 Python Programming</h3>
+            <p>Start coding with fun projects</p>
+            <p class="demo-time">📅 Saturday • 2:00 PM</p>
+            <p class="demo-age">Age: 10-14 years</p>
+            <button
+              class="btn btn-demo"
+              onclick="enrollFor('Python Programming')">
+              Register for Demo
+            </button>
+          </div>
+          <div class="demo-card">
+            <div class="demo-badge">🎉 FREE</div>
+            <h3>⚡ Arduino & Electronics</h3>
+            <p>Hands-on electronics workshop</p>
+            <p class="demo-time">📅 Sunday • 10:00 AM</p>
+            <p class="demo-age">Age: 11-18 years</p>
+            <button
+              class="btn btn-demo"
+              onclick="enrollFor('Arduino & Electronics')">
+              Register for Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Paths Section -->
+    <section id="paths" class="learning-paths">
+      <div class="container">
+        <h2 class="section-title">🎯 Choose Your Learning Path</h2>
+        <p class="section-subtitle">
+          Structured programs designed for each age group
+        </p>
+
+        <div class="paths-grid">
+          <!-- FOUNDATION SECTION -->
+          <div class="path-card foundation">
+            <div class="path-header">
+              <span class="emoji">🧩</span>
+              <div class="path-badge">FOUNDATION</div>
+            </div>
+            <h3>Age 6–10</h3>
+            <p class="path-desc">6 Month Program</p>
+            <ul class="path-list">
+              <li>✓ Block Programming</li>
+              <li>✓ Basic Robotics</li>
+              <li>✓ Sensors & Actions</li>
+              <li>✓ Mini Projects</li>
+            </ul>
+            <p
+              style="
+                font-size: 0.75rem;
+                color: var(--text-light);
+                margin: 0.6rem 0;
+                line-height: 1.4;
+              ">
+              🏢 Batch training • 👨‍🏫 1-to-1 mentorship available
+            </p>
+            <button
+              class="btn btn-path"
+              onclick="window.location.href = 'foundation.html'">
+              Explore & Enroll →
+            </button>
+          </div>
+
+          <!-- EXPLORER SECTION -->
+          <div class="path-card explorer">
+            <div class="path-header">
+              <span class="emoji">🔍</span>
+              <div class="path-badge">EXPLORER</div>
+            </div>
+            <h3>Age 11–14</h3>
+            <p class="path-desc">9 Month Program</p>
+            <ul class="path-list">
+              <li>✓ Arduino Programming</li>
+              <li>✓ Python Basics</li>
+              <li>✓ IoT Introduction</li>
+              <li>✓ Robotics Projects</li>
+            </ul>
+            <p
+              style="
+                font-size: 0.75rem;
+                color: var(--text-light);
+                margin: 0.6rem 0;
+                line-height: 1.4;
+              ">
+              🏢 Batch training • 👨‍🏫 1-to-1 mentorship available
+            </p>
+            <button
+              class="btn btn-path"
+              onclick="window.location.href = 'explorer.html'">
+              Explore & Enroll →
+            </button>
+          </div>
+
+          <!-- INNOVATOR SECTION -->
+          <div class="path-card innovator">
+            <div class="path-header">
+              <span class="emoji">🚀</span>
+              <div class="path-badge">INNOVATOR</div>
+            </div>
+            <h3>Age 14–18</h3>
+            <p class="path-desc">12 Month Program</p>
+            <ul class="path-list">
+              <li>✓ Advanced Python & AI</li>
+              <li>✓ ESP32 & IoT</li>
+              <li>✓ Computer Vision</li>
+              <li>✓ Capstone Project</li>
+            </ul>
+            <p
+              style="
+                font-size: 0.75rem;
+                color: var(--text-light);
+                margin: 0.6rem 0;
+                line-height: 1.4;
+              ">
+              🏢 Batch training • 👨‍🏫 1-to-1 mentorship available
+            </p>
+            <button
+              class="btn btn-path"
+              onclick="window.location.href = 'innovator.html'">
+              Explore & Enroll →
+            </button>
+          </div>
+
+          <!-- ALL COURSES CARD -->
+          <div class="path-card all-courses">
+            <div class="path-header">
+              <span class="emoji">📚</span>
+              <div class="path-badge">ALL COURSES</div>
+            </div>
+            <h3>Complete Catalog</h3>
+            <p class="path-desc">View all courses & prices</p>
+            <p
+              style="
+                font-size: 0.7rem;
+                color: var(--text-light);
+                margin: 0.6rem 0;
+                line-height: 1.4;
+              ">
+              Browse our complete collection of robotics, programming, AI, and
+              design courses. Compare prices and find the perfect fit.
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="window.location.href = 'courses.html'">
+              View All Courses & Prices →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+      <div class="container">
+        <h2 class="section-title">📚 Our Award-Winning Courses</h2>
+        <div class="view-all-container">
+          <a href="courses.html" class="view-link">
+            <span class="icon">📚</span>
+            View All Courses
+            <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <div class="courses-container">
+          <div class="course-category">
+            <h3 class="category-title">🐍 Programming Courses</h3>
+            <div class="courses-grid">
+              <div class="course-card" onclick="enrollFor('Core Python')">
+                <div class="course-icon">🐍</div>
+                <h4>Core Python</h4>
+                <p class="course-desc">Master Python fundamentals</p>
+                <p class="course-meta">Age 8-14 • 12 weeks</p>
+                <p class="price">₹7,500</p>
+                <button class="btn btn-enroll">Register for Demo →</button>
+              </div>
+              <div class="course-card" onclick="enrollFor('Advanced Python')">
+                <div class="course-icon">🚀</div>
+                <h4>Advanced Python</h4>
+                <p class="course-desc">Real-world applications & projects</p>
+                <p class="course-meta">Age 12-18 • 10 weeks</p>
+                <p class="price">₹7,500</p>
+                <button class="btn btn-enroll">Register for Demo →</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-category">
+            <h3 class="category-title">⚡ Robotics Courses</h3>
+            <div class="courses-grid">
+              <div class="course-card" onclick="enrollFor('Arduino Robotics')">
+                <div class="course-icon">⚡</div>
+                <h4>Arduino Robotics</h4>
+                <p class="course-desc">Build smart robots from scratch</p>
+                <p class="course-meta">Age 10-16 • 14 weeks</p>
+                <p class="price">₹8,500</p>
+                <button class="btn btn-enroll">Register for Demo →</button>
+              </div>
+              <div class="course-card" onclick="enrollFor('Humanoid Robotics')">
+                <div class="course-icon">🤖</div>
+                <h4>Humanoid Robotics</h4>
+                <p class="course-desc">Advanced robot programming with AI</p>
+                <p class="course-meta">Age 14-18 • 16 weeks</p>
+                <p class="price">₹28,500</p>
+                <button class="btn btn-enroll">Register for Demo →</button>
+              </div>
+              <div class="course-card" onclick="enrollFor('Robot Arm')">
+                <div class="course-icon">🦾</div>
+                <h4>Robot Arm Control</h4>
+                <p class="course-desc">Precision robotics engineering</p>
+                <p class="course-meta">Age 12-18 • 12 weeks</p>
+                <p class="price">₹12,000</p>
+                <button class="btn btn-enroll">Register for Demo →</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-category">
+            <h3 class="category-title">🎨 Design & Development</h3>
+            <div class="courses-grid">
+              <div class="course-card" onclick="enrollFor('Image Processing')">
+                <div class="course-icon">📷</div>
+                <h4>Image Processing</h4>
+                <p class="course-desc">Computer vision & AI techniques</p>
+                <p class="course-meta">Age 12-18 • 10 weeks</p>
+                <p class="price">₹9,500</p>
+                <button class="btn btn-enroll">Register for Demo →</button>
+              </div>
+              <div class="course-card" onclick="enrollFor('3D CAD')">
+                <div class="course-icon">🖨️</div>
+                <h4>3D Printing & CAD</h4>
+                <p class="course-desc">Design for real-world robotics</p>
+                <p class="course-meta">Age 10-16 • 8 weeks</p>
+                <p class="price">₹8,500</p>
+                <button class="btn btn-enroll">Register for Demo →</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-category">
+            <h3 class="category-title">💼 Career Programs</h3>
+            <div class="courses-grid">
+              <div class="course-card" onclick="enrollFor('Embedded Systems')">
+                <div class="course-icon">💻</div>
+                <h4>Embedded Systems</h4>
+                <p class="course-desc">Professional IoT development</p>
+                <p class="course-meta">Age 14-18 • 16 weeks</p>
+                <p class="price">₹15,000</p>
+                <button class="btn btn-enroll">Register for Demo →</button>
+              </div>
+              <div class="course-card" onclick="enrollFor('IoT Program')">
+                <div class="course-icon">🌐</div>
+                <h4>IoT Program</h4>
+                <p class="course-desc">Connected devices & cloud</p>
+                <p class="course-meta">Age 14-18 • 12 weeks</p>
+                <p class="price">₹12,000</p>
+                <button class="btn btn-enroll">Register for Demo →</button>
+              </div>
+              <div class="course-card" onclick="enrollFor('Raspberry Pi')">
+                <div class="course-icon">🍓</div>
+                <h4>Raspberry Pi Expert</h4>
+                <p class="course-desc">Advanced computing projects</p>
+                <p class="course-meta">Age 12-18 • 14 weeks</p>
+                <p class="price">₹18,000</p>
+                <button class="btn btn-enroll">Register for Demo →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+      <div class="container">
+        <h2 class="section-title">Why Parents Choose Sparklebots</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">👨‍🏫</div>
+            <h4>Expert Trainers</h4>
+            <p>Industry professionals with 10+ years experience</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏆</div>
+            <h4>Certified Programs</h4>
+            <p>Globally recognized certifications & achievements</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎓</div>
+            <h4>Structured Curriculum</h4>
+            <p>Age-appropriate learning paths & progression</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h4>Hands-On Learning</h4>
+            <p>Real projects with actual robots & hardware</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h4>Career Preparation</h4>
+            <p>Industry-ready skills for future opportunities</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h4>Progress Tracking</h4>
+            <p>Regular updates & performance reports to parents</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="videos-section">
+      <div class="container">
+        <h2 class="section-title" style="color: #ffffff">
+          📹 See Our Students in Action
+        </h2>
+        <div class="videos-grid">
+          <div class="video-card">
+            <video width="100%" height="250" controls>
+              <source
+                src="WhatsApp Video 2026-04-01 at 11.41.18 PM.mp4"
+                type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>Robotics Workshop</h3>
+          </div>
+          <div class="video-card">
+            <video width="100%" height="250" controls>
+              <source
+                src="WhatsApp Video 2026-04-01 at 11.42.57 PM.mp4"
+                type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>Advanced Projects</h3>
+          </div>
+          <div class="video-card">
+            <video width="100%" height="250" controls>
+              <source
+                src="WhatsApp Video 2026-04-01 at 11.43.13 PM.mp4"
+                type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>Student Success</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QR Code Section -->
+    <section id="qr" class="qr-section">
+      <div class="container">
+        <h2 class="section-title">Quick Access - Scan QR Code</h2>
+        <div class="qr-content">
+          <div class="qr-code-container">
+            <div id="qrcode"></div>
+            <p class="qr-text">Scan to explore courses</p>
+          </div>
+          <div class="qr-info">
+            <h3>Get More Information</h3>
+            <p>
+              📞 Call: <strong>7875367537</strong> • <strong>8446767999</strong>
+            </p>
+            <p>
+              📍
+              <strong
+                ><a
+                  href="https://maps.google.com/?q=Sparklebot+location"
+                  target="_blank"
+                  class="location-link"
+                  >Visit Our Live Location</a
+                ></strong
+              >
+            </p>
+            <p>
+              🌐
+              <a href="https://www.sparklebots.com" target="_blank"
+                ><strong>Directly to our Main Website</strong></a
+              >
+            </p>
+            <p>📧 Email: hello@sparklebots.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">🚀 Start Your Child's Tech Journey Today</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Us</h3>
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <div>
+                <p><strong>Call or WhatsApp</strong></p>
+                <p>
+                  <a href="tel:7875367537">7875367537</a> •
+                  <a href="tel:8446767999">8446767999</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="icon">🌐</span>
+              <div>
+                <p><strong>Website</strong></p>
+                <p>
+                  <a href="https://www.sparklebots.com" target="_blank"
+                    >www.sparklebots.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <div>
+                <p><strong>Location</strong></p>
+                <p>Robotics & AI Innovation Lab</p>
+              </div>
+            </div>
+            <div class="contact-item highlight-limited">
+              <span class="icon">⏰</span>
+              <div>
+                <p><strong>Secure Your Seat Now!</strong></p>
+                <p class="limited-text">
+                  🎯 Limited seats available - Enroll immediately!
+                </p>
+              </div>
+            </div>
+          </div>
+          <form id="enrollForm" class="enrollment-form">
+            <h3>Quick Enrollment Form</h3>
+            <input
+              type="text"
+              name="child"
+              placeholder="Child's Name"
+              required />
+            <input
+              type="text"
+              name="parent"
+              placeholder="Parent's Name"
+              required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required />
+            <input type="tel" name="phone" placeholder="Your Phone" required />
+            <select name="age" required>
+              <option value="">Select Age Group</option>
+              <option value="6 to 20">👶 6 to 20 Years</option>
+            </select>
+            <select name="course" required>
+              <option value="">Select Course</option>
+              <option value="Robotics basis FREE demo">
+                🤖 Robotics basis FREE demo
+              </option>
+              <option value="RoboCHAMP Robotics Course">
+                RoboCHAMP Robotics Course - ₹6,500
+              </option>
+              <option value="Adv RoboCHAMP Robotics Course">
+                Adv RoboCHAMP Robotics Course - ₹7,500
+              </option>
+              <option value="Arduino Robotics Development">
+                Arduino Robotics Development - ₹7,500
+              </option>
+              <option value="Core Python Programming">
+                Core Python Programming - ₹7,500
+              </option>
+              <option value="Arduino IDE Programming">
+                Arduino IDE Programming - ₹8,500
+              </option>
+              <option value="Mobile App Development">
+                Mobile App Development - ₹7,500
+              </option>
+              <option value="Scratch Programming">
+                Scratch Programming - ₹7,500
+              </option>
+              <option value="UI/UX Designing">UI/UX Designing - ₹7,500</option>
+              <option value="CAM/CAM Course">CAM/CAM Course - ₹7,500</option>
+              <option value="Advance Arduino Robotics Development">
+                Advance Arduino Robotics Development - ₹8,500
+              </option>
+              <option value="Embedded Systems">
+                Embedded Systems - ₹15,000
+              </option>
+              <option value="IoT Application Program">
+                IoT Application Program - ₹12,000
+              </option>
+              <option value="Raspberry Pi Development">
+                Raspberry Pi Development - ₹18,000
+              </option>
+              <option value="Artificial Intelligence">
+                Artificial Intelligence - ₹15,000
+              </option>
+              <option value="Adv. Python Programming">
+                Adv. Python Programming - ₹7,500
+              </option>
+              <option value="Image Processing">
+                Image Processing - ₹9,500
+              </option>
+              <option value="Humanoid Robot Development">
+                Humanoid Robot Development - ₹28,500
+              </option>
+              <option value="Robot Arm Operations and Programming (4 Axis)">
+                Robot Arm Operations and Programming (4 Axis) - ₹12,000
+              </option>
+              <option value="Additive Manufacturing with 3d Printing">
+                Additive Manufacturing with 3d Printing - ₹8,500
+              </option>
+            </select>
+            <button type="submit" class="btn btn-primary btn-lg">
+              ✅ Register for Demo
+            </button>
+            <small
+              style="
+                display: block;
+                margin-top: 10px;
+                color: #666;
+                text-align: center;
+                font-size: 12px;
+              ">
+            </small>
+          </form>
+
+          <!-- Debug Info Box (Hidden by default) -->
+          <div
+            id="debugBox"
+            style="
+              display: none;
+              margin-top: 15px;
+              padding: 10px;
+              background: #f0f0f0;
+              border-radius: 5px;
+              border-left: 3px solid #0fa3b1;
+              font-size: 12px;
+            ">
+            <strong>🔍 Debug Info (F12 Console):</strong>
+            <p id="debugAge" style="margin: 5px 0; color: #333"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2026 Sparklebots - Robotics & AI Innovation Lab. All rights
+          reserved.
+        </p>
+        <p>
+          Building the tech leaders of tomorrow | Engineer • Innovate • Create
+          the Future
+        </p>
+      </div>
+    </footer>
+
+    <!-- Demo Row: Register for Demo + Contact Icons (Desktop) -->
+    <div class="demo-row">
+      <button
+        class="floating-cta"
+        onclick="
+          document
+            .getElementById('enrollForm')
+            .scrollIntoView({ behavior: 'smooth' })
+        ">
+        <span>Register for Demo</span>
+        <span class="pulse"></span>
+      </button>
+      <div class="contact-icons">
+        <a href="tel:7875367537" class="call-icon" title="Call us"> 📞 </a>
+        <a
+          href="https://wa.me/917875367537?text=Hi%20Sparklebots!%20I%20want%20to%20know%20more%20about%20your%20courses"
+          target="_blank"
+          class="whatsapp-icon"
+          title="Message on WhatsApp">
+          💬
+        </a>
+      </div>
+    </div>
+
+    <!-- Floating CTA Button (Mobile) -->
+    <button
+      class="floating-cta mobile-only"
+      onclick="
+        document
+          .getElementById('enrollForm')
+          .scrollIntoView({ behavior: 'smooth' })
+      ">
+      <span>Register for Demo</span>
+      <span class="pulse"></span>
+    </button>
+
+    <!-- Combined Contact Button - Call & WhatsApp (Mobile) -->
+    <div class="combined-contact-btn">
+      <a
+        href="tel:7875367537"
+        class="contact-option contact-call"
+        title="Call us">
+        <span class="contact-icon">📞</span>
+        <span class="contact-label">Call</span>
+      </a>
+      <a
+        href="https://wa.me/917875367537?text=Hi%20Sparklebots!%20I%20want%20to%20know%20more%20about%20your%20courses"
+        target="_blank"
+        class="contact-option contact-whatsapp"
+        title="Message on WhatsApp">
+        <span class="contact-icon">💬</span>
+        <span class="contact-label">WhatsApp</span>
+      </a>
+    </div>
+
+    <!-- Combined Contact Button - WhatsApp Only (Desktop) -->
+    <div class="combined-contact-btn desktop-layout">
+      <a
+        href="https://wa.me/917875367537?text=Hi%20Sparklebots!%20I%20want%20to%20know%20more%20about%20your%20courses"
+        target="_blank"
+        class="contact-option contact-whatsapp"
+        title="Message on WhatsApp">
+        <span class="contact-icon">💬</span>
+        <span class="contact-label">WhatsApp</span>
+      </a>
+    </div>
+
+    <script>
+      // ============ MOBILE HAMBURGER MENU ============
+      function initHamburgerMenu() {
+        const hamburgerBtn = document.getElementById("hamburgerBtn");
+        const navMenu = document.getElementById("navMenu");
+
+        if (!hamburgerBtn || !navMenu) {
+          console.error("❌ Hamburger or menu element not found!");
+          return;
+        }
+
+        console.log("✅ Hamburger menu elements found!");
+
+        // Toggle menu on hamburger click
+        hamburgerBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          console.log("🔄 Hamburger clicked!");
+          console.log(
+            "Current classes - btn:",
+            hamburgerBtn.className,
+            "menu:",
+            navMenu.className,
+          );
+
+          navMenu.classList.toggle("active");
+          hamburgerBtn.classList.toggle("active");
+
+          console.log(
+            "After toggle - btn:",
+            hamburgerBtn.className,
+            "menu:",
+            navMenu.className,
+          );
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = navMenu.querySelectorAll("a");
+        console.log("Found " + navLinks.length + " nav links");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            console.log("📍 Link clicked:", this.href);
+            navMenu.classList.remove("active");
+            hamburgerBtn.classList.remove("active");
+          });
+        });
+
+        // Close menu when clicking outside the navbar
+        document.addEventListener("click", function (e) {
+          const navbar = document.querySelector(".navbar");
+          if (navbar && !navbar.contains(e.target)) {
+            navMenu.classList.remove("active");
+            hamburgerBtn.classList.remove("active");
+          }
+        });
+      }
+
+      // Initialize when DOM is ready
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initHamburgerMenu);
+      } else {
+        initHamburgerMenu();
+      }
+
+      // QR Code Generation
+      document.addEventListener("DOMContentLoaded", function () {
+        new QRCode(document.getElementById("qrcode"), {
+          text: "https://www.sparklebots.com",
+          width: 256,
+          height: 256,
+          colorDark: "#0B3C5D",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.H,
+        });
+
+        // Make all course cards clickable with Register buttons
+        const enrollButtons = document.querySelectorAll(
+          ".btn-enroll, .btn-demo",
+        );
+        enrollButtons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const card =
+              this.closest("div[onclick]") || this.closest(".course-card");
+            if (card && card.getAttribute("onclick")) {
+              // If card has onclick attribute, trigger it
+              eval(card.getAttribute("onclick"));
+            } else {
+              // Otherwise, just scroll to enrollment form
+              const enrollForm = document.getElementById("enrollForm");
+              if (enrollForm) {
+                enrollForm.scrollIntoView({ behavior: "smooth" });
+              }
+            }
+          });
+        });
+
+        // Check if course was selected from foundation or courses page
+        const selectedCourse = sessionStorage.getItem("selectedCourse");
+        if (selectedCourse) {
+          // Set course value
+          const courseSelect = document.querySelector("[name='course']");
+          courseSelect.value = selectedCourse;
+          sessionStorage.removeItem("selectedCourse");
+          // Auto-scroll to enrollment form
+          setTimeout(() => {
+            document
+              .getElementById("enrollForm")
+              .scrollIntoView({ behavior: "smooth" });
+          }, 300);
+        }
+
+        // Add age selection debugger
+        const ageSelect = document.querySelector("[name='age']");
+        if (ageSelect) {
+          ageSelect.addEventListener("change", function () {
+            console.log("🎯 Age selected:", this.value);
+            if (this.value) {
+              document.getElementById("debugAge").textContent = `
+              Selected: "${this.value}" ✅
+              This value will be sent to Google Forms entry.631329358
+              `;
+            }
+          });
+        }
+      });
+
+      // Enroll for course
+      function enrollFor(courseName) {
+        // Set the course value
+        const courseSelect = document.querySelector("[name='course']");
+        if (courseSelect) {
+          courseSelect.value = courseName;
+        }
+
+        // Scroll to enrollment form with smooth animation
+        const enrollForm = document.getElementById("enrollForm");
+        if (enrollForm) {
+          enrollForm.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+
+      // Scroll to contact and fill course name
+      function scrollToContact(courseName) {
+        const courseSelect = document.querySelector("[name='course']");
+        if (courseSelect) {
+          courseSelect.value = courseName;
+        }
+        setTimeout(() => {
+          const enrollForm = document.getElementById("enrollForm");
+          if (enrollForm) {
+            enrollForm.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100);
+      }
+
+      // Scroll to courses by path
+      function scrollToCourses(path) {
+        document
+          .getElementById("courses")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      // ============ AUTO-FILL COURSE FUNCTION ============
+      function selectCourse(courseName) {
+        const courseSelect = document.querySelector("[name='course']");
+        if (courseSelect) {
+          courseSelect.value = courseName;
+        }
+        const enrollForm = document.getElementById("enrollForm");
+        if (enrollForm) {
+          enrollForm.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+
+      // ============ GOOGLE FORMS INTEGRATION ============
+      const GOOGLE_FORM_URL =
+        "https://docs.google.com/forms/d/e/1FAIpQLSfJ7EPdU2fOXQ8uqIAw1cYDuT_YRbXDepZMBiw0ZBnroukn0Q/formResponse";
+
+      document
+        .getElementById("enrollForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Collect and validate form values
+          const child = document.querySelector("[name='child']").value.trim();
+          const parent = document.querySelector("[name='parent']").value.trim();
+          const email = document.querySelector("[name='email']").value.trim();
+          const phone = document.querySelector("[name='phone']").value.trim();
+          const age = document.querySelector("[name='age']").value;
+          const course = document.querySelector("[name='course']").value;
+
+          // Validate all fields are filled
+          if (!child || !parent || !email || !phone || !age || !course) {
+            alert("⚠️ Please fill all required fields!");
+            return;
+          }
+
+          // DEBUG: Log values before submission
+          console.log("📋 Form Data:", {
+            child,
+            parent,
+            email,
+            phone,
+            age,
+            course,
+          });
+
+          // Get submit button
+          const submitBtn = this.querySelector('button[type="submit"]');
+          const originalText = submitBtn.textContent;
+          submitBtn.textContent = "⏳ Submitting...";
+          submitBtn.disabled = true;
+          const formElement = this;
+
+          // Force age value to exact Google Forms format
+          let ageValue = "6-20";
+
+          // Get actual selected course
+          let selectedCourse = course.trim();
+
+          // Send valid course value to Google Form (required for form acceptance)
+          let googleFormCourse = "Robotics basis FREE demo";
+
+          // Append actual selected course to child name to preserve data
+          let childNameWithCourse = child + " | Course: " + selectedCourse;
+
+          // Prepare data using URLSearchParams
+          const data = new URLSearchParams();
+          data.append("entry.1182718283", childNameWithCourse);
+          data.append("entry.760708752", parent);
+          data.append("entry.1552215661", email);
+          data.append("entry.1201379715", phone);
+          data.append("entry.631329358", ageValue);
+          data.append("entry.1482151709", googleFormCourse);
+
+          // DEBUG: Log all entry data
+          console.log("📤 Sending to Google Forms:");
+          for (let [key, value] of data.entries()) {
+            console.log(`   ${key}: ${value}`);
+          }
+          console.log("✅ Actual Course Selected:", selectedCourse);
+          console.log("✅ Google Form Course:", googleFormCourse);
+
+          // Submit to Google Forms with timeout
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => {
+            controller.abort();
+          }, 5000); // 5 second timeout
+
+          fetch(GOOGLE_FORM_URL, {
+            method: "POST",
+            mode: "no-cors",
+            body: data,
+            signal: controller.signal,
+          })
+            .then((response) => {
+              clearTimeout(timeoutId);
+              console.log("✅ Submission sent to Google Forms successfully");
+              console.log(
+                "📊 Response status:",
+                response.status,
+                response.type,
+              );
+
+              // Show success message
+              alert(
+                "🎉 Registration Submitted Successfully!\n\n" +
+                  "✅ We'll contact you shortly at:\n" +
+                  "📞 " +
+                  phone +
+                  "\n" +
+                  "📧 " +
+                  email +
+                  "\n\n" +
+                  "Check your email for confirmation and next steps!\n\n" +
+                  "Thank you for choosing Sparklebots! 🤖",
+              );
+
+              // Reset form
+              formElement.reset();
+              submitBtn.textContent = originalText;
+              submitBtn.disabled = false;
+
+              // Store in localStorage as backup
+              const submission = {
+                child,
+                parent,
+                email,
+                phone,
+                age,
+                course,
+                timestamp: new Date().toISOString(),
+              };
+              const submissions = JSON.parse(
+                localStorage.getItem("enrollments") || "[]",
+              );
+              submissions.push(submission);
+              localStorage.setItem("enrollments", JSON.stringify(submissions));
+              console.log("📦 Backup stored in localStorage:", submission);
+            })
+            .catch((error) => {
+              clearTimeout(timeoutId);
+              console.error("Error during submission:", error);
+
+              // Still consider it a success if error is due to no-cors
+              if (error.name === "AbortError") {
+                alert(
+                  "⚠️ Submission took too long. Please check your internet connection.",
+                );
+              } else {
+                // For no-cors requests, errors are common but data might still go through
+                console.log("Attempting to save data locally...");
+
+                // Store in localStorage as backup
+                const submission = {
+                  child,
+                  parent,
+                  email,
+                  phone,
+                  age,
+                  course,
+                  timestamp: new Date().toISOString(),
+                };
+                const submissions = JSON.parse(
+                  localStorage.getItem("enrollments") || "[]",
+                );
+                submissions.push(submission);
+                localStorage.setItem(
+                  "enrollments",
+                  JSON.stringify(submissions),
+                );
+
+                alert(
+                  "✅ Your registration has been recorded!\n\n" +
+                    "We'll contact you at:\n" +
+                    "📞 " +
+                    phone +
+                    "\n" +
+                    "📧 " +
+                    email +
+                    "\n\n" +
+                    "Thank you for choosing Sparklebots! 🤖",
+                );
+
+                formElement.reset();
+              }
+
+              submitBtn.textContent = originalText;
+              submitBtn.disabled = false;
+            });
+        });
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorer - Sparklebots</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="assets/logo.jpg" alt="Sparklebots Logo" class="logo-img" />
+          <h1>Sparklebots</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">All Courses</a></li>
+          <li><a href="index.html#paths">Programs</a></li>
+          <li><a href="courses.html">← Back to Learning Path</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <button
+            class="btn btn-primary"
+            onclick="
+              document.getElementById('contact-section').scrollIntoView()
+            ">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Course Header Section -->
+    <section class="course-header compact-course-header">
+      <div class="container">
+        <div class="compact-header-card">
+          <div class="header-left">
+            <div class="header-icon-large">🔵</div>
+            <div class="header-text">
+              <h1>EXPLORER</h1>
+              <p class="header-subtitle">
+                Master Arduino, Python & IoT Systems
+              </p>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="header-meta-block">
+              <span class="meta-badge">📅 9 Months</span>
+              <span class="meta-badge">👥 Age 11-14</span>
+              <span class="meta-badge">🎓 Intermediate</span>
+            </div>
+            <button
+              class="btn btn-primary btn-demo"
+              onclick="enrollFor('Explorer')">
+              Register for Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Description Section -->
+    <section class="course-section">
+      <div class="container">
+        <p class="section-text center-text">
+          Take your skills to the next level! Learn real programming languages,
+          build IoT systems, and create autonomous robots. This program bridges
+          basic robotics with professional-grade technologies used in industry.
+        </p>
+      </div>
+    </section>
+
+    <!-- What Students Will Learn Section -->
+    <section class="course-section alternate-bg">
+      <div class="container">
+        <h2>What Students Will Learn</h2>
+        <div class="skills-grid">
+          <div class="skill-card-enhanced">
+            <div class="skill-icon">⚡</div>
+            <h4>Arduino Programming</h4>
+            <p class="skill-subtitle">Write real code for microcontrollers</p>
+            <div class="skill-details">
+              <ul>
+                <li>C/C++ programming syntax</li>
+                <li>Digital/analog I/O control</li>
+                <li>Sensor integration</li>
+                <li>Real embedded systems</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-card-enhanced">
+            <div class="skill-icon">🐍</div>
+            <h4>Python Basics</h4>
+            <p class="skill-subtitle">Industry-standard programming language</p>
+            <div class="skill-details">
+              <ul>
+                <li>Variables and data types</li>
+                <li>Functions and loops</li>
+                <li>Libraries and modules</li>
+                <li>Problem-solving logic</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-card-enhanced">
+            <div class="skill-icon">🔌</div>
+            <h4>Motors & Sensors</h4>
+            <p class="skill-subtitle">Advanced sensor integration</p>
+            <div class="skill-details">
+              <ul>
+                <li>Digital and analog sensors</li>
+                <li>Motor control and PWM</li>
+                <li>Real-time data processing</li>
+                <li>Hardware interfacing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-card-enhanced">
+            <div class="skill-icon">📐</div>
+            <h4>3D Design Basics</h4>
+            <p class="skill-subtitle">CAD software and 3D printing</p>
+            <div class="skill-details">
+              <ul>
+                <li>Fusion 360 fundamentals</li>
+                <li>3D modeling and sketching</li>
+                <li>3D printing preparation</li>
+                <li>Custom parts design</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-card-enhanced">
+            <div class="skill-icon">🌐</div>
+            <h4>IoT Introduction</h4>
+            <p class="skill-subtitle">Connected smart systems</p>
+            <div class="skill-details">
+              <ul>
+                <li>WiFi and wireless connectivity</li>
+                <li>Cloud platform basics</li>
+                <li>Data transmission</li>
+                <li>Smart device fundamentals</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-card-enhanced">
+            <div class="skill-icon">🤖</div>
+            <h4>Robotics Projects</h4>
+            <p class="skill-subtitle">Build autonomous robots</p>
+            <div class="skill-details">
+              <ul>
+                <li>Robot assembly and design</li>
+                <li>Autonomous navigation</li>
+                <li>Sensor-based decision making</li>
+                <li>Competition-ready builds</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="course-section">
+      <div class="container">
+        <h2>Why Choose Explorer Course?</h2>
+        <div class="benefits-grid-enhanced">
+          <div class="benefit-box-enhanced">
+            <div class="benefit-number">01</div>
+            <div class="benefit-content">
+              <h3>Confidence Building</h3>
+              <p>
+                Tackle challenging projects and discover their capability to
+                create amazing things with technology.
+              </p>
+              <div class="benefit-details">
+                <ul>
+                  <li>Hands-on project experience</li>
+                  <li>Success through challenges</li>
+                  <li>Portfolio building</li>
+                  <li>Recognition and awards</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-box-enhanced">
+            <div class="benefit-number">02</div>
+            <div class="benefit-content">
+              <h3>Problem-Solving Skills</h3>
+              <p>
+                Develop advanced troubleshooting and debugging—essential for
+                engineers and programmers.
+              </p>
+              <div class="benefit-details">
+                <ul>
+                  <li>Logical thinking development</li>
+                  <li>Debugging techniques</li>
+                  <li>Systematic problem approach</li>
+                  <li>Technical analysis</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-box-enhanced">
+            <div class="benefit-number">03</div>
+            <div class="benefit-content">
+              <h3>Career Readiness</h3>
+              <p>
+                Gain industry-relevant skills in Python, Arduino, and IoT—highly
+                sought by employers.
+              </p>
+              <div class="benefit-details">
+                <ul>
+                  <li>In-demand programming skills</li>
+                  <li>Professional certifications</li>
+                  <li>Internship opportunities</li>
+                  <li>Industry connections</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-box-enhanced">
+            <div class="benefit-number">04</div>
+            <div class="benefit-content">
+              <h3>Practical Skills</h3>
+              <p>
+                Learn hands-on engineering practices used by professionals,
+                preparing for advanced careers.
+              </p>
+              <div class="benefit-details">
+                <ul>
+                  <li>Real-world applications</li>
+                  <li>Professional workflows</li>
+                  <li>Industry tools mastery</li>
+                  <li>Technical expertise</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Modules Section -->
+    <section class="course-section alternate-bg">
+      <div class="container">
+        <h2>Course Modules</h2>
+        <div class="modules-showcase-grid">
+          <div class="module-box-enhanced module-box-1">
+            <div class="module-step">1</div>
+            <h3>Arduino Fundamentals</h3>
+            <p class="module-intro">
+              Introduction to Arduino board and circuits
+            </p>
+            <div class="module-details">
+              <ul>
+                <li>Arduino board architecture</li>
+                <li>Circuit basics and safety</li>
+                <li>First programs and sketches</li>
+                <li>Breadboard fundamentals</li>
+              </ul>
+            </div>
+          </div>
+          <div class="module-box-enhanced module-box-2">
+            <div class="module-step">2</div>
+            <h3>Python Programming</h3>
+            <p class="module-intro">Functions, loops, and data structures</p>
+            <div class="module-details">
+              <ul>
+                <li>Variables and data types</li>
+                <li>Control flow and loops</li>
+                <li>Functions and libraries</li>
+                <li>Problem-solving approach</li>
+              </ul>
+            </div>
+          </div>
+          <div class="module-box-enhanced module-box-3">
+            <div class="module-step">3</div>
+            <h3>Sensors & Motors</h3>
+            <p class="module-intro">Digital/analog sensors and control</p>
+            <div class="module-details">
+              <ul>
+                <li>Sensor types and interfacing</li>
+                <li>Motor control and PWM</li>
+                <li>Data acquisition</li>
+                <li>Real-time processing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="module-box-enhanced module-box-1">
+            <div class="module-step">4</div>
+            <h3>3D Design & CAD</h3>
+            <p class="module-intro">Design custom robot parts</p>
+            <div class="module-details">
+              <ul>
+                <li>Fusion 360 basics</li>
+                <li>3D modeling techniques</li>
+                <li>Assembly design</li>
+                <li>3D printing preparation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="module-box-enhanced module-box-2">
+            <div class="module-step">5</div>
+            <h3>IoT & Connectivity</h3>
+            <p class="module-intro">Cloud integration and smart systems</p>
+            <div class="module-details">
+              <ul>
+                <li>WiFi and wireless protocols</li>
+                <li>Cloud platform APIs</li>
+                <li>Data logging and storage</li>
+                <li>Mobile app integration</li>
+              </ul>
+            </div>
+          </div>
+          <div class="module-box-enhanced module-box-3">
+            <div class="module-step">6</div>
+            <h3>Capstone Projects</h3>
+            <p class="module-intro">Build autonomous competing robots</p>
+            <div class="module-details">
+              <ul>
+                <li>Line-following robots</li>
+                <li>Object detection systems</li>
+                <li>Autonomous navigation</li>
+                <li>Competition preparation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Individual Course Breakdown Section -->
+    <section class="course-section alternate-bg">
+      <div class="container">
+        <h2>What You'll Master</h2>
+        <div class="master-skills-grid">
+          <div class="master-box-enhanced master-box-1">
+            <div class="master-icon">⚙️</div>
+            <h3>Arduino Code</h3>
+            <p class="master-highlight">
+              Real C/C++ microcontroller programming
+            </p>
+            <p>Professional-grade hardware control</p>
+            <div class="master-content">
+              <ul>
+                <li>Embedded C/C++ programming</li>
+                <li>Real-time signal processing</li>
+                <li>Hardware optimization</li>
+                <li>Professional workflows</li>
+              </ul>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-blue">Real Coding</span>
+              <span class="tag tag-green">Signals</span>
+              <span class="tag tag-gold">Hardware</span>
+            </div>
+          </div>
+          <div class="master-box-enhanced master-box-2">
+            <div class="master-icon">🐍</div>
+            <h3>Python Programming</h3>
+            <p class="master-highlight">Industry-standard language for AI</p>
+            <p>Functions, data structures, and libraries</p>
+            <div class="master-content">
+              <ul>
+                <li>Advanced function design</li>
+                <li>Data structure mastery</li>
+                <li>Library integration</li>
+                <li>Software design patterns</li>
+              </ul>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-green">Functions</span>
+              <span class="tag tag-gold">Data Structures</span>
+              <span class="tag tag-blue">Libraries</span>
+            </div>
+          </div>
+          <div class="master-box-enhanced master-box-3">
+            <div class="master-icon">🌐</div>
+            <h3>IoT Systems</h3>
+            <p class="master-highlight">Connected smart devices and cloud</p>
+            <p>Fastest-growing technology field</p>
+            <div class="master-content">
+              <ul>
+                <li>Wireless communication protocols</li>
+                <li>Cloud platform integration</li>
+                <li>Data synchronization</li>
+                <li>Remote device management</li>
+              </ul>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-gold">WiFi/Bluetooth</span>
+              <span class="tag tag-blue">Cloud APIs</span>
+              <span class="tag tag-green">Connectivity</span>
+            </div>
+          </div>
+          <div class="master-box-enhanced master-box-1">
+            <div class="master-icon">🚀</div>
+            <h3>Advanced Robotics</h3>
+            <p class="master-highlight">Build autonomous intelligent robots</p>
+            <p>Impressive portfolios and competitions</p>
+            <div class="master-content">
+              <ul>
+                <li>Autonomous navigation systems</li>
+                <li>Multi-component integration</li>
+                <li>Competitive programming</li>
+                <li>Portfolio development</li>
+              </ul>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-blue">Autonomous Systems</span>
+              <span class="tag tag-green">Integration</span>
+              <span class="tag tag-gold">Competitions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Options Section -->
+    <section class="course-section">
+      <div class="container">
+        <h2>Training Options</h2>
+        <div class="training-options-enhanced">
+          <div class="training-card-enhanced">
+            <div class="training-icon">🏢</div>
+            <h3>Batch Training</h3>
+            <p>Learn with 4-6 peers in collaborative sessions for teamwork</p>
+            <div class="training-details">
+              <ul>
+                <li>Group learning environment</li>
+                <li>Peer collaboration</li>
+                <li>Shared resources</li>
+                <li>Cost-effective option</li>
+              </ul>
+            </div>
+            <p class="price-highlight">Perfect for collaborative learning</p>
+          </div>
+          <div class="training-card-enhanced">
+            <div class="training-icon">👨‍🏫</div>
+            <h3>1-to-1 Mentorship</h3>
+            <p>
+              Customized guidance from expert mentors for accelerated learning
+            </p>
+            <div class="training-details">
+              <ul>
+                <li>Personalized curriculum</li>
+                <li>One-on-one attention</li>
+                <li>Flexible scheduling</li>
+                <li>Accelerated progress</li>
+              </ul>
+            </div>
+            <p class="price-highlight">For advanced/accelerated learning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Card Section -->
+    <section class="course-section">
+      <div class="container">
+        <div class="price-card">
+          <h2>Explorer Course Package</h2>
+          <div class="price-duration">
+            <p><strong>Duration:</strong> 9 Months (36 Classes)</p>
+            <p><strong>Age Group:</strong> 11–14 Years</p>
+            <p><strong>Batch Size:</strong> 4–6 Students</p>
+            <p><strong>Schedule:</strong> 2 Classes per Week (90 min each)</p>
+          </div>
+          <div class="price-display">
+            <span class="price-text">Starting from</span>
+            <h3 style="color: #ffd700; font-size: 36px; margin: 10px 0">
+              ₹8,500
+            </h3>
+          </div>
+          <p style="color: #e8f5ff; margin: 1rem 0">
+            1-to-1 mentorship available at same cost
+          </p>
+          <button onclick="enrollFor('Explorer Course')">
+            Register for Free Demo Class
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section cta-with-animation">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-text">
+            <h2>Ready to Master Arduino & Python?</h2>
+            <p>
+              Join the Explorer course and unlock your full potential in
+              robotics!
+            </p>
+            <button
+              class="btn btn-lg btn-demo-cta"
+              onclick="enrollFor('Explorer Course')">
+              📅 Book a Free Demo
+            </button>
+          </div>
+          <div class="robot-animation">
+            <div class="robot-body">🤖</div>
+            <div class="robot-move">👾</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Sparklebots. All rights reserved.</p>
+        <p>Building tomorrow's innovators today.</p>
+      </div>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+      <div class="modal-overlay" onclick="closeModal()"></div>
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script>
+      // Modal data for all sections
+      const modalData = {
+        "learn-1": {
+          title: "Arduino Programming",
+          icon: "⚡",
+          content: `
+            <h3>Master Real Microcontroller Programming</h3>
+            <ul>
+              <li><strong>Arduino Boards:</strong> Understanding Arduino Uno, Mega, and other variants</li>
+              <li><strong>C/C++ Programming:</strong> Write real code that runs on microcontrollers</li>
+              <li><strong>Digital & Analog I/O:</strong> Control inputs and outputs</li>
+              <li><strong>Serial Communication:</strong> Communicate between Arduino and computers</li>
+              <li><strong>Libraries & Functions:</strong> Use built-in and custom libraries</li>
+              <li><strong>Real Projects:</strong> Build working IoT devices and smart systems</li>
+            </ul>
+          `,
+        },
+        "learn-2": {
+          title: "Python Basics",
+          icon: "🐍",
+          content: `
+            <h3>Industry-Standard Programming Language</h3>
+            <ul>
+              <li><strong>Variables & Data Types:</strong> Strings, integers, floats, lists, dictionaries</li>
+              <li><strong>Control Flow:</strong> If/else statements, loops, functions</li>
+              <li><strong>Object-Oriented Programming:</strong> Classes, objects, inheritance</li>
+              <li><strong>File Handling:</strong> Reading and writing data</li>
+              <li><strong>Libraries & Modules:</strong> Use NumPy, Pandas, and other libraries</li>
+              <li><strong>Real Applications:</strong> Build automation scripts and data processing tools</li>
+            </ul>
+          `,
+        },
+        "learn-3": {
+          title: "Motors & Sensors",
+          icon: "🔌",
+          content: `
+            <h3>Advanced Electronic Integration</h3>
+            <ul>
+              <li><strong>Digital Sensors:</strong> Ultrasonic, infrared, touch, motion detection</li>
+              <li><strong>Analog Sensors:</strong> Temperature, humidity, light, pressure</li>
+              <li><strong>Motor Types:</strong> DC motors, servo motors, stepper motors</li>
+              <li><strong>Motor Control:</strong> Speed regulation, direction control, PWM</li>
+              <li><strong>Power Management:</strong> Battery selection and voltage regulation</li>
+              <li><strong>Integration:</strong> Connecting sensors and motors to Arduino</li>
+            </ul>
+          `,
+        },
+        "learn-4": {
+          title: "3D Design Basics",
+          icon: "📐",
+          content: `
+            <h3>CAD Software & Digital Design</h3>
+            <ul>
+              <li><strong>Fusion 360 Basics:</strong> Creating 3D models and assemblies</li>
+              <li><strong>Part Design:</strong> Sketches, extrusions, patterns</li>
+              <li><strong>Assembly Design:</strong> Combining parts and setting constraints</li>
+              <li><strong>Simulation:</strong> Testing designs virtually</li>
+              <li><strong>3D Printing:</strong> Preparing models for 3D printing</li>
+              <li><strong>Custom Robot Parts:</strong> Design specialized components for your projects</li>
+            </ul>
+          `,
+        },
+        "learn-5": {
+          title: "IoT Introduction",
+          icon: "🌐",
+          content: `
+            <h3>Connected Smart Systems</h3>
+            <ul>
+              <li><strong>WiFi & Networking:</strong> Connect devices to the internet</li>
+              <li><strong>Cloud Platforms:</strong> AWS, Google Cloud, Azure basics</li>
+              <li><strong>MQTT Protocol:</strong> Publish and subscribe to data streams</li>
+              <li><strong>API Integration:</strong> Connect to web services and databases</li>
+              <li><strong>Real-Time Monitoring:</strong> Track and control devices remotely</li>
+              <li><strong>Smart Home Projects:</strong> Build IoT applications</li>
+            </ul>
+          `,
+        },
+        "learn-6": {
+          title: "Robotics Projects",
+          icon: "🤖",
+          content: `
+            <h3>Hands-On Autonomous Projects</h3>
+            <ul>
+              <li><strong>Line-Following Robot:</strong> Advanced sensor algorithms</li>
+              <li><strong>Obstacle Avoidance:</strong> Complex sensor logic and decision trees</li>
+              <li><strong>WiFi-Controlled Robot:</strong> Remote operation via app</li>
+              <li><strong>Robotic Arm:</strong> Multiple servo control and coordination</li>
+              <li><strong>Environmental Monitoring:</strong> Data collection and analysis</li>
+              <li><strong>Autonomous Navigation:</strong> GPS and mapping basics</li>
+            </ul>
+          `,
+        },
+        "benefit-1": {
+          title: "Confidence Building",
+          icon: "🌟",
+          content: `
+            <h3>Master Challenging Real-World Technology</h3>
+            <ul>
+              <li><strong>Success Stories:</strong> See your own working projects</li>
+              <li><strong>Progressive Challenges:</strong> Build skills systematically</li>
+              <li><strong>Industry Recognition:</strong> Learn tools used by professionals</li>
+              <li><strong>Portfolio Projects:</strong> Build impressive portfolio pieces</li>
+              <li><strong>Peer Collaboration:</strong> Learn from advanced students</li>
+              <li><strong>Real Impact:</strong> Create tools that solve actual problems</li>
+            </ul>
+          `,
+        },
+        "benefit-2": {
+          title: "Problem-Solving Skills",
+          icon: "🧩",
+          content: `
+            <h3>Advanced Troubleshooting & Debugging</h3>
+            <ul>
+              <li><strong>Circuit Debugging:</strong> Using oscilloscopes and multimeters</li>
+              <li><strong>Code Debugging:</strong> Advanced debugging techniques</li>
+              <li><strong>System Analysis:</strong> Understanding complex interactions</li>
+              <li><strong>Performance Optimization:</strong> Making code run faster</li>
+              <li><strong>Testing Strategies:</strong> Comprehensive testing approaches</li>
+              <li><strong>Documentation:</strong> Recording and explaining your solutions</li>
+            </ul>
+          `,
+        },
+        "benefit-3": {
+          title: "Career Readiness",
+          icon: "🚀",
+          content: `
+            <h3>Industry-Relevant Skills & Opportunities</h3>
+            <ul>
+              <li><strong>Hiring Demand:</strong> High demand for Arduino/Python engineers</li>
+              <li><strong>Freelance Opportunities:</strong> Build projects for others</li>
+              <li><strong>Internship Programs:</strong> Get hired by tech companies</li>
+              <li><strong>Competition Success:</strong> Participate in robotics competitions</li>
+              <li><strong>Research Projects:</strong> Join university research teams</li>
+              <li><strong>Startup Potential:</strong> Launch your own tech venture</li>
+            </ul>
+          `,
+        },
+        "benefit-4": {
+          title: "Practical Skills",
+          icon: "⚙️",
+          content: `
+            <h3>Real-World Engineering Practices</h3>
+            <ul>
+              <li><strong>Hardware Assembly:</strong> Soldering, crimping, proper connections</li>
+              <li><strong>Software Development:</strong> Version control, Git, GitHub</li>
+              <li><strong>Project Management:</strong> Planning, timelines, milestones</li>
+              <li><strong>Testing & Validation:</strong> Professional quality assurance</li>
+              <li><strong>Documentation:</strong> Technical writing and reporting</li>
+              <li><strong>Collaboration:</strong> Teamwork and code reviews</li>
+            </ul>
+          `,
+        },
+        "module-1": {
+          title: "Module 1: Arduino Fundamentals",
+          icon: "📚",
+          content: `
+            <h3>Introduction to Real Microcontroller Programming</h3>
+            <p><strong>Duration:</strong> Weeks 1-4 (4 classes)</p>
+            <ul>
+              <li>Arduino board anatomy and components</li>
+              <li>Installing Arduino IDE and setting up environment</li>
+              <li>Basic C/C++ syntax for Arduino</li>
+              <li>Digital I/O: digitalWrite, digitalRead</li>
+              <li>First program: LED blinking and control</li>
+              <li>Hands-on: Build your first Arduino circuit</li>
+            </ul>
+          `,
+        },
+        "module-2": {
+          title: "Module 2: Python Programming",
+          icon: "🐍",
+          content: `
+            <h3>Master Industry-Standard Language</h3>
+            <p><strong>Duration:</strong> Weeks 5-8 (4 classes)</p>
+            <ul>
+              <li>Python fundamentals and syntax</li>
+              <li>Variables, data types, and operators</li>
+              <li>Control structures: if/else, loops</li>
+              <li>Functions and modular programming</li>
+              <li>Working with lists and dictionaries</li>
+              <li>Project: Build Python automation tools</li>
+            </ul>
+          `,
+        },
+        "module-3": {
+          title: "Module 3: Sensors & Motors",
+          icon: "🔌",
+          content: `
+            <h3>Advanced Electronic Component Integration</h3>
+            <p><strong>Duration:</strong> Weeks 9-12 (4 classes)</p>
+            <ul>
+              <li>Sensor types and how they work</li>
+              <li>Analog input: reading sensor values</li>
+              <li>Motor control and PWM signals</li>
+              <li>Power considerations for motors</li>
+              <li>Building circuits with sensors and motors</li>
+              <li>Project: Build a sensor-responsive robot</li>
+            </ul>
+          `,
+        },
+        "module-4": {
+          title: "Module 4: 3D Design & CAD",
+          icon: "📐",
+          content: `
+            <h3>Professional CAD Design Skills</h3>
+            <p><strong>Duration:</strong> Weeks 13-16 (4 classes)</p>
+            <ul>
+              <li>Fusion 360 interface and navigation</li>
+              <li>Creating sketches and basic shapes</li>
+              <li>Extrusions and advanced features</li>
+              <li>Assembly design and constraints</li>
+              <li>Preparing for 3D printing</li>
+              <li>Project: Design custom robot components</li>
+            </ul>
+          `,
+        },
+        "module-5": {
+          title: "Module 5: IoT & Connectivity",
+          icon: "🌐",
+          content: `
+            <h3>Build Connected Smart Systems</h3>
+            <p><strong>Duration:</strong> Weeks 17-20 (4 classes)</p>
+            <ul>
+              <li>WiFi modules and networking basics</li>
+              <li>Cloud platform overview and setup</li>
+              <li>MQTT protocol and pub/sub systems</li>
+              <li>API integration and data exchange</li>
+              <li>Remote monitoring and control</li>
+              <li>Project: Build a cloud-connected robot</li>
+            </ul>
+          `,
+        },
+        "module-6": {
+          title: "Module 6: Capstone Projects",
+          icon: "🚀",
+          content: `
+            <h3>Comprehensive Final Project</h3>
+            <p><strong>Duration:</strong> Weeks 21-36 (16 classes)</p>
+            <ul>
+              <li>Project brainstorming and planning</li>
+              <li>Design phase with CAD modeling</li>
+              <li>Hardware assembly and testing</li>
+              <li>Software development and debugging</li>
+              <li>Performance optimization</li>
+              <li>Final presentation and showcase</li>
+            </ul>
+          `,
+        },
+        "master-1": {
+          title: "Arduino Code",
+          icon: "⚙️",
+          content: `
+            <h3>Real C/C++ Microcontroller Programming</h3>
+            <ul>
+              <li><strong>Arduino IDE:</strong> Code editor, compilation, and upload</li>
+              <li><strong>Serial Communication:</strong> Debug and monitor data</li>
+              <li><strong>Advanced I/O:</strong> PWM, interrupts, timers</li>
+              <li><strong>Libraries:</strong> Using and creating custom libraries</li>
+              <li><strong>Performance:</strong> Memory optimization and speed tuning</li>
+              <li><strong>Real Projects:</strong> Deploy on actual hardware systems</li>
+            </ul>
+          `,
+        },
+        "master-2": {
+          title: "Python Programming",
+          icon: "🐍",
+          content: `
+            <h3>Advanced Python for IoT & Automation</h3>
+            <ul>
+              <li><strong>Object-Oriented Programming:</strong> Classes and inheritance</li>
+              <li><strong>Libraries & Frameworks:</strong> NumPy, Pandas, requests</li>
+              <li><strong>Networking:</strong> Socket programming and HTTP</li>
+              <li><strong>File Handling:</strong> JSON, CSV, database integration</li>
+              <li><strong>Async Programming:</strong> Non-blocking operations</li>
+              <li><strong>Real Applications:</strong> Build production-ready code</li>
+            </ul>
+          `,
+        },
+        "master-3": {
+          title: "IoT Systems",
+          icon: "🌐",
+          content: `
+            <h3>Enterprise-Grade Connected Systems</h3>
+            <ul>
+              <li><strong>Cloud Architecture:</strong> Scalable IoT platforms</li>
+              <li><strong>Security:</strong> Authentication, encryption, secure connections</li>
+              <li><strong>Data Management:</strong> Time-series databases, analytics</li>
+              <li><strong>Protocols:</strong> MQTT, CoAP, HTTP/HTTPS</li>
+              <li><strong>Real-Time Data:</strong> Streaming and processing</li>
+              <li><strong>Monitoring:</strong> Dashboards and alerting systems</li>
+            </ul>
+          `,
+        },
+        "master-4": {
+          title: "Advanced Robotics",
+          icon: "🚀",
+          content: `
+            <h3>Autonomous Intelligent Robots</h3>
+            <ul>
+              <li><strong>System Integration:</strong> Combining hardware and software</li>
+              <li><strong>Autonomous Navigation:</strong> Path planning and sensors</li>
+              <li><strong>Competition Preparation:</strong> Advanced robotics competitions</li>
+              <li><strong>Machine Learning:</strong> Training models for robot behavior</li>
+              <li><strong>Portfolio Building:</strong> Showcase-worthy projects</li>
+              <li><strong>Research Ready:</strong> Advanced robotics research topics</li>
+            </ul>
+          `,
+        },
+        "training-1": {
+          title: "Batch Training Program",
+          icon: "🏢",
+          content: `
+            <h3>Group Learning with Peer Collaboration</h3>
+            <ul>
+              <li><strong>Class Size:</strong> 4-6 students per batch</li>
+              <li><strong>Schedule:</strong> 2 classes per week, 90 minutes each</li>
+              <li><strong>Duration:</strong> 9 months (36 classes total)</li>
+              <li><strong>Benefits:</strong> Teamwork, peer learning, social interaction</li>
+              <li><strong>Environment:</strong> Dedicated lab with professional equipment</li>
+              <li><strong>Pricing:</strong> ₹8,500 for full 9-month program</li>
+              <li><strong>Add-ons:</strong> 1-to-1 mentorship available at same cost</li>
+            </ul>
+          `,
+        },
+        "training-2": {
+          title: "1-to-1 Mentorship Program",
+          icon: "👨‍🏫",
+          content: `
+            <h3>Personalized Advanced Learning</h3>
+            <ul>
+              <li><strong>Customized Pace:</strong> Learn at your own speed</li>
+              <li><strong>Flexible Schedule:</strong> Classes at your convenience</li>
+              <li><strong>Expert Guidance:</strong> One-on-one with professional mentors</li>
+              <li><strong>Tailored Content:</strong> Focus on your interests and goals</li>
+              <li><strong>Duration:</strong> 9 months or customizable</li>
+              <li><strong>Pricing:</strong> Available at same cost as batch training</li>
+              <li><strong>Perfect For:</strong> Accelerated learners or competitive programming</li>
+            </ul>
+          `,
+        },
+      };
+
+      // Open modal function
+      function openModal(id) {
+        const data = modalData[id];
+        if (!data) return;
+
+        const modalBody = document.getElementById("modal-body");
+        modalBody.innerHTML = `
+          <div class="modal-header">
+            <div class="modal-icon">${data.icon}</div>
+            <h2>${data.title}</h2>
+          </div>
+          <div class="modal-body-content">
+            ${data.content}
+          </div>
+        `;
+        document.getElementById("modal").classList.add("active");
+      }
+
+      // Close modal function
+      function closeModal() {
+        document.getElementById("modal").classList.remove("active");
+      }
+
+      // Close modal when Esc key is pressed
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+
+      function enrollFor(courseName) {
+        // Store course name and redirect to enrollment form
+        sessionStorage.setItem("selectedCourse", courseName);
+        window.location.href = "index.html#enrollForm";
+      }
+    </script>
+  </body>
+</html>

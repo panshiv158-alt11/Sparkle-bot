@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovator - Sparklebots</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="assets/logo.jpg" alt="Sparklebots Logo" class="logo-img" />
+          <h1>Sparklebots</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">All Courses</a></li>
+          <li><a href="index.html#paths">Programs</a></li>
+          <li><a href="courses.html">← Back to Learning Path</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <button
+            class="btn btn-primary"
+            onclick="
+              document.getElementById('contact-section').scrollIntoView()
+            ">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Course Header Section -->
+    <section class="course-header compact-course-header">
+      <div class="container">
+        <div class="compact-header-card">
+          <div class="header-left">
+            <div class="header-icon-large">🟠</div>
+            <div class="header-text">
+              <h1>INNOVATOR</h1>
+              <p class="header-subtitle">
+                Master AI, Computer Vision & Professional Engineering
+              </p>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="header-meta-block">
+              <span class="meta-badge">📅 12 Months</span>
+              <span class="meta-badge">👥 Age 14-18</span>
+              <span class="meta-badge">🎓 Advanced</span>
+            </div>
+            <button
+              class="btn btn-primary btn-demo"
+              onclick="enrollFor('Innovator')">
+              Register for Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Description Section -->
+    <section class="course-section">
+      <div class="container">
+        <p class="section-text center-text">
+          The ultimate program for aspiring tech innovators! Master artificial
+          intelligence, computer vision, advanced IoT systems, and professional
+          engineering practices. Create portfolio-worthy projects that impress
+          colleges and employers.
+        </p>
+      </div>
+    </section>
+
+    <!-- What Students Will Learn Section -->
+    <section class="course-section alternate-bg">
+      <div class="container">
+        <h2>What Students Will Learn</h2>
+        <div class="skills-grid">
+          <div class="skill-card-enhanced">
+            <div class="skill-icon">🐍</div>
+            <h4>Advanced Python & AI</h4>
+            <p class="skill-subtitle">Machine learning and neural networks</p>
+            <div class="skill-details">
+              <ul>
+                <li>TensorFlow and PyTorch libraries</li>
+                <li>Neural network design</li>
+                <li>Data preprocessing and analysis</li>
+                <li>Real-world AI applications</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-card-enhanced">
+            <div class="skill-icon">📡</div>
+            <h4>ESP32 & Advanced IoT</h4>
+            <p class="skill-subtitle">Cloud-connected smart systems</p>
+            <div class="skill-details">
+              <ul>
+                <li>ESP32 microcontroller programming</li>
+                <li>Cloud platforms (AWS, Azure)</li>
+                <li>Real-time data monitoring</li>
+                <li>Scalable IoT architectures</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-card-enhanced">
+            <div class="skill-icon">⚙️</div>
+            <h4>Electronics & Soldering</h4>
+            <p class="skill-subtitle">Professional circuit design</p>
+            <div class="skill-details">
+              <ul>
+                <li>PCB design and layout</li>
+                <li>Soldering techniques</li>
+                <li>Component selection</li>
+                <li>Signal integrity</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-card-enhanced">
+            <div class="skill-icon">🏗️</div>
+            <h4>Fusion 360 Design</h4>
+            <p class="skill-subtitle">Advanced mechanical CAD</p>
+            <div class="skill-details">
+              <ul>
+                <li>3D modeling and assemblies</li>
+                <li>Simulation and analysis</li>
+                <li>Technical drawings</li>
+                <li>Manufacturing optimization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-card-enhanced">
+            <div class="skill-icon">👁️</div>
+            <h4>Computer Vision</h4>
+            <p class="skill-subtitle">AI-powered image processing</p>
+            <div class="skill-details">
+              <ul>
+                <li>OpenCV and image processing</li>
+                <li>Object detection and recognition</li>
+                <li>Deep learning models</li>
+                <li>Autonomous system applications</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-card-enhanced">
+            <div class="skill-icon">🎓</div>
+            <h4>Capstone Project</h4>
+            <p class="skill-subtitle">Professional project execution</p>
+            <div class="skill-details">
+              <ul>
+                <li>Full-stack project development</li>
+                <li>Integration of all technologies</li>
+                <li>Portfolio development</li>
+                <li>Presentation and documentation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="course-section">
+      <div class="container">
+        <h2>Why Choose Innovator Course?</h2>
+        <div class="benefits-grid">
+          <div class="benefit-box-enhanced">
+            <div class="benefit-number">01</div>
+            <div class="benefit-content">
+              <h3>Confidence Building</h3>
+              <p>
+                Master cutting-edge technologies and lead innovation teams with
+                real-world impact.
+              </p>
+              <div class="benefit-details">
+                <ul>
+                  <li>AI and machine learning mastery</li>
+                  <li>Advanced robotics expertise</li>
+                  <li>Innovation team leadership</li>
+                  <li>Industry recognition</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-box-enhanced">
+            <div class="benefit-number">02</div>
+            <div class="benefit-content">
+              <h3>Problem-Solving Skills</h3>
+              <p>
+                Tackle complex, open-ended engineering challenges requiring
+                advanced thinking and research.
+              </p>
+              <div class="benefit-details">
+                <ul>
+                  <li>Complex algorithm design</li>
+                  <li>System architecture planning</li>
+                  <li>Research methodologies</li>
+                  <li>Innovation through iteration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-box-enhanced">
+            <div class="benefit-number">03</div>
+            <div class="benefit-content">
+              <h3>Career Readiness</h3>
+              <p>
+                Graduate with professional portfolio projects ready for
+                internships and tech careers.
+              </p>
+              <div class="benefit-details">
+                <ul>
+                  <li>Portfolio-worthy projects</li>
+                  <li>Internship preparation</li>
+                  <li>College program readiness</li>
+                  <li>Tech industry connections</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-box-enhanced">
+            <div class="benefit-number">04</div>
+            <div class="benefit-content">
+              <h3>Practical Skills</h3>
+              <p>
+                Learn real-world development practices and professional
+                collaboration from tech leaders.
+              </p>
+              <div class="benefit-details">
+                <ul>
+                  <li>Git and version control</li>
+                  <li>Agile development practices</li>
+                  <li>Code collaboration</li>
+                  <li>DevOps and deployment</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Modules Section -->
+    <section class="course-section alternate-bg">
+      <div class="container">
+        <h2>Course Modules</h2>
+        <div class="modules-showcase-grid">
+          <div class="module-box-enhanced module-box-1">
+            <div class="module-step">1</div>
+            <h3>Advanced Python & OOP</h3>
+            <p class="module-intro">
+              Professional programming concepts and patterns
+            </p>
+            <div class="module-details">
+              <ul>
+                <li>Object-oriented design principles</li>
+                <li>Design patterns and best practices</li>
+                <li>Advanced data structures</li>
+                <li>Code optimization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="module-box-enhanced module-box-2">
+            <div class="module-step">2</div>
+            <h3>AI & Machine Learning</h3>
+            <p class="module-intro">
+              Build intelligent systems with ML algorithms
+            </p>
+            <div class="module-details">
+              <ul>
+                <li>Supervised and unsupervised learning</li>
+                <li>Neural network architectures</li>
+                <li>Model training and optimization</li>
+                <li>Real-world ML deployments</li>
+              </ul>
+            </div>
+          </div>
+          <div class="module-box-enhanced module-box-3">
+            <div class="module-step">3</div>
+            <h3>ESP32 & Advanced IoT</h3>
+            <p class="module-intro">Cloud-connected smart device systems</p>
+            <div class="module-details">
+              <ul>
+                <li>Advanced microcontroller programming</li>
+                <li>Cloud platform integration</li>
+                <li>Data streaming and real-time monitoring</li>
+                <li>Enterprise IoT architectures</li>
+              </ul>
+            </div>
+          </div>
+          <div class="module-box-enhanced module-box-1">
+            <div class="module-step">4</div>
+            <h3>Electronics & Soldering</h3>
+            <p class="module-intro">
+              Professional circuit design and fabrication
+            </p>
+            <div class="module-details">
+              <ul>
+                <li>PCB schematic design</li>
+                <li>Advanced soldering techniques</li>
+                <li>Signal integrity and testing</li>
+                <li>Manufacturing processes</li>
+              </ul>
+            </div>
+          </div>
+          <div class="module-box-enhanced module-box-2">
+            <div class="module-step">5</div>
+            <h3>Fusion 360 & CAD</h3>
+            <p class="module-intro">
+              Advanced mechanical design and simulation
+            </p>
+            <div class="module-details">
+              <ul>
+                <li>Complex 3D modeling and assemblies</li>
+                <li>FEA simulation and analysis</li>
+                <li>Technical documentation</li>
+                <li>Manufacturing for 3D printing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="module-box-enhanced module-box-3">
+            <div class="module-step">6</div>
+            <h3>Computer Vision</h3>
+            <p class="module-intro">
+              AI-powered image recognition and analysis
+            </p>
+            <div class="module-details">
+              <ul>
+                <li>Image processing algorithms</li>
+                <li>Deep learning models for vision</li>
+                <li>Real-time object detection</li>
+                <li>Autonomous vision applications</li>
+              </ul>
+            </div>
+          </div>
+          <div class="module-box-enhanced module-box-1">
+            <div class="module-step">7</div>
+            <h3>Development Practices</h3>
+            <p class="module-intro">
+              Professional collaboration and deployment
+            </p>
+            <div class="module-details">
+              <ul>
+                <li>Git workflow and version control</li>
+                <li>Agile and DevOps practices</li>
+                <li>CI/CD pipelines</li>
+                <li>Cloud deployment</li>
+              </ul>
+            </div>
+          </div>
+          <div class="module-box-enhanced module-box-2">
+            <div class="module-step">8</div>
+            <h3>Capstone Project</h3>
+            <p class="module-intro">Comprehensive professional-grade project</p>
+            <div class="module-details">
+              <ul>
+                <li>Full system integration</li>
+                <li>Advanced feature development</li>
+                <li>Portfolio presentation</li>
+                <li>Industry-ready deliverable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Individual Course Breakdown Section -->
+    <section class="course-section alternate-bg">
+      <div class="container">
+        <h2>What You'll Master</h2>
+        <div class="master-skills-grid">
+          <div class="master-box-enhanced master-box-1">
+            <div class="master-icon">🤖</div>
+            <h3>AI & Machine Learning</h3>
+            <p class="master-highlight">TensorFlow and neural networks</p>
+            <p>Transforming every industry</p>
+            <div class="master-content">
+              <ul>
+                <li>Deep learning frameworks</li>
+                <li>Neural network architectures</li>
+                <li>Real-world AI applications</li>
+                <li>AI ethics and deployment</li>
+              </ul>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-blue">ML Algorithms</span>
+              <span class="tag tag-green">Deep Learning</span>
+              <span class="tag tag-gold">Data Science</span>
+            </div>
+          </div>
+          <div class="master-box-enhanced master-box-2">
+            <div class="master-icon">📡</div>
+            <h3>Enterprise IoT</h3>
+            <p class="master-highlight">Cloud-connected systems</p>
+            <p>Industry standard technology</p>
+            <div class="master-content">
+              <ul>
+                <li>AWS and cloud platforms</li>
+                <li>Security and authentication</li>
+                <li>Scalable architectures</li>
+                <li>Enterprise integration</li>
+              </ul>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-green">AWS/Cloud</span>
+              <span class="tag tag-gold">Security</span>
+              <span class="tag tag-blue">Scalability</span>
+            </div>
+          </div>
+          <div class="master-box-enhanced master-box-3">
+            <div class="master-icon">👁️</div>
+            <h3>Computer Vision</h3>
+            <p class="master-highlight">Image recognition and analysis</p>
+            <p>Powers autonomous systems</p>
+            <div class="master-content">
+              <ul>
+                <li>OpenCV library mastery</li>
+                <li>Real-time detection systems</li>
+                <li>Deep learning models</li>
+                <li>Autonomous applications</li>
+              </ul>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-gold">OpenCV</span>
+              <span class="tag tag-blue">Object Detection</span>
+              <span class="tag tag-green">Deep Learning</span>
+            </div>
+          </div>
+          <div class="master-box-enhanced master-box-1">
+            <div class="master-icon">🏆</div>
+            <h3>Capstone Project</h3>
+            <p class="master-highlight">Your innovation portfolio</p>
+            <p>Impress colleges and employers</p>
+            <div class="master-content">
+              <ul>
+                <li>Full system integration</li>
+                <li>Professional execution</li>
+                <li>Portfolio presentation</li>
+                <li>Industry standards</li>
+              </ul>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-blue">Full Integration</span>
+              <span class="tag tag-green">Professional Execution</span>
+              <span class="tag tag-gold">Innovation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Options Section -->
+    <section class="course-section">
+      <div class="container">
+        <h2>Training Options</h2>
+        <div class="training-options-enhanced">
+          <div class="training-card-enhanced">
+            <div class="training-icon">🏢</div>
+            <h3>Batch Training</h3>
+            <p>
+              Collaborate with peers on advanced projects and network together
+            </p>
+            <div class="training-details">
+              <ul>
+                <li>Group learning environment</li>
+                <li>Peer collaboration</li>
+                <li>Team-based capstone projects</li>
+                <li>Network with fellow innovators</li>
+              </ul>
+            </div>
+            <p class="price-highlight">
+              Ideal for team-based capstone projects
+            </p>
+          </div>
+          <div class="training-card-enhanced">
+            <div class="training-icon">👨‍🏫</div>
+            <h3>1-to-1 Mentorship</h3>
+            <p>
+              Personalized guidance from industry professionals for your goals
+            </p>
+            <div class="training-details">
+              <ul>
+                <li>Personalized curriculum</li>
+                <li>One-on-one attention</li>
+                <li>Career guidance</li>
+                <li>Accelerated progress</li>
+              </ul>
+            </div>
+            <p class="price-highlight">
+              For university preparation & career guidance
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Card Section -->
+    <section class="course-section">
+      <div class="container">
+        <div class="price-card">
+          <h2>Innovator Course Package</h2>
+          <div class="price-duration">
+            <p><strong>Duration:</strong> 12 Months (48 Classes)</p>
+            <p><strong>Age Group:</strong> 14–18 Years</p>
+            <p><strong>Batch Size:</strong> 4–6 Students</p>
+            <p><strong>Schedule:</strong> 2 Classes per Week (120 min each)</p>
+          </div>
+          <div class="price-display">
+            <span class="price-text">Starting from</span>
+            <h3 style="color: #ffd700; font-size: 36px; margin: 10px 0">
+              ₹12,000
+            </h3>
+          </div>
+          <p style="color: #e8f5ff; margin: 1rem 0">
+            1-to-1 mentorship available at same cost
+          </p>
+          <button onclick="enrollFor('Innovator Course')">
+            Register for Free Demo Class
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section cta-with-animation">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-text">
+            <h2>Ready to Become an Innovator?</h2>
+            <p>
+              Master AI, Computer Vision, and Professional Robotics Engineering.
+              Shape the future of technology!
+            </p>
+            <button
+              class="btn btn-lg btn-demo-cta"
+              onclick="enrollFor('Innovator Course')">
+              📅 Book a Free Demo
+            </button>
+          </div>
+          <div class="robot-animation">
+            <div class="robot-body">🤖</div>
+            <div class="robot-move">🦾</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Sparklebots. All rights reserved.</p>
+        <p>Building tomorrow's innovators today.</p>
+      </div>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+      <div class="modal-overlay" onclick="closeModal()"></div>
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script>
+      // Modal data for all sections
+      const modalData = {
+        "learn-1": {
+          title: "Advanced Python & AI",
+          icon: "🐍",
+          content: `
+            <h3>Master Python for Artificial Intelligence</h3>
+            <ul>
+              <li><strong>Advanced Python:</strong> Decorators, generators, async/await</li>
+              <li><strong>NumPy & SciPy:</strong> Numerical computing and scientific algorithms</li>
+              <li><strong>Pandas:</strong> Data manipulation and analysis</li>
+              <li><strong>TensorFlow & PyTorch:</strong> Deep learning frameworks</li>
+              <li><strong>Machine Learning Algorithms:</strong> Supervised and unsupervised learning</li>
+              <li><strong>Real AI Projects:</strong> Predictive models and neural networks</li>
+            </ul>
+          `,
+        },
+        "learn-2": {
+          title: "ESP32 & Advanced IoT",
+          icon: "📡",
+          content: `
+            <h3>Enterprise-Grade IoT Systems</h3>
+            <ul>
+              <li><strong>ESP32 Microcontroller:</strong> WiFi and Bluetooth capabilities</li>
+              <li><strong>Cloud Integration:</strong> AWS IoT, Google Cloud IoT</li>
+              <li><strong>Real-Time Data:</strong> Streaming and processing at scale</li>
+              <li><strong>Security Protocols:</strong> SSL/TLS, encryption, authentication</li>
+              <li><strong>Device Management:</strong> OTA updates, remote monitoring</li>
+              <li><strong>Production Deployment:</strong> Scalable IoT solutions</li>
+            </ul>
+          `,
+        },
+        "learn-3": {
+          title: "Electronics & Soldering",
+          icon: "⚙️",
+          content: `
+            <h3>Professional Circuit Design & Assembly</h3>
+            <ul>
+              <li><strong>PCB Design:</strong> Using Eagle, KiCad, Altium Designer</li>
+              <li><strong>Component Selection:</strong> Datasheets and specifications</li>
+              <li><strong>Soldering Techniques:</strong> Surface mount and through-hole</li>
+              <li><strong>Circuit Testing:</strong> Oscilloscopes, multimeters, logic analyzers</li>
+              <li><strong>Troubleshooting:</strong> Finding and fixing hardware issues</li>
+              <li><strong>Manufacturing:</strong> From prototype to production</li>
+            </ul>
+          `,
+        },
+        "learn-4": {
+          title: "Fusion 360 Design",
+          icon: "🏗️",
+          content: `
+            <h3>Professional CAD & Mechanical Design</h3>
+            <ul>
+              <li><strong>Advanced Modeling:</strong> Complex assemblies and simulations</li>
+              <li><strong>Parametric Design:</strong> Creating reusable design patterns</li>
+              <li><strong>Simulation & Analysis:</strong> Stress testing and FEA</li>
+              <li><strong>Manufacturing Considerations:</strong> Designing for production</li>
+              <li><strong>3D Printing:</strong> Advanced printing techniques</li>
+              <li><strong>CNC Programming:</strong> Preparing designs for machining</li>
+            </ul>
+          `,
+        },
+        "learn-5": {
+          title: "Computer Vision",
+          icon: "👁️",
+          content: `
+            <h3>AI-Powered Visual Recognition Systems</h3>
+            <ul>
+              <li><strong>OpenCV:</strong> Computer vision library and algorithms</li>
+              <li><strong>Image Processing:</strong> Filtering, edge detection, segmentation</li>
+              <li><strong>Object Detection:</strong> YOLO, SSD, R-CNN models</li>
+              <li><strong>Face Recognition:</strong> Facial detection and identification</li>
+              <li><strong>Real-Time Processing:</strong> Video stream analysis</li>
+              <li><strong>Autonomous Systems:</strong> Vision-guided robots</li>
+            </ul>
+          `,
+        },
+        "learn-6": {
+          title: "Capstone Project",
+          icon: "🎓",
+          content: `
+            <h3>Professional Portfolio Project</h3>
+            <ul>
+              <li><strong>Project Planning:</strong> Requirements and specifications</li>
+              <li><strong>System Design:</strong> Architecture and design patterns</li>
+              <li><strong>Full Integration:</strong> Hardware, software, AI, IoT</li>
+              <li><strong>Professional Development:</strong> Code quality and documentation</li>
+              <li><strong>Performance Optimization:</strong> Speed and efficiency</li>
+              <li><strong>Deployment:</strong> Launch your professional product</li>
+            </ul>
+          `,
+        },
+        "benefit-1": {
+          title: "Confidence Building",
+          icon: "🌟",
+          content: `
+            <h3>Master Cutting-Edge Technologies</h3>
+            <ul>
+              <li><strong>Leadership Skills:</strong> Lead innovation teams</li>
+              <li><strong>Real-World Impact:</strong> Create solutions that matter</li>
+              <li><strong>Advanced Portfolio:</strong> Showcase professional projects</li>
+              <li><strong>Industry Recognition:</strong> Gain credentials and certifications</li>
+              <li><strong>Peer Network:</strong> Connect with advanced technologists</li>
+              <li><strong>Career Advancement:</strong> Open doors to top companies</li>
+            </ul>
+          `,
+        },
+        "benefit-2": {
+          title: "Problem-Solving Skills",
+          icon: "🧩",
+          content: `
+            <h3>Complex Engineering Challenges</h3>
+            <ul>
+              <li><strong>Open-Ended Problems:</strong> Design your own solutions</li>
+              <li><strong>Research Skills:</strong> Find and evaluate information</li>
+              <li><strong>System Thinking:</strong> Understand complex interactions</li>
+              <li><strong>Advanced Debugging:</strong> Tools and techniques</li>
+              <li><strong>Innovation:</strong> Create novel approaches</li>
+              <li><strong>Documentation:</strong> Write professional technical reports</li>
+            </ul>
+          `,
+        },
+        "benefit-3": {
+          title: "Career Readiness",
+          icon: "🚀",
+          content: `
+            <h3>College & Career Preparation</h3>
+            <ul>
+              <li><strong>Internship Ready:</strong> Qualify for top tech internships</li>
+              <li><strong>College Applications:</strong> Impressive portfolio for universities</li>
+              <li><strong>Job Market:</strong> Highly sought after skills</li>
+              <li><strong>Competition Success:</strong> Win in major robotics competitions</li>
+              <li><strong>Startup Potential:</strong> Launch your tech venture</li>
+              <li><strong>Graduate Programs:</strong> Qualify for top graduate schools</li>
+            </ul>
+          `,
+        },
+        "benefit-4": {
+          title: "Practical Skills",
+          icon: "⚙️",
+          content: `
+            <h3>Industry-Grade Development Practices</h3>
+            <ul>
+              <li><strong>Version Control:</strong> Git, GitHub, code collaboration</li>
+              <li><strong>Agile Methodology:</strong> Professional project management</li>
+              <li><strong>Code Quality:</strong> Testing, reviews, best practices</li>
+              <li><strong>Documentation:</strong> Technical writing and APIs</li>
+              <li><strong>DevOps:</strong> Deployment and CI/CD pipelines</li>
+              <li><strong>Team Collaboration:</strong> Working in professional teams</li>
+            </ul>
+          `,
+        },
+        "module-1": {
+          title: "Module 1: Advanced Python & OOP",
+          icon: "📚",
+          content: `
+            <h3>Professional Python Development</h3>
+            <p><strong>Duration:</strong> Weeks 1-4 (4 classes)</p>
+            <ul>
+              <li>Advanced Python concepts and design patterns</li>
+              <li>Object-oriented programming mastery</li>
+              <li>Decorators, generators, and context managers</li>
+              <li>Performance optimization and profiling</li>
+              <li>Testing frameworks and unit testing</li>
+              <li>Project: Build a complex Python application</li>
+            </ul>
+          `,
+        },
+        "module-2": {
+          title: "Module 2: AI & Machine Learning",
+          icon: "🤖",
+          content: `
+            <h3>Artificial Intelligence Fundamentals</h3>
+            <p><strong>Duration:</strong> Weeks 5-12 (8 classes)</p>
+            <ul>
+              <li>ML algorithms and theory</li>
+              <li>Supervised and unsupervised learning</li>
+              <li>Neural networks and deep learning</li>
+              <li>Data preprocessing and feature engineering</li>
+              <li>Model training, validation, and deployment</li>
+              <li>Project: Train and deploy an AI model</li>
+            </ul>
+          `,
+        },
+        "module-3": {
+          title: "Module 3: ESP32 & Advanced IoT",
+          icon: "📡",
+          content: `
+            <h3>Enterprise IoT Solutions</h3>
+            <p><strong>Duration:</strong> Weeks 13-18 (6 classes)</p>
+            <ul>
+              <li>ESP32 advanced features and WiFi/Bluetooth</li>
+              <li>Cloud platform integration</li>
+              <li>MQTT and advanced messaging protocols</li>
+              <li>Security in IoT systems</li>
+              <li>Scalable IoT architectures</li>
+              <li>Project: Build a cloud-connected IoT system</li>
+            </ul>
+          `,
+        },
+        "module-4": {
+          title: "Module 4: Electronics & Soldering",
+          icon: "⚙️",
+          content: `
+            <h3>Professional Electronics Design</h3>
+            <p><strong>Duration:</strong> Weeks 19-22 (4 classes)</p>
+            <ul>
+              <li>PCB design and layout</li>
+              <li>Component selection and sourcing</li>
+              <li>Advanced soldering techniques</li>
+              <li>Circuit troubleshooting and testing</li>
+              <li>Manufacturing and production</li>
+              <li>Project: Design and manufacture a PCB</li>
+            </ul>
+          `,
+        },
+        "module-5": {
+          title: "Module 5: Fusion 360 & CAD",
+          icon: "🏗️",
+          content: `
+            <h3>Advanced Mechanical Design</h3>
+            <p><strong>Duration:</strong> Weeks 23-26 (4 classes)</p>
+            <ul>
+              <li>Complex assemblies and simulations</li>
+              <li>Parametric design and optimization</li>
+              <li>Manufacturing analysis</li>
+              <li>Advanced 3D printing techniques</li>
+              <li>CNC programming basics</li>
+              <li>Project: Design a professional mechanical system</li>
+            </ul>
+          `,
+        },
+        "module-6": {
+          title: "Module 6: Computer Vision",
+          icon: "👁️",
+          content: `
+            <h3>AI Vision System Development</h3>
+            <p><strong>Duration:</strong> Weeks 27-32 (6 classes)</p>
+            <ul>
+              <li>OpenCV and image processing</li>
+              <li>Object detection and recognition</li>
+              <li>Deep learning for computer vision</li>
+              <li>Real-time video processing</li>
+              <li>Integration with robotics</li>
+              <li>Project: Build an AI vision-guided robot</li>
+            </ul>
+          `,
+        },
+        "module-7": {
+          title: "Module 7: Development Practices",
+          icon: "💻",
+          content: `
+            <h3>Professional Software Development</h3>
+            <p><strong>Duration:</strong> Weeks 33-36 (4 classes)</p>
+            <ul>
+              <li>Git and version control workflows</li>
+              <li>Agile methodology and Scrum</li>
+              <li>Code quality and best practices</li>
+              <li>CI/CD pipelines and DevOps</li>
+              <li>Team collaboration and code reviews</li>
+              <li>Project: Work on a team project</li>
+            </ul>
+          `,
+        },
+        "module-8": {
+          title: "Module 8: Capstone Project",
+          icon: "🏆",
+          content: `
+            <h3>Professional Portfolio Project</h3>
+            <p><strong>Duration:</strong> Weeks 37-48 (12 classes)</p>
+            <ul>
+              <li>Project conception and planning</li>
+              <li>Full system design and architecture</li>
+              <li>Hardware development and assembly</li>
+              <li>Software development and integration</li>
+              <li>AI/ML model development</li>
+              <li>Final deployment and presentation</li>
+            </ul>
+          `,
+        },
+        "master-1": {
+          title: "AI & Machine Learning",
+          icon: "🤖",
+          content: `
+            <h3>TensorFlow and Neural Networks</h3>
+            <ul>
+              <li><strong>TensorFlow:</strong> Build and train neural networks</li>
+              <li><strong>Keras:</strong> High-level neural network API</li>
+              <li><strong>CNN:</strong> Convolutional networks for image processing</li>
+              <li><strong>RNN:</strong> Recurrent networks for sequences</li>
+              <li><strong>Transfer Learning:</strong> Reuse pre-trained models</li>
+              <li><strong>Production Deployment:</strong> Serve models at scale</li>
+            </ul>
+          `,
+        },
+        "master-2": {
+          title: "Enterprise IoT",
+          icon: "📡",
+          content: `
+            <h3>Cloud-Connected Systems at Scale</h3>
+            <ul>
+              <li><strong>AWS IoT:</strong> Amazon's IoT platform</li>
+              <li><strong>Google Cloud IoT:</strong> Google's enterprise solution</li>
+              <li><strong>Security:</strong> Certificates, encryption, authentication</li>
+              <li><strong>Scalability:</strong> Handling millions of devices</li>
+              <li><strong>Analytics:</strong> Real-time data processing</li>
+              <li><strong>Monitoring:</strong> Dashboard and alerting systems</li>
+            </ul>
+          `,
+        },
+        "master-3": {
+          title: "Computer Vision",
+          icon: "👁️",
+          content: `
+            <h3>Image Recognition and Automation</h3>
+            <ul>
+              <li><strong>OpenCV:</strong> Comprehensive vision library</li>
+              <li><strong>Object Detection:</strong> YOLO, R-CNN, SSD models</li>
+              <li><strong>Image Segmentation:</strong> U-Net and FCN</li>
+              <li><strong>Face Recognition:</strong> DeepFace, FaceNet</li>
+              <li><strong>Real-Time Processing:</strong> GPU acceleration</li>
+              <li><strong>Production Systems:</strong> Deploying vision AI</li>
+            </ul>
+          `,
+        },
+        "master-4": {
+          title: "Capstone Project",
+          icon: "🏆",
+          content: `
+            <h3>Your Innovation Portfolio</h3>
+            <ul>
+              <li><strong>Full Integration:</strong> AI + IoT + Hardware + CV</li>
+              <li><strong>Professional Execution:</strong> Industry-grade quality</li>
+              <li><strong>Innovation:</strong> Novel ideas and solutions</li>
+              <li><strong>Documentation:</strong> Technical and research papers</li>
+              <li><strong>Portfolio Value:</strong> Impress colleges and employers</li>
+              <li><strong>Presentation:</strong> Demo and pitch your project</li>
+            </ul>
+          `,
+        },
+        "training-1": {
+          title: "Batch Training Program",
+          icon: "🏢",
+          content: `
+            <h3>Team-Based Advanced Learning</h3>
+            <ul>
+              <li><strong>Class Size:</strong> 4-6 students per batch</li>
+              <li><strong>Schedule:</strong> 2 classes per week, 120 minutes each</li>
+              <li><strong>Duration:</strong> 12 months (48 classes total)</li>
+              <li><strong>Benefits:</strong> Collaboration, networking, team projects</li>
+              <li><strong>Environment:</strong> Advanced lab with professional tools</li>
+              <li><strong>Pricing:</strong> ₹12,000 for full 12-month program</li>
+              <li><strong>Add-ons:</strong> 1-to-1 mentorship available at same cost</li>
+            </ul>
+          `,
+        },
+        "training-2": {
+          title: "1-to-1 Mentorship Program",
+          icon: "👨‍🏫",
+          content: `
+            <h3>Personalized Expert Guidance</h3>
+            <ul>
+              <li><strong>Customized Pace:</strong> Learn at your own speed</li>
+              <li><strong>Flexible Schedule:</strong> Classes at your convenience</li>
+              <li><strong>Industry Mentors:</strong> Learn from professionals</li>
+              <li><strong>Tailored Path:</strong> Focus on your goals</li>
+              <li><strong>Duration:</strong> 12 months or customizable</li>
+              <li><strong>Pricing:</strong> Available at same cost as batch training</li>
+              <li><strong>Perfect For:</strong> Competitive edge and accelerated learning</li>
+            </ul>
+          `,
+        },
+      };
+
+      // Open modal function
+      function openModal(id) {
+        const data = modalData[id];
+        if (!data) return;
+
+        const modalBody = document.getElementById("modal-body");
+        modalBody.innerHTML = `
+          <div class="modal-header">
+            <div class="modal-icon">${data.icon}</div>
+            <h2>${data.title}</h2>
+          </div>
+          <div class="modal-body-content">
+            ${data.content}
+          </div>
+        `;
+        document.getElementById("modal").classList.add("active");
+      }
+
+      // Close modal function
+      function closeModal() {
+        document.getElementById("modal").classList.remove("active");
+      }
+
+      // Close modal when Esc key is pressed
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+
+      function enrollFor(courseName) {
+        // Store course name and redirect to enrollment form
+        sessionStorage.setItem("selectedCourse", courseName);
+        window.location.href = "index.html#enrollForm";
+      }
+    </script>
+  </body>
+</html>

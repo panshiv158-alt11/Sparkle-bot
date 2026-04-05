@@ -1,0 +1,349 @@
+╔════════════════════════════════════════════════════════════════╗
+║      SPARKLEBOTS WEBSITE - SETUP & DEPLOYMENT GUIDE            ║
+╚════════════════════════════════════════════════════════════════╝
+
+📋 TABLE OF CONTENTS:
+  1. Quick Start
+  2. Setup Options
+  3. Video Configuration
+  4. QR Code Features
+  5. Customization
+  6. Deployment
+  7. Troubleshooting
+
+═══════════════════════════════════════════════════════════════════
+
+1️⃣  QUICK START (Easiest Way)
+
+Simply double-click: start.bat
+This will automatically:
+  ✓ Check for Node.js installation
+  ✓ Copy videos if needed
+  ✓ Start the server
+  ✓ Open the website in your browser
+
+═══════════════════════════════════════════════════════════════════
+
+2️⃣  SETUP OPTIONS
+
+OPTION A: Node.js Server (Best for Videos)
+─────────────────────────────────────────
+Prerequisites:
+  • Node.js installed (https://nodejs.org/)
+
+Steps:
+  1. Copy videos to this folder (see section 3)
+  2. Open Command Prompt in this folder
+  3. Run: node server.js
+  4. Open: http://localhost:3000
+
+Or just double-click: start.bat
+
+OPTION B: Python Server (Alternative)
+──────────────────────────────────────
+Prerequisites:
+  • Python 3.x installed
+
+Steps:
+  1. Copy videos to this folder
+  2. Open Command Prompt in this folder
+  3. Run: python server.py
+  4. Open: http://localhost:8000
+
+OPTION C: Direct File Open (Simple)
+────────────────────────────────────
+Steps:
+  1. Double-click: index.html
+  2. Website opens in your default browser
+
+Note: Videos may not load with this method due to browser
+security restrictions. Use Option A or B for full functionality.
+
+OPTION D: Windows IIS Server (Advanced)
+────────────────────────────────────────
+If you have IIS installed:
+  1. Copy all files to: C:\inetpub\wwwroot\sparklebots\
+  2. Create website in IIS
+  3. Access via: http://localhost/sparklebots
+
+═══════════════════════════════════════════════════════════════════
+
+3️⃣  VIDEO CONFIGURATION
+
+Method 1: Automatic (Easiest)
+───────────────────────────────
+1. Double-click: copy_videos.bat
+   OR run it from Command Prompt:
+   copy_videos.bat
+
+2. Videos will be automatically copied from WhatsApp to this folder
+
+Method 2: Manual Copy
+──────────────────────
+1. Open File Explorer
+2. Navigate to:
+   C:\Users\HP\AppData\Local\Packages\5319275A.51895FA4EA97F_cv1g1gvanyjgm\
+   LocalState\sessions\876047C0BA1590B765B961E9EC65BC49337372AE\transfers\2026-14
+
+3. Copy these 3 files:
+   • WhatsApp Video 2026-04-01 at 11.41.18 PM.mp4
+   • WhatsApp Video 2026-04-01 at 11.42.57 PM.mp4
+   • WhatsApp Video 2026-04-01 at 11.43.13 PM.mp4
+
+4. Paste them into your Application folder
+
+Method 3: Using Command Prompt
+───────────────────────────────
+1. Open Command Prompt in this folder
+2. Run:
+   
+   copy "C:\Users\HP\AppData\Local\Packages\5319275A.51895FA4EA97F_cv1g1gvanyjgm\LocalState\sessions\876047C0BA1590B765B961E9EC65BC49337372AE\transfers\2026-14\*.*" .
+
+═══════════════════════════════════════════════════════════════════
+
+4️⃣  QR CODE FEATURES
+
+The website automatically generates a QR code that links to:
+📱 www.sparklebots.com
+
+How to Use:
+1. Run the website (using any method above)
+2. Scroll to "QR Code" section
+3. The QR code is generated dynamically
+
+To Download/Print the QR Code:
+1. Right-click on the QR code
+2. Select "Save image as..."
+3. Save as: sparklebots-qr.png
+
+To Add to Posters:
+1. Download the QR code as shown above
+2. Open your poster design software (Photoshop, Canva, etc.)
+3. Insert the QR code image
+4. Resize as needed
+5. Add contact info: 8446630300, www.sparklebots.com
+
+Customizing QR Code Target:
+To change where the QR code points:
+1. Open index.html in a text editor
+2. Find line with: text: "https://www.sparklebots.com"
+3. Change to your desired URL
+4. Save and refresh the website
+
+═══════════════════════════════════════════════════════════════════
+
+5️⃣  CUSTOMIZATION
+
+Edit Colors:
+────────────
+1. Open: styles.css
+2. Scroll to the top (:root section)
+3. Change these colors:
+   --primary-blue: #003DA5
+   --primary-yellow: #FFD800
+   --primary-red: #E63946
+
+Edit Course Information:
+────────────────────────
+1. Open: index.html
+2. Find the course card you want to edit
+3. Change the name, price, description
+4. Save and refresh
+
+Edit Contact Information:
+──────────────────────────
+1. Open: index.html
+2. Find "8446630300" - change to your phone
+3. Find "www.sparklebots.com" - change to your website
+4. Update any other contact details
+
+Add New Courses:
+─────────────────
+1. Open: index.html
+2. Find a course-card section
+3. Duplicate it and modify
+
+Example:
+<div class="course-card">
+    <div class="course-icon">🔧</div>
+    <h3>Your Course Name</h3>
+    <p class="price">₹ 7500</p>
+    <p class="description">Your course description</p>
+</div>
+
+═══════════════════════════════════════════════════════════════════
+
+6️⃣  DEPLOYMENT OPTIONS
+
+Free Options:
+─────────────
+
+1. NETLIFY (Recommended)
+   • Sign up: https://netlify.com
+   • Drag & drop your folder
+   • Get free subdomain or custom domain
+   • Automatic HTTPS
+   • Videos work perfectly
+
+2. VERCEL
+   • Sign up: https://vercel.com
+   • Connect GitHub repository
+   • Auto-deploys on every change
+   • Free tier with good performance
+
+3. GITHUB PAGES
+   • Create GitHub account
+   • Push files to repository
+   • Enable Pages in settings
+   • Live at: username.github.io/sparklebots
+
+4. CLOUDFLARE PAGES
+   • Sign up: https://pages.cloudflare.com
+   • Connect GitHub
+   • Automatic deployment
+   • Free with fast CDN
+
+Paid Options:
+──────────────
+
+1. Shared Hosting (₹500-2000/month)
+   • Hostinger, Bluehost, GoDaddy
+   • Easy control panel
+   • Good for beginners
+
+2. VPS Hosting (₹1000-5000/month)
+   • More control
+   • Better performance
+   • For growing sites
+
+3. Dedicated Server (₹10000+/month)
+   • Full control
+   • Maximum performance
+   • For high traffic
+
+Deploying to Netlify (Step by Step):
+──────────────────────────────────────
+1. Go to https://netlify.com
+2. Click "Sign up"
+3. Create account with email or GitHub
+4. Click "Add new site" → "Deploy manually"
+5. Drag and drop your Application folder
+6. Wait for deployment
+7. Get your free URL (e.g., sparklebots-xyz.netlify.app)
+8. Optionally connect custom domain
+
+═══════════════════════════════════════════════════════════════════
+
+7️⃣  TROUBLESHOOTING
+
+Problem: "node is not recognized"
+─────────────────────────────────
+Solution:
+  1. Install Node.js from https://nodejs.org/
+  2. Restart Command Prompt after installation
+  3. Run: node --version (should show a version number)
+
+Problem: "Port 3000 already in use"
+──────────────────────────────────
+Solution A:
+  1. Change PORT in server.js from 3000 to 8080 (or any free port)
+  2. Access at: http://localhost:8080
+
+Solution B:
+  1. Find what's using port 3000:
+     netstat -ano | findstr :3000
+  2. Kill the process:
+     taskkill /PID <PID> /F
+
+Problem: Videos not playing
+────────────────────────────
+Solution:
+  1. Check if videos are in the Application folder
+  2. Use server.js or server.py (not direct file open)
+  3. Verify video file names match exactly:
+     - WhatsApp Video 2026-04-01 at 11.41.18 PM.mp4
+     - WhatsApp Video 2026-04-01 at 11.42.57 PM.mp4
+     - WhatsApp Video 2026-04-01 at 11.43.13 PM.mp4
+  4. Try running: copy_videos.bat
+
+Problem: QR code not generating
+───────────────────────────────
+Solution:
+  1. Refresh the webpage (F5 or Ctrl+R)
+  2. Wait 2-3 seconds for QR code to appear
+  3. Check browser console for errors (F12)
+  4. Try a different browser
+
+Problem: Website looks broken
+──────────────────────────────
+Solution:
+  1. Clear browser cache (Ctrl+Shift+Delete)
+  2. Refresh page (Ctrl+F5)
+  3. Try a different browser
+  4. Check if styles.css is in the same folder as index.html
+
+═══════════════════════════════════════════════════════════════════
+
+📞 QUICK CONTACT INFO
+
+Phone: 8446630300
+Website: www.sparklebots.com
+Email: (Add your email here)
+Location: (Add your location here)
+
+═══════════════════════════════════════════════════════════════════
+
+✨ ADDITIONAL FEATURES
+
+• Fully Responsive - Works on all devices
+• SEO Optimized - Better search engine visibility
+• Fast Loading - Optimized for speed
+• Modern Design - Professional Sparklebots branding
+• Easy to Maintain - Simple HTML/CSS structure
+• Video Support - Multiple video formats
+• Auto QR Code - Generated dynamically
+• Form Handling - Enrollment form
+
+═══════════════════════════════════════════════════════════════════
+
+📁 FILE STRUCTURE
+
+Application/
+│
+├── index.html                          (Main website file)
+├── styles.css                          (Website styling)
+├── server.js                           (Node.js server - recommended)
+├── server.py                           (Python server - alternative)
+├── package.json                        (Node.js configuration)
+│
+├── start.bat                           (One-click launcher)
+├── copy_videos.bat                     (Auto-copy videos)
+│
+├── README.md                           (Quick start guide)
+├── SETUP_GUIDE.txt                     (This file)
+│
+└── Video Files (after setup):
+    ├── WhatsApp Video 2026-04-01 at 11.41.18 PM.mp4
+    ├── WhatsApp Video 2026-04-01 at 11.42.57 PM.mp4
+    └── WhatsApp Video 2026-04-01 at 11.43.13 PM.mp4
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 NEXT STEPS
+
+1. Run start.bat to launch the website
+2. Verify all courses and content are correct
+3. Copy/add your videos
+4. Test QR code functionality
+5. Download QR code for your posters
+6. Customize contact information
+7. Deploy to a free hosting service
+8. Share the link with everyone!
+
+═══════════════════════════════════════════════════════════════════
+
+Created: April 2026
+Version: 1.0
+© Sparklebots - Robotics & AI Innovation Lab
+
+═══════════════════════════════════════════════════════════════════

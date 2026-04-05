@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Courses (Age 6-10) - Sparklebots</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <h1>🤖 SPARKLEBOTS</h1>
+            <p class="tagline">AI & Robotics for Kids</p>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#paths">Paths</a></li>
+            <li><a href="index.html#courses">Courses</a></li>
+            <li><a href="index.html#demo">Free Demo</a></li>
+            <li><a href="index.html#contact" class="nav-cta">Enroll</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Foundation Courses Header -->
+    <section class="page-header foundation-header">
+      <div class="container">
+        <div class="back-button-wrapper">
+          <button class="btn-back" onclick="window.history.back()">
+            ← Back to Home
+          </button>
+        </div>
+        <h1 class="section-title">🎓 Foundation Courses</h1>
+        <p class="section-subtitle">
+          Age 6-10 • Build Strong Basics in Robotics & Coding
+        </p>
+        <p class="page-intro">
+          Start your tech journey with our carefully designed courses for young
+          learners. Each course includes hands-on projects, interactive lessons,
+          and expert guidance.
+        </p>
+      </div>
+    </section>
+
+    <!-- Foundation Courses Grid -->
+    <section class="courses-section">
+      <div class="container">
+        <div class="courses-grid">
+          <!-- Course 1: RoboChamp Robotics -->
+          <div class="course-card">
+            <div class="course-header">
+              <div class="course-icon">🤖</div>
+              <h3 class="course-title">RoboChamp Robotics</h3>
+            </div>
+            <div class="course-body">
+              <p class="course-level">Beginner Level</p>
+              <p class="course-description">
+                Learn the fundamentals of robotics through engaging hands-on
+                projects. Build and program robots, understand mechanics, and
+                explore basic engineering concepts. Perfect for curious minds
+                ready to tinker and create!
+              </p>
+              <div class="course-details">
+                <span class="detail-item">📅 8 Weeks</span>
+                <span class="detail-item">🕐 2 Hours/Week</span>
+                <span class="detail-item">👥 5-8 Students</span>
+              </div>
+              <p class="course-price">₹6,500</p>
+            </div>
+            <button
+              class="btn btn-enroll course-enroll-btn"
+              onclick="enrollForFoundation('RoboChamp Robotics')">
+              ✨ Enroll Now
+            </button>
+          </div>
+
+          <!-- Course 2: Scratch Programming -->
+          <div class="course-card">
+            <div class="course-header">
+              <div class="course-icon">🎮</div>
+              <h3 class="course-title">Scratch Programming</h3>
+            </div>
+            <div class="course-body">
+              <p class="course-level">Beginner Level</p>
+              <p class="course-description">
+                Discover the joy of coding with Scratch! Create interactive
+                games, animations, and stories using visual blocks. Learn logic,
+                problem-solving, and creative thinking through fun programming
+                projects.
+              </p>
+              <div class="course-details">
+                <span class="detail-item">📅 6 Weeks</span>
+                <span class="detail-item">🕐 1.5 Hours/Week</span>
+                <span class="detail-item">👥 5-8 Students</span>
+              </div>
+              <p class="course-price">₹7,500</p>
+            </div>
+            <button
+              class="btn btn-enroll course-enroll-btn"
+              onclick="enrollForFoundation('Scratch Programming')">
+              ✨ Enroll Now
+            </button>
+          </div>
+
+          <!-- Course 3: Creative Design -->
+          <div class="course-card">
+            <div class="course-header">
+              <div class="course-icon">🎨</div>
+              <h3 class="course-title">Creative Design</h3>
+            </div>
+            <div class="course-body">
+              <p class="course-level">Beginner Level</p>
+              <p class="course-description">
+                Unleash your creativity with digital design tools. Learn about
+                colors, shapes, and composition. Create digital art, designs,
+                and visual projects using beginner-friendly design software.
+              </p>
+              <div class="course-details">
+                <span class="detail-item">📅 6 Weeks</span>
+                <span class="detail-item">🕐 1.5 Hours/Week</span>
+                <span class="detail-item">👥 5-8 Students</span>
+              </div>
+              <p class="course-price">₹7,500</p>
+            </div>
+            <button
+              class="btn btn-enroll course-enroll-btn"
+              onclick="enrollForFoundation('Creative Design')">
+              ✨ Enroll Now
+            </button>
+          </div>
+
+          <!-- Course 4: Problem Solving -->
+          <div class="course-card">
+            <div class="course-header">
+              <div class="course-icon">🧩</div>
+              <h3 class="course-title">Problem Solving</h3>
+            </div>
+            <div class="course-body">
+              <p class="course-level">Beginner Level</p>
+              <p class="course-description">
+                Develop critical thinking and logical reasoning skills. Solve
+                puzzles, complete challenges, and learn computational thinking
+                through interactive games and activities designed for young
+                learners.
+              </p>
+              <div class="course-details">
+                <span class="detail-item">📅 5 Weeks</span>
+                <span class="detail-item">🕐 1 Hour/Week</span>
+                <span class="detail-item">👥 5-8 Students</span>
+              </div>
+              <p class="course-price">₹4,500</p>
+            </div>
+            <button
+              class="btn btn-enroll course-enroll-btn"
+              onclick="enrollForFoundation('Problem Solving')">
+              ✨ Enroll Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Foundation Courses Section -->
+    <section class="why-foundation">
+      <div class="container">
+        <h2 class="section-title">✨ Why Foundation Courses?</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">🎯</div>
+            <h3>Age-Appropriate</h3>
+            <p>
+              Designed specifically for 6-10 year olds with engaging,
+              interactive content.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">👨‍🏫</div>
+            <h3>Expert Instructors</h3>
+            <p>
+              Learn from experienced teachers passionate about nurturing young
+              talent.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🚀</div>
+            <h3>Hands-On Projects</h3>
+            <p>
+              Build real projects, robots, and games while learning core
+              concepts.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🏆</div>
+            <h3>Certificate</h3>
+            <p>
+              Receive a completion certificate to showcase your achievements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="foundation-cta">
+      <div class="container">
+        <h2>Ready to Start Your Tech Journey?</h2>
+        <p>Join hundreds of kids learning robotics and coding at Sparklebots</p>
+        <button class="btn btn-primary btn-lg" onclick="goToEnrollment()">
+          🎉 Enroll Now - Limited Seats!
+        </button>
+        <p class="contact-info">
+          📞 Questions? Call us: <strong>8446630300</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2026 Sparklebots - Robotics & AI Innovation Lab. All rights
+          reserved.
+        </p>
+        <p>
+          Building the tech leaders of tomorrow | Engineer • Innovate • Create
+          the Future
+        </p>
+      </div>
+    </footer>
+
+    <!-- Demo Row: Enroll Now + Contact Icons (Desktop) -->
+    <div class="demo-row">
+      <button class="floating-cta" onclick="goToEnrollment()">
+        <span>Enroll Now</span>
+        <span class="pulse"></span>
+      </button>
+      <div class="contact-icons">
+        <a href="tel:8446630300" class="call-icon" title="Call us"> 📞 </a>
+        <a
+          href="https://wa.me/918446630300?text=Hi%20Sparklebots!%20I%20want%20to%20know%20more%20about%20Foundation%20courses"
+          target="_blank"
+          class="whatsapp-icon"
+          title="Message on WhatsApp">
+          💬
+        </a>
+      </div>
+    </div>
+
+    <!-- Floating CTA Button (Mobile) -->
+    <button class="floating-cta mobile-only" onclick="goToEnrollment()">
+      <span>Enroll Now</span>
+      <span class="pulse"></span>
+    </button>
+
+    <!-- Combined Contact Button - Call & WhatsApp -->
+    <div class="combined-contact-btn">
+      <a
+        href="tel:8446630300"
+        class="contact-option contact-call"
+        title="Call us">
+        <span class="contact-icon">📞</span>
+        <span class="contact-label">Call</span>
+      </a>
+      <a
+        href="https://wa.me/918446630300?text=Hi%20Sparklebots!%20I%20want%20to%20know%20more%20about%20Foundation%20courses"
+        target="_blank"
+        class="contact-option contact-whatsapp"
+        title="Message on WhatsApp">
+        <span class="contact-icon">💬</span>
+        <span class="contact-label">WhatsApp</span>
+      </a>
+    </div>
+    <!-- Combined Contact Button - WhatsApp Only (Desktop) -->
+    <div class="combined-contact-btn desktop-layout">
+      <a
+        href="https://wa.me/918446630300?text=Hi%20Sparklebots!%20I%20want%20to%20know%20more%20about%20Foundation%20courses"
+        target="_blank"
+        class="contact-option contact-whatsapp"
+        title="Message on WhatsApp">
+        <span class="contact-icon">💬</span>
+        <span class="contact-label">WhatsApp</span>
+      </a>
+    </div>
+    <script>
+      // Enroll for foundation course
+      function enrollForFoundation(courseName) {
+        // Store the course name in sessionStorage for retrieval on main page
+        sessionStorage.setItem("selectedCourse", courseName);
+        // Redirect to main page contact section
+        window.location.href = "index.html#contact";
+      }
+
+      // Go to enrollment on main page
+      function goToEnrollment() {
+        window.location.href = "index.html#contact";
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

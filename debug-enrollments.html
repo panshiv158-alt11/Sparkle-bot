@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enrollment Debug - Sparklebots</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #0b3c5d 0%, #0fa3b1 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        color: #0b3c5d;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .subtitle {
+        color: #666;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 14px;
+      }
+
+      .controls {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary {
+        background: #0fa3b1;
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background: #0b3c5d;
+        transform: translateY(-2px);
+      }
+
+      .btn-danger {
+        background: #ff6b6b;
+        color: white;
+      }
+
+      .btn-danger:hover {
+        background: #c92a2a;
+      }
+
+      .btn-success {
+        background: #51cf66;
+        color: white;
+      }
+
+      .btn-success:hover {
+        background: #37b24d;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .stat-card {
+        background: #f0f0f0;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        border-left: 4px solid #0fa3b1;
+      }
+
+      .stat-label {
+        color: #666;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+
+      .stat-value {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0b3c5d;
+      }
+
+      .enrollment-list {
+        max-height: 500px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+
+      .enrollment-item {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+        background: #fafafa;
+        transition: background 0.3s ease;
+      }
+
+      .enrollment-item:hover {
+        background: #f0f0f0;
+      }
+
+      .enrollment-item:last-child {
+        border-bottom: none;
+      }
+
+      .enrollment-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+
+      .enrollment-label {
+        font-weight: bold;
+        color: #0b3c5d;
+        min-width: 100px;
+      }
+
+      .enrollment-value {
+        color: #333;
+        word-break: break-all;
+      }
+
+      .enrollment-time {
+        font-size: 12px;
+        color: #999;
+        margin-top: 10px;
+      }
+
+      .empty-state {
+        text-align: center;
+        padding: 40px;
+        color: #999;
+      }
+
+      .empty-icon {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+
+      .age-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .age-stat {
+        background: #f5f5f5;
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+        border: 2px solid #0fa3b1;
+      }
+
+      .age-name {
+        font-weight: bold;
+        color: #0b3c5d;
+        margin-bottom: 5px;
+      }
+
+      .age-count {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0fa3b1;
+      }
+
+      .success-msg {
+        background: #d4edda;
+        border: 1px solid #c3e6cb;
+        color: #155724;
+        padding: 12px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+
+      .error-msg {
+        background: #f8d7da;
+        border: 1px solid #f5c6cb;
+        color: #721c24;
+        padding: 12px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: 480px) {
+        .stats {
+          grid-template-columns: 1fr;
+        }
+
+        .age-stats {
+          grid-template-columns: 1fr;
+        }
+
+        .controls {
+          flex-direction: column;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>📊 Enrollment Submissions Debug</h1>
+      <p class="subtitle">
+        View all locally stored enrollment submissions and age group statistics
+      </p>
+
+      <div id="message"></div>
+
+      <div class="controls">
+        <button class="btn-primary" onclick="loadEnrollments()">
+          🔄 Refresh Data
+        </button>
+        <button class="btn-success" onclick="exportAsJSON()">
+          📥 Export JSON
+        </button>
+        <button class="btn-danger" onclick="clearAll()">🗑️ Clear All</button>
+        <button class="btn-primary" onclick="goHome()">🏠 Back to Home</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-label">Total Submissions</div>
+          <div class="stat-value" id="totalCount">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Last Submission</div>
+          <div class="stat-value" id="lastTime" style="font-size: 12px">
+            Never
+          </div>
+        </div>
+      </div>
+
+      <h3 style="color: #0b3c5d; margin: 20px 0 15px">
+        Age Group Distribution:
+      </h3>
+      <div class="age-stats">
+        <div class="age-stat">
+          <div class="age-name">6 to 10</div>
+          <div class="age-count" id="age-6-10">0</div>
+        </div>
+        <div class="age-stat">
+          <div class="age-name">10 to 14</div>
+          <div class="age-count" id="age-10-14">0</div>
+        </div>
+        <div class="age-stat">
+          <div class="age-name">14 to 18</div>
+          <div class="age-count" id="age-14-18">0</div>
+        </div>
+      </div>
+
+      <h3 style="color: #0b3c5d; margin: 20px 0 15px">All Submissions:</h3>
+      <div class="enrollment-list" id="enrollmentList"></div>
+    </div>
+
+    <script>
+      function loadEnrollments() {
+        const enrollments = JSON.parse(
+          localStorage.getItem("enrollments") || "[]",
+        );
+        const messageDiv = document.getElementById("message");
+        messageDiv.innerHTML = "";
+
+        document.getElementById("totalCount").textContent = enrollments.length;
+
+        if (enrollments.length === 0) {
+          document.getElementById("enrollmentList").innerHTML =
+            '<div class="empty-state"><div class="empty-icon">📭</div>No enrollments yet</div>';
+          document.getElementById("lastTime").textContent = "Never";
+          document.getElementById("age-6-10").textContent = "0";
+          document.getElementById("age-10-14").textContent = "0";
+          document.getElementById("age-14-18").textContent = "0";
+          return;
+        }
+
+        // Calculate age distribution
+        let ageCount = {
+          "6 to 10": 0,
+          "10 to 14": 0,
+          "14 to 18": 0,
+        };
+
+        enrollments.forEach((e) => {
+          if (ageCount.hasOwnProperty(e.age)) {
+            ageCount[e.age]++;
+          }
+        });
+
+        document.getElementById("age-6-10").textContent = ageCount["6 to 10"];
+        document.getElementById("age-10-14").textContent = ageCount["10 to 14"];
+        document.getElementById("age-14-18").textContent = ageCount["14 to 18"];
+
+        // Get last submission time
+        const lastSubmission = new Date(
+          enrollments[enrollments.length - 1].timestamp,
+        );
+        document.getElementById("lastTime").textContent =
+          lastSubmission.toLocaleTimeString();
+
+        // Display enrollments
+        let html = "";
+        enrollments.reverse().forEach((enrollment, index) => {
+          const timestamp = new Date(enrollment.timestamp);
+          html += `
+        <div class="enrollment-item">
+          <div class="enrollment-row">
+            <span class="enrollment-label">Child's Name:</span>
+            <span class="enrollment-value">${enrollment.child}</span>
+          </div>
+          <div class="enrollment-row">
+            <span class="enrollment-label">Parent's Name:</span>
+            <span class="enrollment-value">${enrollment.parent}</span>
+          </div>
+          <div class="enrollment-row">
+            <span class="enrollment-label">Email:</span>
+            <span class="enrollment-value">${enrollment.email}</span>
+          </div>
+          <div class="enrollment-row">
+            <span class="enrollment-label">Phone:</span>
+            <span class="enrollment-value">${enrollment.phone}</span>
+          </div>
+          <div class="enrollment-row">
+            <span class="enrollment-label">Age Group:</span>
+            <span class="enrollment-value"><strong style="color: #0fa3b1">${enrollment.age}</strong></span>
+          </div>
+          <div class="enrollment-row">
+            <span class="enrollment-label">Course:</span>
+            <span class="enrollment-value">${enrollment.course}</span>
+          </div>
+          <div class="enrollment-time">⏰ ${timestamp.toLocaleString()}</div>
+        </div>
+      `;
+        });
+
+        document.getElementById("enrollmentList").innerHTML = html;
+
+        messageDiv.innerHTML =
+          '<div class="success-msg">✅ Found ' +
+          enrollments.length +
+          " submissions. All three age groups are being tracked!</div>";
+      }
+
+      function exportAsJSON() {
+        const enrollments = JSON.parse(
+          localStorage.getItem("enrollments") || "[]",
+        );
+        const dataStr = JSON.stringify(enrollments, null, 2);
+        const dataBlob = new Blob([dataStr], { type: "application/json" });
+        const url = URL.createObjectURL(dataBlob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `sparklebots-enrollments-${new Date().toISOString().split("T")[0]}.json`;
+        link.click();
+        alert("✅ Enrollments exported as JSON!");
+      }
+
+      function clearAll() {
+        if (
+          confirm(
+            "⚠️ Are you sure you want to delete ALL stored enrollments? This cannot be undone.",
+          )
+        ) {
+          localStorage.removeItem("enrollments");
+          document.getElementById("message").innerHTML =
+            '<div class="success-msg">✅ All enrollments cleared!</div>';
+          loadEnrollments();
+        }
+      }
+
+      function goHome() {
+        window.location.href = "index.html";
+      }
+
+      // Load on page load
+      window.addEventListener("DOMContentLoaded", loadEnrollments);
+    </script>
+  </body>
+</html>

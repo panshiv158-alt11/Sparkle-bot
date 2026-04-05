@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Sparklebots</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="assets/logo.jpg" alt="Sparklebots Logo" class="logo-img" />
+          <span>Sparklebots</span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-links">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#paths" class="nav-links">Learning Paths</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#courses" class="nav-links">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-links nav-cta">Contact Us</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+      <div class="container">
+        <!-- Hero -->
+        <div class="contact-hero">
+          <h1 class="section-title">Get In Touch With Us</h1>
+          <p class="contact-subtitle">
+            Have questions? Want to schedule a FREE demo? We're here to help! 🚀
+          </p>
+        </div>
+
+        <!-- Three Column Contact Info -->
+        <div class="quick-contact-grid">
+          <div class="quick-contact-card">
+            <div class="contact-icon">📞</div>
+            <h3>Call Us</h3>
+            <p class="contact-detail">
+              <a href="tel:+917875367537">+91 7875367537</a>
+            </p>
+            <p class="contact-detail">
+              <a href="tel:+918446767999">+91 8446767999</a>
+            </p>
+            <p class="text-small">Monday - Sunday: 10 AM - 7 PM</p>
+          </div>
+
+          <div class="quick-contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3>Email Us</h3>
+            <p class="contact-detail">
+              <a href="mailto:info@sparklebots.com">info@sparklebots.com</a>
+            </p>
+            <p class="text-small">Response within 24 hours</p>
+          </div>
+
+          <div class="quick-contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Visit Us</h3>
+            <p class="contact-detail">Kothrud, Pune</p>
+            <a
+              href="https://www.google.com/maps/search/Sparklebots+Robotics+Innovation+and+Research+Labs+Narmada+Heights+DP+Rd+Gananjay+Society+Guruganesh+Nagar+Kothrud+Pune+Maharashtra+411038"
+              target="_blank"
+              class="btn btn-demo btn-sm"
+              >Get Directions</a
+            >
+          </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+          <p class="faq-subtitle">
+            Everything you need to know about Sparklebots
+          </p>
+          <div class="faq-container">
+            <div class="faq-card">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>📝 How do I register for a course?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" style="display: none">
+                <p>
+                  Simply call us at the numbers above or email us with your
+                  child's age and interests. Our team will reach out within 24
+                  hours to confirm enrollment and schedule a FREE demo session.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-card">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>⏱️ What is the duration of courses?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" style="display: none">
+                <p>
+                  Course duration varies by level. Foundation courses are
+                  typically 8-12 weeks (2 hours per week), while advanced
+                  courses can extend to 16+ weeks. We also offer intensive
+                  summer programs.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-card">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>💻 Do you provide online classes?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" style="display: none">
+                <p>
+                  Yes, we offer both online and in-person classes. The choice
+                  depends on the course and your convenience. Most foundation
+                  courses are best experienced in-person for hands-on learning.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-card">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>👶 What age group can join?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" style="display: none">
+                <p>
+                  We have courses for children aged 5-18 years. Each course is
+                  designed specifically for different age groups with
+                  age-appropriate challenges and learning objectives.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-card">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>🆕 Is prior experience required?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" style="display: none">
+                <p>
+                  No prior experience is required! All our foundation courses
+                  are designed for beginners. We welcome students of all skill
+                  levels and tailor our teaching accordingly.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-card">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>✅ What happens after the free demo?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" style="display: none">
+                <p>
+                  After the demo, our instructors will discuss the best course
+                  fit for your child and answer any questions. You can then
+                  choose to enroll or take time to decide.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View All Courses CTA -->
+        <div class="view-all-courses-section">
+          <div class="courses-cta-container">
+            <div class="courses-cta-content">
+              <h2 class="courses-cta-title">
+                Ready to Start Your Child's Journey? 🚀
+              </h2>
+              <p class="courses-cta-subtitle">
+                Explore all our robotics courses designed for different age
+                groups and skill levels
+              </p>
+              <a
+                href="index.html#courses"
+                class="btn btn-primary btn-lg courses-cta-btn">
+                🎓 View All Courses
+              </a>
+            </div>
+            <div class="courses-cta-animation">
+              <div class="animated-robot">🤖</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Sparklebots</h3>
+          <p>Building future innovators through robotics education.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="foundation-details.html">Foundation Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p>Email: info@sparklebots.com</p>
+          <p>Phone: +91 7875367537</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Sparklebots. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // ============ FAQ ACCORDION TOGGLE ============
+      function toggleFAQ(button) {
+        const answer = button.nextElementSibling;
+        const toggle = button.querySelector(".faq-toggle");
+        const isOpen = answer.style.display !== "none";
+
+        // Close all other FAQs
+        document.querySelectorAll(".faq-answer").forEach((item) => {
+          item.style.display = "none";
+        });
+        document.querySelectorAll(".faq-toggle").forEach((item) => {
+          item.textContent = "+";
+          item.parentElement.classList.remove("active");
+        });
+
+        // Toggle current FAQ
+        if (!isOpen) {
+          answer.style.display = "block";
+          toggle.textContent = "−";
+          button.classList.add("active");
+        }
+      }
+
+      // Mobile menu toggle
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-menu").classList.toggle("active");
+        });
+
+      // Close menu when link is clicked
+      document.querySelectorAll(".nav-links").forEach((link) => {
+        link.addEventListener("click", function () {
+          document.querySelector(".nav-menu").classList.remove("active");
+        });
+      });
+
+      // Smooth scroll to sections
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

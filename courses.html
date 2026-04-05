@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Courses - Sparklebots</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="assets/logo.jpg" alt="Sparklebots Logo" class="logo-img" />
+          <h1>Sparklebots</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#paths">Programs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header with Back Button -->
+    <section class="page-header">
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        ">
+        <div>
+          <h1>📚 All Sparklebots Courses</h1>
+          <p>
+            Choose from our comprehensive catalog of robotics, programming, and
+            AI courses
+          </p>
+        </div>
+        <a href="index.html#paths" class="btn-back">← Back</a>
+      </div>
+    </section>
+
+    <!-- Programming Courses Section -->
+    <section class="courses-page-section">
+      <div class="container">
+        <h2 class="section-title">🐍 Programming Courses</h2>
+        <p class="section-desc">
+          Master coding languages and build real applications
+        </p>
+
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-icon">🐍</div>
+            <h4>Core Python</h4>
+            <p class="course-desc">Master Python fundamentals</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 8–14 Years</p>
+              <p><strong>Duration:</strong> 12 weeks</p>
+              <p>
+                <strong>Skills:</strong> Variables, Loops, Functions, Data
+                Structures
+              </p>
+            </div>
+            <p class="price">₹7,500</p>
+            <button class="btn btn-enroll" onclick="enrollFor('Core Python')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">🚀</div>
+            <h4>Advanced Python</h4>
+            <p class="course-desc">Real-world applications & projects</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 12–18 Years</p>
+              <p><strong>Duration:</strong> 10 weeks</p>
+              <p>
+                <strong>Skills:</strong> OOP, Libraries, Web Development, Data
+                Analysis
+              </p>
+            </div>
+            <p class="price">₹7,500</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Advanced Python')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">🌐</div>
+            <h4>Web Development</h4>
+            <p class="course-desc">Build interactive websites</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 12–18 Years</p>
+              <p><strong>Duration:</strong> 14 weeks</p>
+              <p><strong>Skills:</strong> HTML, CSS, JavaScript, React</p>
+            </div>
+            <p class="price">₹9,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Web Development')">
+              Register for Demo →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Robotics Courses Section -->
+    <section class="courses-page-section alternate-bg">
+      <div class="container">
+        <h2 class="section-title">⚡ Robotics Courses</h2>
+        <p class="section-desc">Build, program, and control robots</p>
+
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-icon">⚡</div>
+            <h4>Arduino Robotics</h4>
+            <p class="course-desc">Build smart robots from scratch</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 10–16 Years</p>
+              <p><strong>Duration:</strong> 14 weeks</p>
+              <p>
+                <strong>Skills:</strong> Arduino Programming, Sensors, Motors,
+                Circuit Design
+              </p>
+            </div>
+            <p class="price">₹8,500</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Arduino Robotics')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">🤖</div>
+            <h4>Humanoid Robotics</h4>
+            <p class="course-desc">Advanced robot programming with AI</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 14–18 Years</p>
+              <p><strong>Duration:</strong> 16 weeks</p>
+              <p>
+                <strong>Skills:</strong> Robot Dynamics, AI Integration, Motion
+                Control
+              </p>
+            </div>
+            <p class="price">₹28,500</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Humanoid Robotics')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">🦾</div>
+            <h4>Robot Arm Control</h4>
+            <p class="course-desc">Precision robotics engineering</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 12–18 Years</p>
+              <p><strong>Duration:</strong> 12 weeks</p>
+              <p>
+                <strong>Skills:</strong> Servo Control, Inverse Kinematics,
+                Automation
+              </p>
+            </div>
+            <p class="price">₹12,000</p>
+            <button class="btn btn-enroll" onclick="enrollFor('Robot Arm')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">🤩</div>
+            <h4>Drone Programming</h4>
+            <p class="course-desc">Control autonomous drones</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 12–18 Years</p>
+              <p><strong>Duration:</strong> 10 weeks</p>
+              <p>
+                <strong>Skills:</strong> Flight Control, GPS Navigation,
+                AI-based Path Planning
+              </p>
+            </div>
+            <p class="price">₹15,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Drone Programming')">
+              Register for Demo →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI & Machine Learning Section -->
+    <section class="courses-page-section">
+      <div class="container">
+        <h2 class="section-title">🧠 AI & Machine Learning</h2>
+        <p class="section-desc">Learn the future of technology</p>
+
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-icon">👁️</div>
+            <h4>Computer Vision</h4>
+            <p class="course-desc">Image processing & object detection</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 14–18 Years</p>
+              <p><strong>Duration:</strong> 12 weeks</p>
+              <p>
+                <strong>Skills:</strong> OpenCV, Image Processing, Neural
+                Networks
+              </p>
+            </div>
+            <p class="price">₹12,500</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Computer Vision')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">🤖</div>
+            <h4>Machine Learning Basics</h4>
+            <p class="course-desc">AI fundamentals and ML algorithms</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 14–18 Years</p>
+              <p><strong>Duration:</strong> 14 weeks</p>
+              <p>
+                <strong>Skills:</strong> Data Analysis, Model Training,
+                TensorFlow, Scikit-learn
+              </p>
+            </div>
+            <p class="price">₹13,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Machine Learning Basics')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">📊</div>
+            <h4>Data Science Essentials</h4>
+            <p class="course-desc">Data analysis and visualization</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 14–18 Years</p>
+              <p><strong>Duration:</strong> 10 weeks</p>
+              <p>
+                <strong>Skills:</strong> Pandas, NumPy, Data Visualization,
+                Statistics
+              </p>
+            </div>
+            <p class="price">₹11,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Data Science Essentials')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">🧬</div>
+            <h4>Deep Learning Pro</h4>
+            <p class="course-desc">Advanced neural networks</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 15–18 Years</p>
+              <p><strong>Duration:</strong> 16 weeks</p>
+              <p>
+                <strong>Skills:</strong> CNNs, RNNs, GANs, Advanced Applications
+              </p>
+            </div>
+            <p class="price">₹18,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Deep Learning Pro')">
+              Register for Demo →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design & Development Section -->
+    <section class="courses-page-section alternate-bg">
+      <div class="container">
+        <h2 class="section-title">🎨 Design & Development</h2>
+        <p class="section-desc">CAD, 3D design, and hardware development</p>
+
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-icon">📐</div>
+            <h4>CAD Fundamentals (Fusion 360)</h4>
+            <p class="course-desc">Professional 3D design</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 11–18 Years</p>
+              <p><strong>Duration:</strong> 10 weeks</p>
+              <p>
+                <strong>Skills:</strong> 3D Modeling, Assemblies, Simulations
+              </p>
+            </div>
+            <p class="price">₹8,500</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('CAD Fundamentals')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">🖨️</div>
+            <h4>3D Printing & Manufacturing</h4>
+            <p class="course-desc">Design for 3D printing</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 10–16 Years</p>
+              <p><strong>Duration:</strong> 8 weeks</p>
+              <p>
+                <strong>Skills:</strong> Design Optimization, Slicing,
+                Post-Processing
+              </p>
+            </div>
+            <p class="price">₹7,500</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('3D Printing & Manufacturing')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">⚙️</div>
+            <h4>Electronics & PCB Design</h4>
+            <p class="course-desc">Circuit design and prototyping</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 13–18 Years</p>
+              <p><strong>Duration:</strong> 12 weeks</p>
+              <p>
+                <strong>Skills:</strong> Schematic Design, PCB Layout,
+                Soldering, Testing
+              </p>
+            </div>
+            <p class="price">₹11,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Electronics & PCB Design')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">🌐</div>
+            <h4>UI/UX Design for Apps</h4>
+            <p class="course-desc">Design mobile and web interfaces</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 12–18 Years</p>
+              <p><strong>Duration:</strong> 10 weeks</p>
+              <p>
+                <strong>Skills:</strong> Figma, Wireframing, User Experience,
+                Prototyping
+              </p>
+            </div>
+            <p class="price">₹9,500</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('UI/UX Design for Apps')">
+              Register for Demo →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IoT & Embedded Systems Section -->
+    <section class="courses-page-section">
+      <div class="container">
+        <h2 class="section-title">🌐 IoT & Embedded Systems</h2>
+        <p class="section-desc">Build connected smart devices</p>
+
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-icon">📡</div>
+            <h4>IoT Fundamentals</h4>
+            <p class="course-desc">Connected devices basics</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 12–18 Years</p>
+              <p><strong>Duration:</strong> 12 weeks</p>
+              <p>
+                <strong>Skills:</strong> Sensors, Data Transmission, Cloud
+                Integration
+              </p>
+            </div>
+            <p class="price">₹10,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('IoT Fundamentals')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">💻</div>
+            <h4>Embedded Systems Pro</h4>
+            <p class="course-desc">Professional IoT development</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 14–18 Years</p>
+              <p><strong>Duration:</strong> 16 weeks</p>
+              <p>
+                <strong>Skills:</strong> Real-time Systems, Firmware, Device
+                Management
+              </p>
+            </div>
+            <p class="price">₹15,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Embedded Systems Pro')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">🍓</div>
+            <h4>Raspberry Pi Expert</h4>
+            <p class="course-desc">Advanced computing projects</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 12–18 Years</p>
+              <p><strong>Duration:</strong> 14 weeks</p>
+              <p>
+                <strong>Skills:</strong> Linux, Python, Project Development,
+                Networking
+              </p>
+            </div>
+            <p class="price">₹18,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Raspberry Pi Expert')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">📊</div>
+            <h4>Cloud Integration & IoT</h4>
+            <p class="course-desc">Connect to cloud platforms</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 14–18 Years</p>
+              <p><strong>Duration:</strong> 10 weeks</p>
+              <p>
+                <strong>Skills:</strong> AWS IoT, Azure IoT, Real-time
+                Dashboards
+              </p>
+            </div>
+            <p class="price">₹16,500</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Cloud Integration & IoT')">
+              Register for Demo →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialized Certificates Section -->
+    <section class="courses-page-section alternate-bg">
+      <div class="container">
+        <h2 class="section-title">🏆 Specialized Certificates</h2>
+        <p class="section-desc">
+          Professional certifications for career advancement
+        </p>
+
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-icon">🏅</div>
+            <h4>Robotics Engineer Certificate</h4>
+            <p class="course-desc">Complete robotics training</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 14–18 Years</p>
+              <p><strong>Duration:</strong> 20 weeks</p>
+              <p>
+                <strong>Skills:</strong> All robotics fundamentals + capstone
+                project
+              </p>
+            </div>
+            <p class="price">₹35,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Robotics Engineer Certificate')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">🎯</div>
+            <h4>AI Developer Certificate</h4>
+            <p class="course-desc">Complete AI/ML training</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 15–18 Years</p>
+              <p><strong>Duration:</strong> 24 weeks</p>
+              <p>
+                <strong>Skills:</strong> ML, DL, CV, NLP, Real-world
+                applications
+              </p>
+            </div>
+            <p class="price">₹45,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('AI Developer Certificate')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">⚡</div>
+            <h4>Full-Stack IoT Expert</h4>
+            <p class="course-desc">Hardware + Software + Cloud</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 14–18 Years</p>
+              <p><strong>Duration:</strong> 22 weeks</p>
+              <p>
+                <strong>Skills:</strong> Embedded Systems, Cloud, Mobile,
+                Security
+              </p>
+            </div>
+            <p class="price">₹40,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Full-Stack IoT Expert')">
+              Register for Demo →
+            </button>
+          </div>
+
+          <div class="course-card">
+            <div class="course-icon">🎓</div>
+            <h4>Tech Innovation Bootcamp</h4>
+            <p class="course-desc">Accelerated multi-discipline program</p>
+            <div class="course-details">
+              <p><strong>Age:</strong> 15–18 Years</p>
+              <p><strong>Duration:</strong> 26 weeks</p>
+              <p><strong>Skills:</strong> All tracks + Startup Mentorship</p>
+            </div>
+            <p class="price">₹65,000</p>
+            <button
+              class="btn btn-enroll"
+              onclick="enrollFor('Tech Innovation Bootcamp')">
+              Register for Demo →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Comparison -->
+    <section class="courses-page-section">
+      <div class="container">
+        <h2 class="section-title">Compare Our Programs</h2>
+        <p class="section-desc">
+          Choose the perfect program for your learning goals
+        </p>
+
+        <div class="comparison-table">
+          <div class="table-row header-row">
+            <div class="table-col">Program</div>
+            <div class="table-col">Age Group</div>
+            <div class="table-col">Duration</div>
+            <div class="table-col">Focus Area</div>
+            <div class="table-col">Starting Price</div>
+          </div>
+
+          <div class="table-row">
+            <div class="table-col"><strong>Foundation</strong></div>
+            <div class="table-col">6–10 years</div>
+            <div class="table-col">6 months</div>
+            <div class="table-col">Basics & Building</div>
+            <div class="table-col">₹6,500</div>
+          </div>
+
+          <div class="table-row">
+            <div class="table-col"><strong>Explorer</strong></div>
+            <div class="table-col">11–14 years</div>
+            <div class="table-col">9 months</div>
+            <div class="table-col">Arduino & Python</div>
+            <div class="table-col">₹8,500</div>
+          </div>
+
+          <div class="table-row">
+            <div class="table-col"><strong>Innovator</strong></div>
+            <div class="table-col">14–18 years</div>
+            <div class="table-col">12 months</div>
+            <div class="table-col">AI & Advanced Tech</div>
+            <div class="table-col">₹12,000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Find Your Perfect Course</h2>
+        <p>Join Sparklebots and start your tech journey today!</p>
+        <button class="btn btn-lg" onclick="enrollFor('Sparklebots Course')">
+          Register for Free Demo Class
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Sparklebots. All rights reserved.</p>
+        <p>Building tomorrow's innovators today.</p>
+      </div>
+    </footer>
+
+    <script>
+      function enrollFor(courseName) {
+        // Store course name and redirect to enrollment form
+        sessionStorage.setItem("selectedCourse", courseName);
+        window.location.href = "index.html#enrollForm";
+      }
+    </script>
+  </body>
+</html>
