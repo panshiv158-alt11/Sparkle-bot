@@ -35,7 +35,7 @@ Course Modules (6 modules)
     ↓
 Training Options (Batch & 1-to-1)
     ↓
-Price Card (₹6,500)
+Price Card ()
     ↓
 CTA & Contact
 ```
@@ -55,7 +55,7 @@ Course Modules (6 modules)
     ↓
 Training Options
     ↓
-Price Card (₹8,500)
+Price Card ()
     ↓
 CTA & Contact
 ```
@@ -75,7 +75,7 @@ Course Modules (8 modules)
     ↓
 Training Options
     ↓
-Price Card (₹12,000)
+Price Card ()
     ↓
 CTA & Contact
 ```
@@ -184,9 +184,9 @@ INDEX.HTML
 
 | Program    | Duration  | Age   | Starting Price |
 | ---------- | --------- | ----- | -------------- |
-| Foundation | 6 months  | 6–10  | ₹6,500         |
-| Explorer   | 9 months  | 11–14 | ₹8,500         |
-| Innovator  | 12 months | 14–18 | ₹12,000        |
+| Foundation | 6 months  | 6–10  |          |
+| Explorer   | 9 months  | 11–14 |          |
+| Innovator  | 12 months | 14–18 |         |
 
 **+ 1-to-1 mentorship available at additional cost**
 

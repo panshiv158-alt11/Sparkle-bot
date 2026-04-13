@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Google Forms Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            background: #0fa3b1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background: #0b3c5d;
+        }
+        .log {
+            margin-top: 20px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Direct Google Forms Submission Test</h1>
+        <p>This will submit DIRECTLY to Google Forms using an iframe (bypassing CORS issues)</p>
+
+        <form id="googleForm" target="iframe" style="display: none;">
+            <input type="text" name="entry.448107434" value="Test Child" />
+            <input type="text" name="entry.1021014844" value="Test Parent" />
+            <input type="email" name="entry.1063743900" value="test@example.com" />
+            <input type="tel" name="entry.1694517917" value="1234567890" />
+            <input type="text" name="entry.1469959605" value="6 - 10 yrs" />
+            <input type="text" name="entry.46458961" value="Arduino Robotics Development" />
+        </form>
+
+        <button onclick="submitToGoogle()">Test Direct Submission to Google Forms</button>
+
+        <div class="log" id="log"></div>
+    </div>
+
+    <iframe name="iframe" style="display: none;"></iframe>
+
+    <script>
+        function log(message, type = 'log') {
+            const logDiv = document.getElementById('log');
+            const line = document.createElement('div');
+            line.className = type;
+            line.textContent = new Date().toLocaleTimeString() + ' - ' + message;
+            logDiv.appendChild(line);
+            logDiv.scrollTop = logDiv.scrollHeight;
+            console.log(message);
+        }
+
+        function submitToGoogle() {
+            log('🔍 Testing entry IDs...', 'log');
+            log('entry.448107434 = Child Name (Test Child)', 'log');
+            log('entry.1021014844 = Parent Name (Test Parent)', 'log');
+            log('entry.1063743900 = Email (test@example.com)', 'log');
+            log('entry.1694517917 = Phone (1234567890)', 'log');
+            log('entry.1469959605 = Age Group (6 - 10 yrs)', 'log');
+            log('entry.46458961 = Course (Arduino Robotics Development)', 'log');
+            log('', 'log');
+            log('📤 Submitting directly to Google Forms (via iframe, no CORS issues)...', 'log');
+            log('Form URL: https://docs.google.com/forms/d/e/1FAIpQLSe_qSy8_GEsTTkYTLOZ94pYdsv_XxSRGDlUPDGxVuCdgpSZEQ/formResponse', 'log');
+            log('', 'log');
+
+            // Update form action to your Google Form
+            const form = document.getElementById('googleForm');
+            form.action = 'https://docs.google.com/forms/d/e/1FAIpQLSe_qSy8_GEsTTkYTLOZ94pYdsv_XxSRGDlUPDGxVuCdgpSZEQ/formResponse';
+            form.method = 'POST';
+
+            // Submit the form
+            form.submit();
+
+            // Log completion
+            setTimeout(() => {
+                log('✅ Submission sent! Check your Google Sheet in a few seconds.', 'success');
+                log('If data appears in the sheet, these entry IDs are correct!', 'success');
+            }, 1000);
+        }
+
+        // Log page load
+        window.addEventListener('load', () => {
+            log('✅ Test page loaded', 'log');
+            log('Click the button to test submission to Google Forms', 'log');
+        });
+    </script>
+</body>
+</html>

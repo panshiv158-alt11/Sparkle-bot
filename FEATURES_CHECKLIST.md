@@ -209,16 +209,16 @@
   3. Design & Development
   4. Career Programs
 - [x] 10+ individual courses:
-  - Core Python (₹7,500)
-  - Advanced Python (₹7,500)
-  - Arduino Robotics (₹8,500)
-  - Humanoid Robotics (₹28,500)
-  - Robot Arm Control (₹12,000)
-  - Image Processing (₹9,500)
-  - 3D Printing & CAD (₹8,500)
-  - Embedded Systems (₹15,000)
-  - IoT Program (₹12,000)
-  - Raspberry Pi (₹18,000)
+  - Core Python ()
+  - Advanced Python ()
+  - Arduino Robotics ()
+  - Humanoid Robotics ()
+  - Robot Arm Control ()
+  - Image Processing ()
+  - 3D Printing & CAD ()
+  - Embedded Systems ()
+  - IoT Program ()
+  - Raspberry Pi ()
 - [x] Each course has:
   - Icon
   - Name

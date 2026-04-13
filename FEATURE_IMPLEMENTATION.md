@@ -21,10 +21,10 @@ Successfully implemented comprehensive course pages and fixed heading visibility
 
 **4 Courses:**
 
-1. ⚡ Arduino Programming (₹8,500) - 10 weeks
-2. 🐍 Python Development (₹9,000) - 12 weeks
-3. 🤖 Robotics Projects (₹10,500) - 14 weeks
-4. 🧠 AI Basics (₹9,500) - 10 weeks
+1. ⚡ Arduino Programming () - 10 weeks
+2. 🐍 Python Development () - 12 weeks
+3. 🤖 Robotics Projects () - 14 weeks
+4. 🧠 AI Basics () - 10 weeks
 
 **Features:** Project-based learning, career-focused, competition preparation, advanced concepts
 
@@ -35,10 +35,10 @@ Successfully implemented comprehensive course pages and fixed heading visibility
 
 **4 Courses:**
 
-1. 🤖 Advanced Python & AI (₹12,500) - 16 weeks
-2. 🦾 Humanoid Robotics (₹14,000) - 18 weeks
-3. 📡 IoT & Embedded Systems (₹13,000) - 14 weeks
-4. 🚀 Career Programs (₹15,000) - 20 weeks
+1. 🤖 Advanced Python & AI () - 16 weeks
+2. 🦾 Humanoid Robotics () - 18 weeks
+3. 📡 IoT & Embedded Systems () - 14 weeks
+4. 🚀 Career Programs () - 20 weeks
 
 **Features:** Industry certification, career mentorship, internship-ready, global opportunities
 
@@ -157,7 +157,7 @@ Successfully implemented comprehensive course pages and fixed heading visibility
    - Duration: 8 Weeks
    - Schedule: 2 Hours/Week
    - Class Size: 5-8 Students
-   - Price: ₹6,500
+   - Price: 
    - Description: Learn robotics fundamentals, build robots, understand mechanics
 
    **Card 2: Scratch Programming 🎮**
@@ -166,7 +166,7 @@ Successfully implemented comprehensive course pages and fixed heading visibility
    - Duration: 6 Weeks
    - Schedule: 1.5 Hours/Week
    - Class Size: 5-8 Students
-   - Price: ₹5,500
+   - Price: 
    - Description: Create games, animations, stories with visual blocks
 
    **Card 3: Creative Design 🎨**
@@ -175,7 +175,7 @@ Successfully implemented comprehensive course pages and fixed heading visibility
    - Duration: 6 Weeks
    - Schedule: 1.5 Hours/Week
    - Class Size: 5-8 Students
-   - Price: ₹5,500
+   - Price: 
    - Description: Digital design tools, colors, shapes, composition
 
    **Card 4: Problem Solving 🧩**
@@ -184,7 +184,7 @@ Successfully implemented comprehensive course pages and fixed heading visibility
    - Duration: 5 Weeks
    - Schedule: 1 Hour/Week
    - Class Size: 5-8 Students
-   - Price: ₹4,500
+   - Price: 
    - Description: Critical thinking, puzzles, computational thinking
 
 4. **Why Foundation Section**: 4 benefit cards

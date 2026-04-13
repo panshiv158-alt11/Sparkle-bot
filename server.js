@@ -60,7 +60,7 @@ const server = http.createServer((req, res) => {
       // File not found
       res.writeHead(404, { "Content-Type": "text/html" });
       res.end(
-        "<h1>404: File Not Found</h1><p>The requested file could not be found.</p>"
+        "<h1>404: File Not Found</h1><p>The requested file could not be found.</p>",
       );
       return;
     }

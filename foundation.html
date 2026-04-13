@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Background Video -->
+    <video class="page-background-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
+      <source src="Sparkle background video.mp4" type="video/mp4" />
+    </video>
+    <div class="page-overlay"></div>
+    
     <!-- Navigation Bar -->
     <nav class="navbar">
       <div class="container">
         <div class="logo">
-          <img src="logo.jpg" alt="Sparklebots Logo" class="logo-img" />
+          <img src="asset/logo.jpg" alt="Sparklebots Logo" class="logo-img" />
           <h1>Sparklebots</h1>
         </div>
         <ul class="nav-menu">
@@ -22,13 +28,9 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="nav-cta">
-          <button
-            class="btn btn-primary"
-            onclick="
-              document.getElementById('contact-section').scrollIntoView()
-            ">
+          <a href="contact.html" class="btn btn-primary">
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
     </nav>
@@ -42,7 +44,7 @@
             <div class="header-text">
               <h1>FOUNDATION</h1>
               <p class="header-subtitle">
-                Build Your First Robot & Master Programming
+                Master Block Programming, Robotics Basics & Robot Building
               </p>
             </div>
           </div>
@@ -55,7 +57,7 @@
             <button
               class="btn btn-primary btn-demo"
               onclick="enrollFor('Foundation')">
-              Register for Demo
+              Register for Free Demo
             </button>
           </div>
         </div>
@@ -63,14 +65,16 @@
     </section>
 
     <!-- Course Description Section -->
-    <section class="course-section">
+    <section class="course-section card-section">
       <div class="container">
-        <p class="section-text center-text">
-          The perfect introduction to robotics and programming for young
-          learners. Build confidence, learn fundamental concepts, and create
-          your first robot projects through hands-on building and interactive
-          visual programming.
-        </p>
+        <div class="description-card">
+          <h2 class="section-heading">Highlights of Foundation Levels</h2>
+          <p class="section-text center-text">
+            The perfect introduction to robotics and programming for young learners.
+            Master block programming, learn robotics basics, assemble unique robots,
+            and participate in exciting projects and competitions.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -80,41 +84,24 @@
         <h2 class="section-heading">What Students Will Learn</h2>
         <div class="card-grid">
           <div class="feature-card">
+            <div class="card-icon">�</div>
+            <h3>Block Programming</h3>
+            <p>Learn visual coding with Scratch to build programs through drag-and-drop blocks.</p>
+          </div>
+          <div class="feature-card">
             <div class="card-icon">🤖</div>
-            <h3>Introduction to Robotics</h3>
-            <p>
-              Master robot mechanics and understand how real-world technology
-              works
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="card-icon">🧩</div>
-            <h3>Block Programming (Scratch)</h3>
-            <p>
-              Learn visual coding without complex syntax - perfect for beginners
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="card-icon">⚡</div>
-            <h3>Sensors & Actions</h3>
-            <p>Build intelligent robots that respond to the environment</p>
+            <h3>Basics of Robotics</h3>
+            <p>Understand robot components, mechanics, and how robots work in the real world.</p>
           </div>
           <div class="feature-card">
             <div class="card-icon">🔧</div>
-            <h3>Basic Mechanisms</h3>
-            <p>Create working mechanical systems with gears and structures</p>
+            <h3>Assemble Robots</h3>
+            <p>Build custom robots with sensors, motors, and mechanisms that perform specific actions.</p>
           </div>
           <div class="feature-card">
-            <div class="card-icon">🧠</div>
-            <h3>AI Thinking Basics</h3>
-            <p>
-              Introduce your child to artificial intelligence concepts early
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="card-icon">🚀</div>
-            <h3>Mini Projects</h3>
-            <p>Build real working robots from day one - hands-on learning</p>
+            <div class="card-icon">🏆</div>
+            <h3>Projects, Competitions</h3>
+            <p>Create robot projects and participate in fun competitions to showcase your skills.</p>
           </div>
         </div>
       </div>
@@ -165,101 +152,66 @@
     <section class="course-section alternate-bg module-showcase-section">
       <div class="container">
         <h2 class="section-heading">Course Modules</h2>
-        <div class="modules-showcase-grid">
-          <div class="module-box module-box-1">
-            <div class="module-step">1</div>
-            <div class="module-title">Robotics Fundamentals</div>
-            <p>Learn basics, safety & components</p>
-          </div>
-          <div class="module-connector"></div>
-
-          <div class="module-box module-box-2">
-            <div class="module-step">2</div>
-            <div class="module-title">Visual Coding</div>
-            <p>Block programming with Scratch</p>
-          </div>
-          <div class="module-connector"></div>
-
-          <div class="module-box module-box-3">
-            <div class="module-step">3</div>
-            <div class="module-title">Smart Sensors</div>
-            <p>Electronic components & circuits</p>
+        <div class="modules-grid">
+          <div class="module-card">
+            <div class="module-number">01</div>
+            <div class="module-icon">�</div>
+            <h3>Block Programming</h3>
+            <p>Master visual coding with Scratch, learning logic, loops, and event-driven programming.</p>
+            <div class="module-duration">4 Weeks</div>
           </div>
 
-          <div class="module-box module-box-2">
-            <div class="module-step">4</div>
-            <div class="module-title">Mechanics & Motion</div>
-            <p>Gears, levers & structures</p>
+          <div class="module-card">
+            <div class="module-number">02</div>
+            <div class="module-icon">🤖</div>
+            <h3>Basics of Robotics</h3>
+            <p>Learn robot components, mechanics, safety, and build your first working robot.</p>
+            <div class="module-duration">3 Weeks</div>
           </div>
-          <div class="module-connector"></div>
 
-          <div class="module-box module-box-1">
-            <div class="module-step">5</div>
-            <div class="module-title">AI & Logic</div>
-            <p>Intelligent robot behaviors</p>
+          <div class="module-card">
+            <div class="module-number">03</div>
+            <div class="module-icon">🔧</div>
+            <h3>Assemble Unique Robots </h3>
+            <p>Build custom robots with sensors, motors, and mechanisms for specific actions and behaviors.</p>
+            <div class="module-duration">4 Weeks</div>
           </div>
-          <div class="module-connector"></div>
 
-          <div class="module-box module-box-3">
-            <div class="module-step">6</div>
-            <div class="module-title">Final Projects</div>
-            <p>Build & showcase your robot</p>
+          <div class="module-card">
+            <div class="module-number">04</div>
+            <div class="module-icon">🏆</div>
+            <h3>Projects & Competitions</h3>
+            <p>Create robot projects and participate in competitions to apply skills and have fun.</p>
+            <div class="module-duration">3 Weeks</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Individual Course Breakdown Section -->
-    <section class="course-section">
+    <!-- What You'll Master Section -->
+    <section class="course-section alternate-bg card-section">
       <div class="container">
         <h2 class="section-heading">What You'll Master</h2>
-        <div class="master-skills-grid">
-          <div class="master-box master-box-1">
-            <div class="master-icon">🧩</div>
+        <div class="card-grid">
+          <div class="feature-card">
+            <div class="card-icon">🧩</div>
             <h3>Block Programming</h3>
-            <p class="master-highlight">Visual drag-drop coding</p>
-            <p>See results instantly</p>
-            <div class="skill-tags">
-              <span class="tag tag-blue">Logic</span>
-              <span class="tag tag-green">Loops</span>
-              <span class="tag tag-gold">Debugging</span>
-            </div>
+            <p>Create programs using visual blocks to control robot actions and behaviors.</p>
           </div>
-
-          <div class="master-box master-box-2">
-            <div class="master-icon">🤖</div>
-            <h3>Basic Robotics</h3>
-            <p class="master-highlight">Build working robots</p>
-            <p>See code move real things</p>
-            <div class="skill-tags">
-              <span class="tag tag-green">Mechanics</span>
-              <span class="tag tag-gold">Assembly</span>
-              <span class="tag tag-blue">Engineering</span>
-            </div>
+          <div class="feature-card">
+            <div class="card-icon">🤖</div>
+            <h3>Basics of Robotics</h3>
+            <p>Understand and build robots with mechanical and electronic components.</p>
           </div>
-
-          <div class="master-box master-box-3">
-            <div class="master-icon">⚡</div>
-            <h3>Sensors & Components</h3>
-            <p class="master-highlight">Electronic inputs & outputs</p>
-            <p>Make robots "see" & "feel"</p>
-            <div class="skill-tags">
-              <span class="tag tag-blue">Circuits</span>
-              <span class="tag tag-gold">Sensors</span>
-              <span class="tag tag-green">Troubleshooting</span>
-            </div>
+          <div class="feature-card">
+            <div class="card-icon">🔧</div>
+            <h3>Robot Assembly</h3>
+            <p>Assemble custom robots and program them to perform specific actions.</p>
           </div>
-
-          <div class="master-box master-box-1">
-            <div class="master-icon">🎯</div>
-            <h3>Mini Projects</h3>
-            <p class="master-highlight">Real-world challenges</p>
-            <p>Apply everything together</p>
-            <div class="skill-tags">
-              <span class="tag tag-gold">Integration</span>
-              <span class="tag tag-green">Problem-solving</span>
-              <span class="tag tag-blue">Presentation</span>
-            </div>
+          <div class="feature-card">
+            <div class="card-icon">🏆</div>
+            <h3>Projects, Competitions</h3>
+            <p>Build robot projects and compete in challenges to showcase your creativity.</p>
           </div>
         </div>
       </div>
@@ -269,24 +221,34 @@
     <section class="course-section card-section">
       <div class="container">
         <h2 class="section-heading">Training Options</h2>
-        <div class="card-grid card-grid-2">
-          <div class="training-info-card" onclick="openModal('training-1')">
-            <div class="card-icon">🏢</div>
+        <div class="card-grid card-grid-2 training-options-enhanced">
+          <div class="training-card-enhanced">
+            <div class="training-icon">🏢</div>
             <h3>Batch Training</h3>
-            <p>
-              Learn in a group setting with 4-6 students per batch. Great for
-              peer learning, teamwork, and social interaction.
-            </p>
-            <p class="highlight-text">✓ Perfect for collaborative learning</p>
+            <p>Learn in a group setting with 4-6 students per batch. Great for peer learning, teamwork, and social interaction.</p>
+            <div class="training-details">
+              <ul>
+                <li>Group learning environment</li>
+                <li>Peer collaboration</li>
+                <li>Structured project support</li>
+                <li>Cost-effective peer learning</li>
+              </ul>
+            </div>
+            <p class="price-highlight">Perfect for collaborative learning</p>
           </div>
-          <div class="training-info-card">
-            <div class="card-icon">👨‍🏫</div>
+          <div class="training-card-enhanced">
+            <div class="training-icon">👨‍🏫</div>
             <h3>1-to-1 Mentorship</h3>
-            <p>
-              Get personalized attention and customized learning pace. Available
-              as an add-on to batch training or standalone.
-            </p>
-            <p class="highlight-text">✓ For advanced/accelerated learning</p>
+            <p>Get personalized attention and a learning pace customized just for your child.</p>
+            <div class="training-details">
+              <ul>
+                <li>Personalized curriculum</li>
+                <li>One-on-one attention</li>
+                <li>Flexible scheduling</li>
+                <li>Fast progress with expert guidance</li>
+              </ul>
+            </div>
+            <p class="price-highlight">For advanced and accelerated learners</p>
           </div>
         </div>
       </div>
@@ -303,13 +265,7 @@
             <p><strong>Batch Size:</strong> 4–6 Students</p>
             <p><strong>Schedule:</strong> 2 Classes per Week (90 min each)</p>
           </div>
-          <div class="price-display">
-            <span class="price-text">Starting from</span>
-            <h3 style="color: #ffd700; font-size: 36px; margin: 10px 0">
-              ₹6,500
-            </h3>
-          </div>
-          <p style="color: #e8f5ff; margin: 1rem 0">
+<p style="color: #e8f5ff; margin: 1rem 0">
             1-to-1 mentorship available at same cost
           </p>
           <button onclick="enrollFor('Foundation Course')">
@@ -347,8 +303,8 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 Sparklebots. All rights reserved.</p>
-        <p>Building tomorrow's innovators today.</p>
+        <p>&copy; 2009 - 2026 Sparklebots - Robotics & AI Innovation Lab. All rights reserved.</p>
+        <p>Building the tech leaders of tomorrow | Engineer • Innovate • Create the Future</p>
       </div>
     </footer>
 
@@ -681,8 +637,8 @@
               <li><strong>Duration:</strong> 6 months (24 classes total)</li>
               <li><strong>Benefits:</strong> Peer learning, teamwork, collaboration</li>
               <li><strong>Environment:</strong> Dedicated lab with shared equipment</li>
-              <li><strong>Pricing:</strong> ₹6,500 for full 6-month program</li>
-              <li><strong>Add-ons:</strong> 1-to-1 mentorship available (₹2,000/month)</li>
+              <li><strong>Pricing:</strong>  for full 6-month program</li>
+              <li><strong>Add-ons:</strong> 1-to-1 mentorship available (/month)</li>
             </ul>
           `,
         },
@@ -697,7 +653,7 @@
               <li><strong>Personal Attention:</strong> One-on-one guidance from expert mentors</li>
               <li><strong>Tailored Content:</strong> Focus on your interests and strengths</li>
               <li><strong>Duration:</strong> 6 months or customizable</li>
-              <li><strong>Pricing:</strong> ₹2,000/month (in addition to batch training)</li>
+              <li><strong>Pricing:</strong> /month (in addition to batch training)</li>
               <li><strong>Perfect For:</strong> Accelerated learners or beginners who need extra support</li>
             </ul>
           `,

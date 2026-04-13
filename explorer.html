@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Background Video -->
+    <video class="page-background-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
+      <source src="Sparkle background video.mp4" type="video/mp4" />
+    </video>
+    <div class="page-overlay"></div>
+    
     <!-- Navigation Bar -->
     <nav class="navbar">
       <div class="container">
         <div class="logo">
-          <img src="logo.jpg" alt="Sparklebots Logo" class="logo-img" />
+          <img src="asset/logo.jpg" alt="Sparklebots Logo" class="logo-img" />
           <h1>Sparklebots</h1>
         </div>
         <ul class="nav-menu">
@@ -22,13 +28,9 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="nav-cta">
-          <button
-            class="btn btn-primary"
-            onclick="
-              document.getElementById('contact-section').scrollIntoView()
-            ">
+          <a href="contact.html" class="btn btn-primary">
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
     </nav>
@@ -63,369 +65,185 @@
     </section>
 
     <!-- Course Description Section -->
-    <section class="course-section">
+    <section class="course-section card-section">
       <div class="container">
-        <p class="section-text center-text">
-          Take your skills to the next level! Learn real programming languages,
-          build IoT systems, and create autonomous robots. This program bridges
-          basic robotics with professional-grade technologies used in industry.
-        </p>
+        <div class="description-card">
+          <h2 class="section-heading">Highlights of Explorer Levels</h2>
+          <p class="section-text center-text">
+            Take your skills to the next level! Learn real programming languages,
+            build IoT systems, and create autonomous robots. This program bridges
+            basic robotics with professional-grade technologies used in industry.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- What Students Will Learn Section -->
-    <section class="course-section alternate-bg">
+    <section class="course-section alternate-bg card-section">
       <div class="container">
-        <h2>What Students Will Learn</h2>
-        <div class="skills-grid">
-          <div class="skill-card-enhanced">
-            <div class="skill-icon">⚡</div>
-            <h4>Arduino Programming</h4>
-            <p class="skill-subtitle">Write real code for microcontrollers</p>
-            <div class="skill-details">
-              <ul>
-                <li>C/C++ programming syntax</li>
-                <li>Digital/analog I/O control</li>
-                <li>Sensor integration</li>
-                <li>Real embedded systems</li>
-              </ul>
-            </div>
+        <h2 class="section-heading">What Students Will Learn</h2>
+        <div class="card-grid">
+          <div class="feature-card">
+            <div class="card-icon">⚡</div>
+            <h3>Arduino Programming</h3>
+            <p>Program microcontrollers to control motors, LEDs, and smart sensors in real hardware projects.</p>
           </div>
-          <div class="skill-card-enhanced">
-            <div class="skill-icon">🐍</div>
-            <h4>Python Basics</h4>
-            <p class="skill-subtitle">Industry-standard programming language</p>
-            <div class="skill-details">
-              <ul>
-                <li>Variables and data types</li>
-                <li>Functions and loops</li>
-                <li>Libraries and modules</li>
-                <li>Problem-solving logic</li>
-              </ul>
-            </div>
+          <div class="feature-card">
+            <div class="card-icon">🐍</div>
+            <h3>Python for Hardware</h3>
+            <p>Learn Python scripting for automation, data handling, and controlling electronics with code.</p>
           </div>
-          <div class="skill-card-enhanced">
-            <div class="skill-icon">🔌</div>
-            <h4>Motors & Sensors</h4>
-            <p class="skill-subtitle">Advanced sensor integration</p>
-            <div class="skill-details">
-              <ul>
-                <li>Digital and analog sensors</li>
-                <li>Motor control and PWM</li>
-                <li>Real-time data processing</li>
-                <li>Hardware interfacing</li>
-              </ul>
-            </div>
+          <div class="feature-card">
+            <div class="card-icon">🔌</div>
+            <h3>Sensor , Motor Control</h3>
+            <p>Master advanced sensing, PWM-driven motors, and responsive robotics behaviors.</p>
           </div>
-          <div class="skill-card-enhanced">
-            <div class="skill-icon">📐</div>
-            <h4>3D Design Basics</h4>
-            <p class="skill-subtitle">CAD software and 3D printing</p>
-            <div class="skill-details">
-              <ul>
-                <li>Fusion 360 fundamentals</li>
-                <li>3D modeling and sketching</li>
-                <li>3D printing preparation</li>
-                <li>Custom parts design</li>
-              </ul>
-            </div>
+          <div class="feature-card">
+            <div class="card-icon">📐</div>
+            <h3>CAD Prototyping</h3>
+            <p>Design and prototype parts in 3D, preparing components for print and physical assembly.</p>
           </div>
-          <div class="skill-card-enhanced">
-            <div class="skill-icon">🌐</div>
-            <h4>IoT Introduction</h4>
-            <p class="skill-subtitle">Connected smart systems</p>
-            <div class="skill-details">
-              <ul>
-                <li>WiFi and wireless connectivity</li>
-                <li>Cloud platform basics</li>
-                <li>Data transmission</li>
-                <li>Smart device fundamentals</li>
-              </ul>
-            </div>
+          <div class="feature-card">
+            <div class="card-icon">🌐</div>
+            <h3>IoT Connectivity</h3>
+            <p>Build connected systems with wireless data, cloud services, and remote monitoring.</p>
           </div>
-          <div class="skill-card-enhanced">
-            <div class="skill-icon">🤖</div>
-            <h4>Robotics Projects</h4>
-            <p class="skill-subtitle">Build autonomous robots</p>
-            <div class="skill-details">
-              <ul>
-                <li>Robot assembly and design</li>
-                <li>Autonomous navigation</li>
-                <li>Sensor-based decision making</li>
-                <li>Competition-ready builds</li>
-              </ul>
-            </div>
+          <div class="feature-card">
+            <div class="card-icon">🚀</div>
+            <h3>Smart Engineering</h3>
+            <p>Create complete smart systems and robotics projects with professional design thinking.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Benefits Section -->
-    <section class="course-section">
+    <section class="course-section card-section">
       <div class="container">
-        <h2>Why Choose Explorer Course?</h2>
-        <div class="benefits-grid-enhanced">
-          <div class="benefit-box-enhanced">
-            <div class="benefit-number">01</div>
-            <div class="benefit-content">
-              <h3>Confidence Building</h3>
-              <p>
-                Tackle challenging projects and discover their capability to
-                create amazing things with technology.
-              </p>
-              <div class="benefit-details">
-                <ul>
-                  <li>Hands-on project experience</li>
-                  <li>Success through challenges</li>
-                  <li>Portfolio building</li>
-                  <li>Recognition and awards</li>
-                </ul>
-              </div>
-            </div>
+        <h2 class="section-heading">Why Choose Explorer Course?</h2>
+        <div class="card-grid card-grid-4">
+          <div class="benefit-card">
+            <div class="card-number">01</div>
+            <div class="card-icon">🌟</div>
+            <h3>Confidence Building</h3>
+            <p>Tackle challenging projects and discover their capability to create amazing things with technology - hands-on experience, success through challenges, portfolio building, and recognition</p>
           </div>
-          <div class="benefit-box-enhanced">
-            <div class="benefit-number">02</div>
-            <div class="benefit-content">
-              <h3>Problem-Solving Skills</h3>
-              <p>
-                Develop advanced troubleshooting and debugging—essential for
-                engineers and programmers.
-              </p>
-              <div class="benefit-details">
-                <ul>
-                  <li>Logical thinking development</li>
-                  <li>Debugging techniques</li>
-                  <li>Systematic problem approach</li>
-                  <li>Technical analysis</li>
-                </ul>
-              </div>
-            </div>
+          <div class="benefit-card">
+            <div class="card-number">02</div>
+            <div class="card-icon">🧩</div>
+            <h3>Problem-Solving Skills</h3>
+            <p>Develop advanced troubleshooting and debugging—essential for engineers and programmers - logical thinking, debugging techniques, systematic approaches, and technical analysis</p>
           </div>
-          <div class="benefit-box-enhanced">
-            <div class="benefit-number">03</div>
-            <div class="benefit-content">
-              <h3>Career Readiness</h3>
-              <p>
-                Gain industry-relevant skills in Python, Arduino, and IoT—highly
-                sought by employers.
-              </p>
-              <div class="benefit-details">
-                <ul>
-                  <li>In-demand programming skills</li>
-                  <li>Professional certifications</li>
-                  <li>Internship opportunities</li>
-                  <li>Industry connections</li>
-                </ul>
-              </div>
-            </div>
+          <div class="benefit-card">
+            <div class="card-number">03</div>
+            <div class="card-icon">🚀</div>
+            <h3>Career Readiness</h3>
+            <p>Gain industry-relevant skills in Python, Arduino, and IoT—highly sought by employers - in-demand programming skills, professional certifications, internships, and industry connections</p>
           </div>
-          <div class="benefit-box-enhanced">
-            <div class="benefit-number">04</div>
-            <div class="benefit-content">
-              <h3>Practical Skills</h3>
-              <p>
-                Learn hands-on engineering practices used by professionals,
-                preparing for advanced careers.
-              </p>
-              <div class="benefit-details">
-                <ul>
-                  <li>Real-world applications</li>
-                  <li>Professional workflows</li>
-                  <li>Industry tools mastery</li>
-                  <li>Technical expertise</li>
-                </ul>
-              </div>
-            </div>
+          <div class="benefit-card">
+            <div class="card-number">04</div>
+            <div class="card-icon">⚙️</div>
+            <h3>Practical Skills</h3>
+            <p>Learn hands-on engineering practices used by professionals, preparing for advanced careers - real-world applications, professional workflows, industry tools, and technical expertise</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Course Modules Section -->
-    <section class="course-section alternate-bg">
+    <section class="course-section alternate-bg module-showcase-section">
       <div class="container">
-        <h2>Course Modules</h2>
-        <div class="modules-showcase-grid">
-          <div class="module-box-enhanced module-box-1">
-            <div class="module-step">1</div>
+        <h2 class="section-heading">Course Modules</h2>
+        <div class="modules-grid">
+          <div class="module-card">
+            <div class="module-number">01</div>
+            <div class="module-icon">⚡</div>
             <h3>Arduino Fundamentals</h3>
-            <p class="module-intro">
-              Introduction to Arduino board and circuits
-            </p>
-            <div class="module-details">
-              <ul>
-                <li>Arduino board architecture</li>
-                <li>Circuit basics and safety</li>
-                <li>First programs and sketches</li>
-                <li>Breadboard fundamentals</li>
-              </ul>
-            </div>
+            <p>Learn board components, wiring, and your first Arduino programs for hardware control.</p>
+            <div class="module-duration">4 Weeks</div>
           </div>
-          <div class="module-box-enhanced module-box-2">
-            <div class="module-step">2</div>
-            <h3>Python Programming</h3>
-            <p class="module-intro">Functions, loops, and data structures</p>
-            <div class="module-details">
-              <ul>
-                <li>Variables and data types</li>
-                <li>Control flow and loops</li>
-                <li>Functions and libraries</li>
-                <li>Problem-solving approach</li>
-              </ul>
-            </div>
+
+          <div class="module-card">
+            <div class="module-number">02</div>
+            <div class="module-icon">🐍</div>
+            <h3>Python for Hardware</h3>
+            <p>Use Python to automate circuits, process sensor input, and build intelligent systems.</p>
+            <div class="module-duration">4 Weeks</div>
           </div>
-          <div class="module-box-enhanced module-box-3">
-            <div class="module-step">3</div>
-            <h3>Sensors & Motors</h3>
-            <p class="module-intro">Digital/analog sensors and control</p>
-            <div class="module-details">
-              <ul>
-                <li>Sensor types and interfacing</li>
-                <li>Motor control and PWM</li>
-                <li>Data acquisition</li>
-                <li>Real-time processing</li>
-              </ul>
-            </div>
+
+          <div class="module-card">
+            <div class="module-number">03</div>
+            <div class="module-icon">🔌</div>
+            <h3>Sensors & Motor Control</h3>
+            <p>Interface sensors and motors, learn PWM and feedback control for accurate robotics.</p>
+            <div class="module-duration">3 Weeks</div>
           </div>
-          <div class="module-box-enhanced module-box-1">
-            <div class="module-step">4</div>
-            <h3>3D Design & CAD</h3>
-            <p class="module-intro">Design custom robot parts</p>
-            <div class="module-details">
-              <ul>
-                <li>Fusion 360 basics</li>
-                <li>3D modeling techniques</li>
-                <li>Assembly design</li>
-                <li>3D printing preparation</li>
-              </ul>
-            </div>
+
+          <div class="module-card">
+            <div class="module-number">04</div>
+            <div class="module-icon">📐</div>
+            <h3>CAD & Prototyping</h3>
+            <p>Create parts in 3D, prepare prototypes, and design enclosures for your robots.</p>
+            <div class="module-duration">3 Weeks</div>
           </div>
-          <div class="module-box-enhanced module-box-2">
-            <div class="module-step">5</div>
-            <h3>IoT & Connectivity</h3>
-            <p class="module-intro">Cloud integration and smart systems</p>
-            <div class="module-details">
-              <ul>
-                <li>WiFi and wireless protocols</li>
-                <li>Cloud platform APIs</li>
-                <li>Data logging and storage</li>
-                <li>Mobile app integration</li>
-              </ul>
-            </div>
+
+          <div class="module-card">
+            <div class="module-number">05</div>
+            <div class="module-icon">🌐</div>
+            <h3>IoT Systems</h3>
+            <p>Build connected devices with WiFi, cloud dashboards, and smart remote control.</p>
+            <div class="module-duration">3 Weeks</div>
           </div>
-          <div class="module-box-enhanced module-box-3">
-            <div class="module-step">6</div>
-            <h3>Capstone Projects</h3>
-            <p class="module-intro">Build autonomous competing robots</p>
-            <div class="module-details">
-              <ul>
-                <li>Line-following robots</li>
-                <li>Object detection systems</li>
-                <li>Autonomous navigation</li>
-                <li>Competition preparation</li>
-              </ul>
-            </div>
+
+          <div class="module-card">
+            <div class="module-number">06</div>
+            <div class="module-icon">🚀</div>
+            <h3>Smart Projects</h3>
+            <p>Design intelligent robotics and IoT applications for real-world problem solving.</p>
+            <div class="module-duration">5 Weeks</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Individual Course Breakdown Section -->
-    <section class="course-section alternate-bg">
+    <!-- What You'll Master Section -->
+    <section class="course-section alternate-bg card-section">
       <div class="container">
-        <h2>What You'll Master</h2>
-        <div class="master-skills-grid">
-          <div class="master-box-enhanced master-box-1">
-            <div class="master-icon">⚙️</div>
-            <h3>Arduino Code</h3>
-            <p class="master-highlight">
-              Real C/C++ microcontroller programming
-            </p>
-            <p>Professional-grade hardware control</p>
-            <div class="master-content">
-              <ul>
-                <li>Embedded C/C++ programming</li>
-                <li>Real-time signal processing</li>
-                <li>Hardware optimization</li>
-                <li>Professional workflows</li>
-              </ul>
-            </div>
-            <div class="skill-tags">
-              <span class="tag tag-blue">Real Coding</span>
-              <span class="tag tag-green">Signals</span>
-              <span class="tag tag-gold">Hardware</span>
-            </div>
+        <h2 class="section-heading">What You'll Master</h2>
+        <div class="card-grid">
+          <div class="feature-card">
+            <div class="card-icon">⚙️</div>
+            <h3>Arduino Systems</h3>
+            <p>Design and program microcontroller systems used in robotics and smart devices.</p>
           </div>
-          <div class="master-box-enhanced master-box-2">
-            <div class="master-icon">🐍</div>
-            <h3>Python Programming</h3>
-            <p class="master-highlight">Industry-standard language for AI</p>
-            <p>Functions, data structures, and libraries</p>
-            <div class="master-content">
-              <ul>
-                <li>Advanced function design</li>
-                <li>Data structure mastery</li>
-                <li>Library integration</li>
-                <li>Software design patterns</li>
-              </ul>
-            </div>
-            <div class="skill-tags">
-              <span class="tag tag-green">Functions</span>
-              <span class="tag tag-gold">Data Structures</span>
-              <span class="tag tag-blue">Libraries</span>
-            </div>
+          <div class="feature-card">
+            <div class="card-icon">🐍</div>
+            <h3>Python Applications</h3>
+            <p>Automate hardware, data processing, and interactive systems with Python code.</p>
           </div>
-          <div class="master-box-enhanced master-box-3">
-            <div class="master-icon">🌐</div>
-            <h3>IoT Systems</h3>
-            <p class="master-highlight">Connected smart devices and cloud</p>
-            <p>Fastest-growing technology field</p>
-            <div class="master-content">
-              <ul>
-                <li>Wireless communication protocols</li>
-                <li>Cloud platform integration</li>
-                <li>Data synchronization</li>
-                <li>Remote device management</li>
-              </ul>
-            </div>
-            <div class="skill-tags">
-              <span class="tag tag-gold">WiFi/Bluetooth</span>
-              <span class="tag tag-blue">Cloud APIs</span>
-              <span class="tag tag-green">Connectivity</span>
-            </div>
+          <div class="feature-card">
+            <div class="card-icon">🌐</div>
+            <h3>Connected IoT</h3>
+            <p>Create devices that talk to the cloud and share data securely over the internet.</p>
           </div>
-          <div class="master-box-enhanced master-box-1">
-            <div class="master-icon">🚀</div>
-            <h3>Advanced Robotics</h3>
-            <p class="master-highlight">Build autonomous intelligent robots</p>
-            <p>Impressive portfolios and competitions</p>
-            <div class="master-content">
-              <ul>
-                <li>Autonomous navigation systems</li>
-                <li>Multi-component integration</li>
-                <li>Competitive programming</li>
-                <li>Portfolio development</li>
-              </ul>
-            </div>
-            <div class="skill-tags">
-              <span class="tag tag-blue">Autonomous Systems</span>
-              <span class="tag tag-green">Integration</span>
-              <span class="tag tag-gold">Competitions</span>
-            </div>
+          <div class="feature-card">
+            <div class="card-icon">🚀</div>
+            <h3>Integrated Projects</h3>
+            <p>Build polished technology projects combining electronics, programming, and design.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Training Options Section -->
-    <section class="course-section">
+    <section class="course-section card-section">
       <div class="container">
-        <h2>Training Options</h2>
-        <div class="training-options-enhanced">
+        <h2 class="section-heading">Training Options</h2>
+        <div class="card-grid card-grid-2 training-options-enhanced">
           <div class="training-card-enhanced">
             <div class="training-icon">🏢</div>
             <h3>Batch Training</h3>
-            <p>Learn with 4-6 peers in collaborative sessions for teamwork</p>
+            <p>Learn with 4-6 peers in collaborative sessions for teamwork and shared projects.</p>
             <div class="training-details">
               <ul>
                 <li>Group learning environment</li>
@@ -439,9 +257,7 @@
           <div class="training-card-enhanced">
             <div class="training-icon">👨‍🏫</div>
             <h3>1-to-1 Mentorship</h3>
-            <p>
-              Customized guidance from expert mentors for accelerated learning
-            </p>
+            <p>Customized guidance from expert mentors for accelerated learning.</p>
             <div class="training-details">
               <ul>
                 <li>Personalized curriculum</li>
@@ -450,7 +266,7 @@
                 <li>Accelerated progress</li>
               </ul>
             </div>
-            <p class="price-highlight">For advanced/accelerated learning</p>
+            <p class="price-highlight">For advanced and accelerated learning</p>
           </div>
         </div>
       </div>
@@ -467,13 +283,7 @@
             <p><strong>Batch Size:</strong> 4–6 Students</p>
             <p><strong>Schedule:</strong> 2 Classes per Week (90 min each)</p>
           </div>
-          <div class="price-display">
-            <span class="price-text">Starting from</span>
-            <h3 style="color: #ffd700; font-size: 36px; margin: 10px 0">
-              ₹8,500
-            </h3>
-          </div>
-          <p style="color: #e8f5ff; margin: 1rem 0">
+<p style="color: #e8f5ff; margin: 1rem 0">
             1-to-1 mentorship available at same cost
           </p>
           <button onclick="enrollFor('Explorer Course')">
@@ -510,8 +320,8 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 Sparklebots. All rights reserved.</p>
-        <p>Building tomorrow's innovators today.</p>
+        <p>&copy; 2009 - 2026 Sparklebots - Robotics & AI Innovation Lab. All rights reserved.</p>
+        <p>Building the tech leaders of tomorrow | Engineer • Innovate • Create the Future</p>
       </div>
     </footer>
 
@@ -844,7 +654,7 @@
               <li><strong>Duration:</strong> 9 months (36 classes total)</li>
               <li><strong>Benefits:</strong> Teamwork, peer learning, social interaction</li>
               <li><strong>Environment:</strong> Dedicated lab with professional equipment</li>
-              <li><strong>Pricing:</strong> ₹8,500 for full 9-month program</li>
+              <li><strong>Pricing:</strong>  for full 9-month program</li>
               <li><strong>Add-ons:</strong> 1-to-1 mentorship available at same cost</li>
             </ul>
           `,

@@ -72,7 +72,7 @@
 │  │ 🟢 FOUNDATN  │  │ 🔵 EXPLORER  │  │ 🟠 INNOVATOR │     │
 │  │ Age 6-10     │  │ Age 11-14    │  │ Age 14-18    │     │
 │  │ Start Journey│  │ Build Project│  │ Career Path  │     │
-│  │ From ₹6.5k   │  │ From ₹8.5k   │  │ From ₹12k    │     │
+│  │ From .5k   │  │ From .5k   │  │ From k    │     │
 │  │ [Explore]    │  │ [Explore]    │  │ [Explore]    │     │
 │  └──────────────┘  └──────────────┘  └──────────────┘     │
 └────────────────────────────────────────────────────────────┘
@@ -84,7 +84,7 @@
 │  ┌──────────────┐  ┌──────────────┐                        │
 │  │ 🐍 Core      │  │ 🚀 Advanced  │                        │
 │  │ Python       │  │ Python       │                        │
-│  │ ₹7,500       │  │ ₹7,500       │                        │
+│  │        │  │        │                        │
 │  │ [Enroll]     │  │ [Enroll]     │                        │
 │  └──────────────┘  └──────────────┘                        │
 │                                                              │
@@ -92,7 +92,7 @@
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
 │  │ ⚡ Arduino   │  │ 🤖 Humanoid  │  │ 🦾 Robot Arm │     │
 │  │ Robotics     │  │ Robotics     │  │ Control      │     │
-│  │ ₹8,500       │  │ ₹28,500      │  │ ₹12,000      │     │
+│  │        │  │       │  │       │     │
 │  │ [Enroll]     │  │ [Enroll]     │  │ [Enroll]     │     │
 │  └──────────────┘  └──────────────┘  └──────────────┘     │
 └────────────────────────────────────────────────────────────┘
@@ -212,7 +212,7 @@ DEFAULT:        HOVER:          ACTIVE:
 │ │ Master Python fundamentals   │
 │ │ Age 8-14 • 12 weeks         │
 │ │                              │
-│ │ ₹7,500                       │  <- Orange price
+│ │                        │  <- Orange price
 │ │ [Enroll Now →]               │
 │ └──────────────────────────────┘
 │ ↑ Hovering: Lifts up + Shadow grows ↑
@@ -232,7 +232,7 @@ DEFAULT:        HOVER:          ACTIVE:
 │  ✓ Creative Design              │
 │  ✓ Problem Solving              │
 │                                 │
-│  From ₹6,500                    │
+│  From                     │
 │  [Explore & Enroll]             │
 └────────────────────────────────┘
 ↑ Hovering: Slight glow effect ↑

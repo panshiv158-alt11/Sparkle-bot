@@ -37,7 +37,7 @@ Successfully refactored the Sparklebots website to implement a professional cour
   - Why Choose Foundation (4 benefits)
   - Course Modules (6 modules breakdown)
   - Training Options (Batch & 1-to-1)
-  - Premium Price Card (₹6,500 starting)
+  - Premium Price Card ( starting)
   - CTA Section
   - Contact Form
   - Footer
@@ -52,7 +52,7 @@ Successfully refactored the Sparklebots website to implement a professional cour
   - Why Choose Explorer (4 benefits)
   - Course Modules (6 modules breakdown)
   - Training Options
-  - Premium Price Card (₹8,500 starting)
+  - Premium Price Card ( starting)
   - CTA Section
   - Contact Form
   - Footer
@@ -67,7 +67,7 @@ Successfully refactored the Sparklebots website to implement a professional cour
   - Why Choose Innovator (4 benefits)
   - Course Modules (8 modules - expanded)
   - Training Options
-  - Premium Price Card (₹12,000 starting)
+  - Premium Price Card ( starting)
   - CTA Section
   - Contact Form
   - Footer
@@ -168,10 +168,10 @@ index.html
 
 | Program               | Age   | Duration    | Skills            | Starting Price  |
 | --------------------- | ----- | ----------- | ----------------- | --------------- |
-| **Foundation**        | 6–10  | 6 Months    | Basics + Building | ₹6,500          |
-| **Explorer**          | 11–14 | 9 Months    | Arduino + Python  | ₹8,500          |
-| **Innovator**         | 14–18 | 12 Months   | AI + Advanced     | ₹12,000         |
-| **Specialized Certs** | 14–18 | 20–26 weeks | Focused Tracks    | ₹35,000–₹65,000 |
+| **Foundation**        | 6–10  | 6 Months    | Basics + Building |           |
+| **Explorer**          | 11–14 | 9 Months    | Arduino + Python  |           |
+| **Innovator**         | 14–18 | 12 Months   | AI + Advanced     |          |
+| **Specialized Certs** | 14–18 | 20–26 weeks | Focused Tracks    |  |
 
 ---
 
